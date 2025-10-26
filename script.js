@@ -36,40 +36,16 @@ class Elegant3D {
             card.style.willChange = 'transform';
             card.style.backfaceVisibility = 'hidden';
             
-            let isHovering = false;
-            
-            // Sophisticated hover effect - STABLE
+            // Simple, stable hover effect - no complex rotations
             card.addEventListener('mouseenter', () => {
-                isHovering = true;
-                card.style.transition = 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)';
-                card.style.transform = 'perspective(1200px) translateZ(20px) scale(1.03)';
-                card.style.boxShadow = '0 20px 60px rgba(11, 178, 74, 0.2), 0 8px 25px rgba(0, 0, 0, 0.12)';
-            });
-            
-            card.addEventListener('mousemove', (e) => {
-                if (!isHovering) return;
-                
-                const rect = card.getBoundingClientRect();
-                const x = (e.clientX - rect.left) / rect.width;
-                const y = (e.clientY - rect.top) / rect.height;
-                
-                const rotateY = (x - 0.5) * 10;
-                const rotateX = (0.5 - y) * 10;
-                
-                card.style.transition = 'none';
-                card.style.transform = `
-                    perspective(1200px) 
-                    rotateX(${rotateX}deg) 
-                    rotateY(${rotateY}deg) 
-                    translateZ(20px) 
-                    scale(1.03)
-                `;
+                card.style.transition = 'all 0.3s ease';
+                card.style.transform = 'translateY(-8px)';
+                card.style.boxShadow = '0 10px 35px rgba(11, 178, 74, 0.15)';
             });
             
             card.addEventListener('mouseleave', () => {
-                isHovering = false;
-                card.style.transition = 'all 0.5s cubic-bezier(0.23, 1, 0.320, 1)';
-                card.style.transform = 'perspective(1200px) rotateX(0) rotateY(0) translateZ(0) scale(1)';
+                card.style.transition = 'all 0.3s ease';
+                card.style.transform = 'translateY(0)';
                 card.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
             });
         });
@@ -100,15 +76,15 @@ class Elegant3D {
     }
     
     setupFloatingGeometry() {
-        // Simplified stable geometric shapes
+        // Simplified stable geometric shapes - minimal for performance
         const shapes = [
             { char: '◆', size: 30, color: 'rgba(11, 178, 74, 0.08)' },
-            { char: '▲', size: 25, color: 'rgba(11, 178, 74, 0.06)' },
-            { char: '●', size: 20, color: 'rgba(11, 178, 74, 0.05)' }
+            { char: '▲', size: 25, color: 'rgba(11, 178, 74, 0.06)' }
         ];
         
         const container = document.querySelector('.container');
-        
+        if (!container) return;
+
         shapes.forEach((shapeData, i) => {
             const shape = document.createElement('div');
             shape.className = 'floating-shape';
@@ -125,6 +101,8 @@ class Elegant3D {
                 animation: simpleFloat ${12 + i * 4}s infinite ease-in-out;
                 will-change: transform;
             `;
+            
+            container.appendChild(shape);
         });
         
         // Single stable animation
@@ -184,10 +162,87 @@ class Elegant3D {
     
 }
 
+// Matrix Rain Effect for Philosophy Section
+class MatrixRain {
+    constructor(container) {
+        this.container = container;
+        this.canvas = document.createElement('canvas');
+        this.ctx = this.canvas.getContext('2d');
+        this.characters = '3ASYAPPS01アイウエオカキクケコサシスセソ';
+        this.drops = [];
+        this.setup();
+    }
+    
+    setup() {
+        this.canvas.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.4;
+        `;
+        
+        this.container.style.position = 'relative';
+        this.container.style.overflow = 'hidden';
+        this.container.appendChild(this.canvas);
+        
+        this.resize();
+        this.initDrops();
+        this.animate();
+        
+        window.addEventListener('resize', () => this.resize());
+    }
+    
+    resize() {
+        const rect = this.container.getBoundingClientRect();
+        this.canvas.width = rect.width;
+        this.canvas.height = rect.height;
+    }
+    
+    initDrops() {
+        const columns = Math.floor(this.canvas.width / 20);
+        this.drops = Array(columns).fill().map(() => ({
+            y: Math.random() * -100,
+            speed: Math.random() * 2 + 1,
+            char: this.characters[Math.floor(Math.random() * this.characters.length)]
+        }));
+    }
+    
+    animate() {
+        this.ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        
+        this.ctx.fillStyle = '#0bb24a';
+        this.ctx.font = '16px monospace';
+        
+        this.drops.forEach((drop, i) => {
+            this.ctx.fillText(drop.char, i * 20, drop.y);
+            
+            drop.y += drop.speed;
+            
+            if (drop.y > this.canvas.height && Math.random() > 0.975) {
+                drop.y = 0;
+                drop.char = this.characters[Math.floor(Math.random() * this.characters.length)];
+            }
+        });
+        
+        requestAnimationFrame(() => this.animate());
+    }
+}
+
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize elegant 3D effects
     window.elegant3D = new Elegant3D();
+    
+    // Matrix rain on philosophy section
+    const philosophy = document.querySelector('.philosophy');
+    if (philosophy) {
+        window.matrixRain = new MatrixRain(philosophy);
+    }
     
     // Language toggle functionality
     window.toggleLanguage = function() {
