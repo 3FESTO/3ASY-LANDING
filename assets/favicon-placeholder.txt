@@ -1,0 +1,12 @@
+# Placeholder per favicon.ico
+# 
+# Per sostituire questo file:
+# 1. Crea un'icona 32x32px in formato ICO
+# 2. Rinomina il file come favicon.ico
+# 3. Sostituisci questo file
+# 4. Aggiorna il riferimento nell'HTML se necessario
+#
+# Tools online per creare favicon:
+# - https://favicon.io
+# - https://realfavicongenerator.net
+# - https://www.favicon-generator.org

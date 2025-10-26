@@ -1,0 +1,17 @@
+# Placeholder per og-image.jpg
+#
+# Questa immagine viene utilizzata per i social media (Facebook, LinkedIn, WhatsApp)
+# quando qualcuno condivide il link del sito.
+#
+# Specifiche raccomandate:
+# - Dimensioni: 1200x630px (rapporto 1.91:1)
+# - Formato: JPG o PNG
+# - Peso: < 1MB
+# - Contenuto: Logo + testo descrittivo + branding 3ASY
+#
+# Per creare l'immagine:
+# 1. Usa Canva, Figma o Photoshop
+# 2. Template "Facebook Post" o "LinkedIn Post"
+# 3. Aggiungi logo 3ASY e testo "Innovazione Digitale per il Business"
+# 4. Salva come og-image.jpg in questa cartella
+# 5. Aggiorna il riferimento nell'HTML se cambi il nome

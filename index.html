@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3ASY - Soluzioni digitali innovative per il business moderno">
+    <meta name="keywords" content="3ASY, business, digitale, soluzioni, innovazione, app, web">
+    <meta name="author" content="3ASY Team">
+    
+    <title>3ASY - Innovazione Digitale per il Business</title>
+    
+    <!-- Open Graph Meta Tags per Social Media -->
+    <meta property="og:title" content="3ASY - Innovazione Digitale per il Business">
+    <meta property="og:description" content="Soluzioni digitali innovative per il business moderno">
+    <meta property="og:url" content="https://www.3asy.app">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.3asy.app/assets/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="3ASY - Innovazione Digitale per il Business">
+    <meta name="twitter:description" content="Soluzioni digitali innovative per il business moderno">
+    <meta name="twitter:image" content="https://www.3asy.app/assets/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Inline per performance ottimali -->
+    <style>
+        /* Reset e base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            margin-top: 70px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(22, 163, 74, 0.3);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e293b;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">3ASY</a>
+                <nav>
+                    <!-- Navigation può essere aggiunta qui se necessario -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Innovazione Digitale per il Tuo Business</h1>
+            <p>Soluzioni moderne e performanti che trasformano le idee in realtà digitali</p>
+            <a href="#contact" class="cta-button">Inizia Subito</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Perché Scegliere 3ASY</h2>
+            <p class="section-subtitle">
+                Offriamo soluzioni complete per digitalizzare e modernizzare il tuo business
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Applicazioni veloci e ottimizzate per massimizzare l'esperienza utente e i risultati di business.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Sicurezza</h3>
+                    <p>Standard di sicurezza enterprise per proteggere i tuoi dati e quelli dei tuoi clienti.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Innovazione</h3>
+                    <p>Tecnologie all'avanguardia per creare soluzioni che anticipano le esigenze del mercato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="hero" style="padding: 60px 0; margin-top: 0;">
+        <div class="container">
+            <h2>Pronto a Trasformare il Tuo Business?</h2>
+            <p>Contattaci per una consulenza gratuita e scopri come possiamo aiutarti</p>
+            <a href="mailto:info@3asy.app" class="cta-button">Contattaci Ora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 3ASY. Tutti i diritti riservati.</p>
+            <p>Sviluppato con ❤️ per il business digitale</p>
+        </div>
+    </footer>
+
+    <!-- Analytics e scripts possono essere aggiunti qui -->
+    <script>
+        // Smooth scrolling per i link interni
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
