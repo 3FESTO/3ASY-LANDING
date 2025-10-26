@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.3asy.app/sitemap.xml
+
+# Crawl-delay for respectful bots
+Crawl-delay: 1
+
+# Block common bot traps
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*?*utm_*
+
+# Allow social media crawlers
+User-agent: facebookexternalhit/*
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
