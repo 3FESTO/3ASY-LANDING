@@ -119,36 +119,36 @@ export const apps: App[] = [
     url: 'https://3asymodeling.com/'
   },
   {
-    id: '3asychannelmanager',
-    icon: '🏠',
-    title: '3ASYCHANNELMANAGER',
+    id: '3asytrading',
+    icon: '📈',
+    title: '3ASYTRADING',
     subtitle: {
-      en: 'SHORT-TERM RENTAL SYNC',
-      it: 'SHORT-TERM RENTAL SYNC'
+      en: 'P2P STRATEGY MARKETPLACE',
+      it: 'P2P STRATEGY MARKETPLACE'
     },
     description: {
-      en: 'Multi-portal synchronization for short-term rentals. Centralized management of Airbnb, Booking.com and other rental channels.',
-      it: 'Sincronizzazione multi-portale per affitti brevi. Gestione centralizzata Airbnb, Booking.com e altri canali rental.'
+      en: 'Peer-to-peer marketplace for algorithmic trading strategies. Share, discover and use quantitative strategies verified by the community.',
+      it: 'Marketplace peer-to-peer per strategie di trading algoritmico. Condividi, scopri e utilizza strategie quantitative verificate dalla community.'
     },
     features: {
       en: [
-        'Automatic iCal synchronization',
-        'Overbooking prevention',
-        'Centralized multi-portal',
-        'Unified dashboard'
+        'Verified quantitative strategies',
+        'Real-time multi-timeframe dashboard',
+        'Performance tracking and metrics',
+        'P2P strategist community'
       ],
       it: [
-        'Sincronizzazione iCal automatica',
-        'Prevenzione overbooking',
-        'Multi-portale centralizzato',
-        'Dashboard unificata'
+        'Strategie quantitative verificate',
+        'Dashboard real-time multi-timeframe',
+        'Performance tracking e metriche',
+        'Community P2P di strategist'
       ]
     },
     ctaText: {
-      en: 'SYNC PORTALS',
-      it: 'SINCRONIZZA I PORTALI'
+      en: 'EXPLORE STRATEGIES',
+      it: 'ESPLORA LE STRATEGIE'
     },
-    url: 'https://3asychannelmanager.com/'
+    url: 'https://3asytrading.com/'
   },
   {
     id: '3asywealth',
