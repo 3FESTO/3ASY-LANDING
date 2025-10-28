@@ -1,14 +1,14 @@
 {
   "name": "3asy-landing",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "npm run build && git add dist -f && git commit -m 'Deploy to GitHub Pages v1.0.0' && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git add dist -f && git commit -m 'Deploy to GitHub Pages v1.0.2' && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@types/three": "^0.180.0",

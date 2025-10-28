@@ -100,13 +100,13 @@
           if (document.querySelector('link[data-app-style]')) return;
           const link = document.createElement('link');
           link.rel = 'stylesheet';
-          link.href = './assets/index-JEdBZ1Sn.css';
+          link.href = './asset/index-JEdBZ1Sn.css';
           link.setAttribute('data-app-style', 'true');
           document.head.appendChild(link);
         };
 
         ensureStyles();
-        import('./assets/index-DQV22ErK.js').catch(() => {
+        import('./asset/index-DQV22ErK.js').catch(() => {
           console.error('Failed to load production bundle.');
         });
       }
