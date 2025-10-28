@@ -9,23 +9,18 @@ export function AppCard({ app, language }: AppCardProps) {
   return (
     <div className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-[#28a745] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
       <div className="flex flex-col flex-1">
-        {/* Icon */}
         <div className="text-5xl md:text-6xl mb-4">{app.icon}</div>
         
-        {/* Title */}
         <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{app.title}</h3>
         
-        {/* Subtitle */}
         <p className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
           {app.subtitle[language]}
         </p>
         
-        {/* Description */}
         <p className="text-sm md:text-base text-gray-700 mb-4 leading-relaxed">
           {app.description[language]}
         </p>
         
-        {/* Features */}
         <ul className="space-y-2 mb-6 flex-1">
           {app.features[language].map((feature, index) => (
             <li key={index} className="flex items-start text-sm text-gray-600">
@@ -35,7 +30,6 @@ export function AppCard({ app, language }: AppCardProps) {
           ))}
         </ul>
         
-        {/* CTA Button - Always at bottom */}
         <a
           href={app.url}
           target="_blank"

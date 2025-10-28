@@ -14,7 +14,6 @@ export function LanguageGlobe({ language, onClick }: LanguageGlobeProps) {
   useEffect(() => {
     if (!canvasRef.current) return;
 
-    // Scene setup
     const scene = new THREE.Scene();
     
     const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 1000);
@@ -28,8 +27,7 @@ export function LanguageGlobe({ language, onClick }: LanguageGlobeProps) {
     renderer.setSize(64, 64);
     renderer.setPixelRatio(window.devicePixelRatio);
 
-    // Low poly sphere - bigger
-    const geometry = new THREE.IcosahedronGeometry(1, 0); // 0 detail = low poly
+    const geometry = new THREE.IcosahedronGeometry(1, 0);
     const material = new THREE.MeshPhongMaterial({
       color: 0x28a745,
       flatShading: true,
@@ -39,15 +37,13 @@ export function LanguageGlobe({ language, onClick }: LanguageGlobeProps) {
     sphereRef.current = sphere;
     scene.add(sphere);
 
-    // Wireframe
     const wireframe = new THREE.WireframeGeometry(geometry);
     const line = new THREE.LineSegments(wireframe);
-    (line.material as THREE.LineBasicMaterial).color.setHex(0xffffff); // White edges
+    (line.material as THREE.LineBasicMaterial).color.setHex(0xffffff);
     (line.material as THREE.LineBasicMaterial).opacity = 0.6;
     (line.material as THREE.LineBasicMaterial).transparent = true;
     sphere.add(line);
 
-    // Lights
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
@@ -55,31 +51,24 @@ export function LanguageGlobe({ language, onClick }: LanguageGlobeProps) {
     pointLight.position.set(3, 3, 5);
     scene.add(pointLight);
 
-    // Animation
     let animationId: number;
 
     const animate = () => {
       animationId = requestAnimationFrame(animate);
 
       if (sphere) {
-        // Constant rotation
         sphere.rotation.y += 0.015;
         sphere.rotation.x += 0.008;
 
-        // Explosive bounce animation
         if (bounceRef.current > 0) {
           const t = bounceRef.current;
-          // More chaotic bounce with multiple sine waves
           const bounce = Math.sin(t * Math.PI * 2) * 0.6 * t;
           const wobble = Math.sin(t * Math.PI * 4) * 0.3 * t;
           
           sphere.position.y = bounce;
           sphere.position.x = wobble * 0.4;
-          
-          // Explosive rotation
           sphere.rotation.z = Math.sin(t * Math.PI * 3) * 0.8;
           
-          // Pulsating scale
           const scale = 1 + Math.sin(t * Math.PI * 3) * 0.3;
           sphere.scale.set(scale, scale, scale);
           
@@ -97,17 +86,18 @@ export function LanguageGlobe({ language, onClick }: LanguageGlobeProps) {
 
     animate();
 
-    // Cleanup
     return () => {
       cancelAnimationFrame(animationId);
       geometry.dispose();
       material.dispose();
+      wireframe.dispose();
+      (line.material as THREE.LineBasicMaterial).dispose();
       renderer.dispose();
     };
   }, []);
 
   const handleClick = () => {
-    bounceRef.current = 1; // Trigger bounce
+    bounceRef.current = 1;
     onClick();
   };
 
