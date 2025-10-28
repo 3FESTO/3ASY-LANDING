@@ -1,3 +1,5 @@
+import { LanguageGlobe } from './LanguageGlobe';
+
 interface HeaderProps {
   language: 'en' | 'it';
   onToggleLanguage: () => void;
@@ -12,12 +14,7 @@ export function Header({ language, onToggleLanguage }: HeaderProps) {
           <span className="text-xl md:text-2xl font-bold text-gray-900">3ASY</span>
         </div>
         
-        <button
-          onClick={onToggleLanguage}
-          className="px-4 py-2 rounded-lg bg-[#28a745] hover:bg-[#218838] text-white font-semibold transition-colors shadow-sm"
-        >
-          {language === 'it' ? 'EN' : 'IT'}
-        </button>
+        <LanguageGlobe language={language} onClick={onToggleLanguage} />
       </div>
     </header>
   );

@@ -19,12 +19,12 @@ export const SITE_CONFIG = {
       en: {
         part1: 'Custom innovation - Our heart beats for 3D Future Experience with ',
         linkText: 'ANY3DP',
-        part2: ', but our DNA is innovative software development. When we identify a need, we don\'t look for solutions: we create them from scratch.'
+        part2: ', but our DNA is innovative software development. When we identify a need: we create from scratch.'
       },
       it: {
         part1: 'Innovazione su misura - Il nostro cuore batte per la 3D Future Experience con ',
         linkText: 'ANY3DP',
-        part2: ', ma il nostro DNA è lo sviluppo di software innovativo. Quando identifichiamo un\'esigenza, non cerchiamo soluzioni: le creiamo da zero.'
+        part2: ', ma il nostro DNA è lo sviluppo di software innovativo. Quando identifichiamo un\'esigenza: creiamo da zero.'
       }
     },
     any3dpUrl: 'https://www.any3dp.com/'
