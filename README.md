@@ -1,6 +1,24 @@
+<div align="center">
+
 # 🚀 3ASYAPPS
 
+[![Live Site](https://img.shields.io/badge/🌐_Live-www.3asy.app-28a745?style=for-the-badge)](https://www.3asy.app)
+[![Made by 3Festo](https://img.shields.io/badge/Made_by-3Festo-000000?style=for-the-badge)](https://www.3festo.com)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+
 **Innovative utilities ecosystem** - From HR management to blockchain whistleblowing and trading, from AI 3D modeling to wealth management.
+
+### 🛠️ Tech Stack
+
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+
+---
+
+</div>
 
 > ⚠️ **Context Disclaimer**: This is a **small public showcase** of our utility applications. Our main focus is advanced 3D technology development with [ANY3DP](https://www.any3dp.com). We maintain dozens of private repositories for cutting-edge 3D R&D projects. These 3ASYAPPS are convenient utilities we've built for our operational needs - **our real innovation happens in the 3D Future Experience space**.
 
