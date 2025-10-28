@@ -7,31 +7,43 @@ interface AppCardProps {
 
 export function AppCard({ app, language }: AppCardProps) {
   return (
-    <div className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2">
-      {/* Glow effect on hover */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300" />
-      
-      <div className="relative z-10">
+    <div className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-emerald-500 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+      <div className="relative">
         {/* Icon */}
-        <div className="text-6xl mb-6">{app.icon}</div>
+        <div className="text-5xl md:text-6xl mb-4">{app.icon}</div>
         
         {/* Title */}
-        <h3 className="text-2xl font-bold text-white mb-4">{app.title}</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">{app.title}</h3>
+        
+        {/* Subtitle */}
+        <p className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
+          {app.subtitle[language]}
+        </p>
         
         {/* Description */}
-        <p className="text-slate-300 mb-6 leading-relaxed">
+        <p className="text-sm md:text-base text-gray-700 mb-4 leading-relaxed">
           {app.description[language]}
         </p>
+        
+        {/* Features */}
+        <ul className="space-y-2 mb-6">
+          {app.features[language].map((feature, index) => (
+            <li key={index} className="flex items-start text-sm text-gray-600">
+              <span className="text-emerald-600 mr-2 mt-0.5">✓</span>
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
         
         {/* CTA Button */}
         <a
           href={app.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-lg font-semibold transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-500/50"
+          className="inline-flex items-center justify-center w-full px-4 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold rounded-lg transition-all duration-300 group-hover:shadow-lg"
         >
-          <span>{language === 'en' ? 'Explore' : 'Esplora'}</span>
-          <span className="text-xl">→</span>
+          <span>{app.ctaText[language]}</span>
+          <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
         </a>
       </div>
     </div>

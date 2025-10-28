@@ -4,27 +4,18 @@ interface PhilosophyProps {
 
 export function Philosophy({ language }: PhilosophyProps) {
   return (
-    <section className="relative py-24 overflow-hidden">
-      {/* Matrix-like background effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 opacity-50" />
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-            {language === 'en' ? 'Our Philosophy' : 'La Nostra Filosofia'}
+    <section className="bg-gradient-to-br from-gray-50 to-emerald-50 py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
+            {language === 'en' ? 'Our Philosophy' : 'La nostra filosofia'}
           </h2>
           
-          <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
+          <div className="text-base md:text-lg text-gray-700 leading-relaxed space-y-4">
             <p>
               {language === 'en'
-                ? 'We believe in the power of technology to transform businesses and create meaningful experiences. Our suite of applications is designed with a focus on innovation, usability, and measurable results.'
-                : 'Crediamo nel potere della tecnologia di trasformare le aziende e creare esperienze significative. La nostra suite di applicazioni è progettata con un focus su innovazione, usabilità e risultati misurabili.'}
-            </p>
-            
-            <p>
-              {language === 'en'
-                ? 'Each product in the 3ASY ecosystem is built to solve real-world challenges, leveraging cutting-edge technologies and best practices in software development.'
-                : 'Ogni prodotto nell\'ecosistema 3ASY è costruito per risolvere sfide del mondo reale, sfruttando tecnologie all\'avanguardia e best practice nello sviluppo software.'}
+                ? 'We are constantly searching for new challenges in the technology landscape. Innovation is not just our job, it\'s our passion. From 3D to AI, from blockchain to enterprise systems: we transform ideas into concrete and scalable solutions.'
+                : 'Siamo costantemente alla ricerca di nuove sfide nel panorama tecnologico. L\'innovazione non è solo il nostro lavoro, è la nostra passione. Dal 3D all\'AI, dalla blockchain ai sistemi enterprise: trasformiamo idee in soluzioni concrete e scalabili.'}
             </p>
           </div>
         </div>
