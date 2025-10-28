@@ -30,7 +30,7 @@
     <meta name="twitter:image" content="https://www.3asy.app/asset/og-image.png" />
     <meta name="twitter:image:alt" content="3ASYAPPS - Utilities for Everything" />
     
-    <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -90,6 +90,26 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      const isLocalEnv = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+
+      if (isLocalEnv) {
+        import('/src/main.tsx');
+      } else {
+        const ensureStyles = () => {
+          if (document.querySelector('link[data-app-style]')) return;
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './assets/index-JEdBZ1Sn.css';
+          link.setAttribute('data-app-style', 'true');
+          document.head.appendChild(link);
+        };
+
+        ensureStyles();
+        import('./assets/index-DQV22ErK.js').catch(() => {
+          console.error('Failed to load production bundle.');
+        });
+      }
+    </script>
   </body>
 </html>
