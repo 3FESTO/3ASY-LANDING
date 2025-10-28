@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
   name: '3ASY',
   tagline: {
-    en: 'OPERATIONS UTILITIES FOR BUSINESS',
-    it: 'OPERATIONS UTILITIES FOR BUSINESS'
+    en: 'UTILITIES FOR EVERYTHING',
+    it: 'UTILITIES FOR EVERYTHING'
   },
   logo: {
     url: 'https://www.3festo.com/images/homePage/3asyapps.png',

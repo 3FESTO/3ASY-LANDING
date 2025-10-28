@@ -14,7 +14,7 @@ export function Header({ language, onToggleLanguage }: HeaderProps) {
         
         <button
           onClick={onToggleLanguage}
-          className="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors shadow-sm"
+          className="px-4 py-2 rounded-lg bg-[#28a745] hover:bg-[#218838] text-white font-semibold transition-colors shadow-sm"
         >
           {language === 'it' ? 'EN' : 'IT'}
         </button>

@@ -21,7 +21,7 @@ export function CTA({ language }: CTAProps) {
           
           <a
             href={`mailto:${company.email}`}
-            className="inline-flex items-center space-x-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white text-base md:text-lg font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            className="inline-flex items-center space-x-2 px-8 py-4 bg-[#28a745] hover:bg-[#218838] text-white text-base md:text-lg font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             <span>📧</span>
             <span>{cta.buttonText[language]}</span>

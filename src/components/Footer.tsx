@@ -16,14 +16,14 @@ export function Footer({ language }: FooterProps) {
             href={company.website} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-emerald-600 hover:text-emerald-700 font-semibold"
+            className="text-[#28a745] hover:text-[#218838] font-semibold"
           >
             {company.name.replace(' S.r.l.', '')} - {company.tagline}
           </a>
         </p>
         <p className="text-sm text-gray-500">
           © 2025 {company.name} - {footer.copyright[language]} |{' '}
-          <a href={`mailto:${company.email}`} className="text-emerald-600 hover:text-emerald-700">
+          <a href={`mailto:${company.email}`} className="text-[#28a745] hover:text-[#218838]">
             {company.email}
           </a>
         </p>

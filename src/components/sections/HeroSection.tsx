@@ -21,21 +21,21 @@ export function HeroSection({ language }: HeroSectionProps) {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
           {name}
         </h1>
-        <p className="text-xl md:text-2xl font-semibold text-emerald-600 mb-6">
-          {tagline[language]}
-        </p>
-        <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-          {content.part1}
-          <a 
-            href={hero.any3dpUrl} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-emerald-600 hover:text-emerald-700 font-semibold"
-          >
-            {content.linkText}
-          </a>
-          {content.part2}
-        </p>
+                  <p className="text-xl md:text-2xl font-semibold text-[#28a745] mb-6">
+            {tagline[language]}
+          </p>
+          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+            {content.part1}
+            <a 
+              href={hero.any3dpUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-[#28a745] hover:text-[#218838] font-semibold"
+            >
+              {content.linkText}
+            </a>
+            {content.part2}
+          </p>
       </div>
     </section>
   );
