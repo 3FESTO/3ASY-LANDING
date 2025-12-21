@@ -18,7 +18,7 @@ export function Footer({ language }: FooterProps) {
             rel="noopener noreferrer"
             className="text-[#28a745] hover:text-[#218838] font-semibold"
           >
-            {company.name.replace(' S.r.l.', '')} - {company.tagline}
+            {company.name.replace(' SRL', '')} - {company.tagline}
           </a>
         </p>
         <p className="text-sm text-gray-500">

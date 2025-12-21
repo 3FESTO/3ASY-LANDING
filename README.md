@@ -3,7 +3,7 @@
 # 🚀 3ASYAPPS
 
 [![Live Site](https://img.shields.io/badge/🌐_Live-www.3asy.app-28a745?style=for-the-badge)](https://www.3asy.app)
-[![Made by 3Festo](https://img.shields.io/badge/Made_by-3Festo-000000?style=for-the-badge)](https://www.3festo.com)
+[![Made by 3FESTO](https://img.shields.io/badge/Made_by-3FESTO-000000?style=for-the-badge)](https://www.3FESTO.com)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
 **Innovative utilities ecosystem** - From HR management to blockchain whistleblowing and trading, from AI 3D modeling to wealth management.
@@ -26,7 +26,7 @@
 
 ## 🎯 What is 3ASYAPPS?
 
-**3ASYAPPS** is an ecosystem of specialized business applications developed by [3Festo](https://www.3festo.com) - the company behind the 3D Future Experience with [ANY3DP](https://www.any3dp.com). 
+**3ASYAPPS** is an ecosystem of specialized business applications developed by [3FESTO](https://www.3FESTO.com) - the company behind the 3D Future Experience with [ANY3DP](https://www.any3dp.com). 
 
 Our philosophy: *When we identify a business need, we don't search for solutions - we create them from scratch.*
 
@@ -148,14 +148,14 @@ Innovation Focus: Next-generation 3D technology
 ## 🔗 Connect with the Ecosystem
 
 - **🌐 Main Site**: [3asy.app](https://www.3asy.app)
-- **🏢 Company**: [3festo.com](https://www.3festo.com)  
+- **🏢 Company**: [3FESTO.com](https://www.3FESTO.com)  
 - **🎯 3D Platform**: [any3dp.com](https://www.any3dp.com)
-- **📧 Contact**: [info@3festo.com](mailto:info@3festo.com)
+- **📧 Contact**: [info@3FESTO.com](mailto:info@3FESTO.com)
 
 ---
 
 ## 📄 License & Credits
 
-**© 2025 3Festo S.r.l.** - Made in Italy 🇮🇹
+**© 2025 3FESTO SRL** - Made in Italy 🇮🇹
 
 *This repository demonstrates our commitment to clean, performant, and purposeful web development.*

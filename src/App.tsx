@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { HeroSection } from './components/sections/HeroSection';
+import { BuilderSection } from './components/sections/BuilderSection';
 import { AppsSection } from './components/sections/AppsSection';
 import { Philosophy } from './components/Philosophy';
 import { CTA } from './components/CTA';
@@ -19,6 +20,7 @@ function App() {
     <div className="min-h-screen bg-white">
       <Header language={language} onToggleLanguage={toggleLanguage} />
       <HeroSection language={language} />
+      <BuilderSection language={language} />
       <AppsSection language={language} />
       <Philosophy language={language} />
       <CTA language={language} />
