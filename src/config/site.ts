@@ -19,12 +19,12 @@ export const SITE_CONFIG = {
       en: {
         part1: 'Born from ',
         linkText: 'ANY3DP',
-        part2: ' and 3D Future Experience, we now build AI-powered tools for everyone. One prompt, one app. No code, no limits. This is the future of software — and we\'re making it accessible.'
+        part2: ' and 3D Future Experience, we now build AI-powered tools for everyone.'
       },
       it: {
         part1: 'Nati da ',
         linkText: 'ANY3DP',
-        part2: ' e dalla 3D Future Experience, costruiamo ANCHE strumenti AI-powered per tutti. Un prompt, un\'app. Nessun codice, nessun limite. Questo è il futuro del software — e lo stiamo rendendo accessibile.'
+        part2: ' e dalla 3D Future Experience, costruiamo ANCHE strumenti AI-powered per tutti.'
       }
     },
     any3dpUrl: 'https://www.any3dp.com/'
