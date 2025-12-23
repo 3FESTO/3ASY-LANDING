@@ -3,11 +3,11 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.3asy.app/</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-12-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.3asy.app/asset/og-image.png</image:loc>
+      <image:loc>https://www.3asy.app/og-image.png</image:loc>
       <image:title>3ASYAPPS - Utilities for Everything by 3FESTO</image:title>
       <image:caption>Ecosistema di applicazioni innovative per il business: HR, whistleblowing, 3D modeling, trading, wealth management</image:caption>
     </image:image>
