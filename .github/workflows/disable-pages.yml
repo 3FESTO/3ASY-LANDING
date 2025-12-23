@@ -1,0 +1,16 @@
+# This workflow intentionally does nothing.
+# It exists to prevent GitHub Pages from auto-deploying.
+# The site is now deployed via Vercel.
+
+name: Disable GitHub Pages
+
+on:
+  push:
+    branches: ["gh-pages"]
+
+jobs:
+  skip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip deployment
+        run: echo "GitHub Pages is disabled. Site is deployed via Vercel at https://www.3asy.app"
