@@ -1,0 +1,82 @@
+# 3ASYAPPS Status Configuration
+# Aggiorna questo file per modificare lo stato delle app
+# MVP: 0-100 (Minimum Viable Product completato)
+# Industrialization: 0-100 (Scalabilità, testing, docs, CI/CD)
+
+apps:
+  - name: 3ASYBUILDER
+    status: live        # live | beta | dev | planned | paused
+    mvp: 90
+    industrialization: 10
+    repo: 3FESTO/3ASYBUILDER
+    notes: "8 templates, 10 lingue, GA integration"
+
+  - name: 3ASYGIT
+    status: planned
+    mvp: 90
+    industrialization: 50
+    repo: 3FESTO/3ASYGIT
+    notes: "Gamification GitHub contributions"
+
+  - name: 3ASYHR
+    status: beta
+    mvp: 100
+    industrialization: 75
+    repo: 3FESTO/JUNO-HR
+    notes: "Testing @JUNO.AM, Microsoft365 integration OK, dashboard con KPI utili al management WIP"
+
+  - name: 3ASYMODELING
+    status: paused
+    mvp: 100
+    industrialization: 5
+    repo: 3FESTO/3ASYMODELING
+    notes: "AI API costs too high, standby"
+
+  - name: 3ASYMUSIC
+    status: dev
+    mvp: 95
+    industrialization: 15
+    repo: 3FESTO/3ASYMUSIC
+    notes: "UI base, player funzionante, effects WIP"
+
+  - name: 3ASYNUTRY
+    status: planned
+    mvp: 50
+    industrialization: 0
+    repo: null
+    notes: "Solo concept per ora, collab con partner nutrizionista"
+
+  - name: 3ASYPERIOD
+    status: live
+    mvp: 100
+    industrialization: 35
+    repo: 3FESTO/3ASYPERIOD
+    notes: "Dual-view funzionante, tracking in progress"
+
+  - name: 3ASYTEST
+    status: live
+    mvp: 100
+    industrialization: 50
+    repo: 3FESTO/3ASYTEST
+    notes: "Puppeteer backend, 1 test/day free"
+
+  - name: 3ASYTRADING
+    status: live
+    mvp: 100
+    industrialization: 70
+    repo: 3FESTO/3ASYTRADING
+    notes: "Beta pubblica, algoritmi cron su Db, webhook Telegram OK"
+
+  - name: 3ASYWEALTH
+    status: live
+    mvp: 100
+    industrialization: 80
+    repo: 3FESTO/3ASYWEALTH
+    notes: "Full localStorage, open source"
+
+  - name: 3ASYWHISTLE
+    status: paused
+    mvp: 100
+    industrialization: 55
+    repo: 3FESTO/3ASYWHISTLE
+    notes: "Compliance WIP, Blockchain needs improvements, serve marketing push"

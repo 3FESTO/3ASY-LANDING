@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { SITE_CONFIG } from '@/config/site';
 
 interface FooterProps {
@@ -27,6 +28,12 @@ export function Footer({ language }: FooterProps) {
             {company.email}
           </a>
         </p>
+        <Link 
+          to="/status" 
+          className="mt-3 inline-block text-[10px] text-gray-400 hover:text-gray-500 opacity-50 hover:opacity-100 transition-opacity"
+        >
+          ◊
+        </Link>
       </div>
     </footer>
   );

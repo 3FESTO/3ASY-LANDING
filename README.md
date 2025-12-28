@@ -30,14 +30,17 @@ Our philosophy: *When we identify a business need, we don't search for solutions
 ### 🏢 Live Applications
 | App | Description | Technology | Status |
 |-----|-------------|------------|--------|
-| **[3ASYBUILDER](https://builder.3asy.app)** | No-code app builder - Create business apps with AI | React + AI | 🚧 WIP |
-| **[3ASYHR](https://juno-hr.3asy.app)** | Smart HR with calendar timesheet automation | React + Supabase + Azure AD | ✅ TESTING @JUNO.AM |
-| **[3ASYWHISTLE](https://3asywhistle.it)** | Blockchain-protected whistleblowing platform | Blockchain + E2E Encryption | ⏸️ STANDBY |
-| **[3ASYMODELING](https://3asymodeling.com)** | AI-powered text/image-to-3D generation | AI + WebGL + NFT | ⏸️ STANDBY |
+| **[3ASYBUILDER](https://builder.3asy.app)** | No-code app builder - Create business apps with AI | React + AI | ✅ Live |
+| **[3ASYGIT](https://git.3asy.app)** | GitHub contribution gamification & analytics | React + GitHub API | 📋 Planned |
+| **[3ASYHR](https://juno-hr.3asy.app)** | Smart HR with calendar timesheet automation | React + Supabase + Azure AD | 🧪 Beta @JUNO.AM |
+| **[3ASYMODELING](https://3asymodeling.com)** | AI-powered text/image-to-3D generation | AI + WebGL + NFT | ⏸️ Paused |
+| **[3ASYMUSIC](https://music.3asy.app)** | Browser-based audio effects processor | React + Web Audio API | 🚧 Dev |
+| **[3ASYNUTRY](https://nutry.3asy.app)** | Professional app for nutritionists & meal planning | React + AI | 📋 Planned |
+| **[3ASYPERIOD](https://period.3asy.app)** | Female period tracking & health insights | React + LocalStorage | ✅ Live |
+| **[3ASYTEST](https://test.3asy.app)** | Automated website testing with Puppeteer | React + Puppeteer | ✅ Live |
 | **[3ASYTRADING](https://trading.3asy.app)** | P2P algorithmic trading marketplace | React + Trading APIs | ✅ Live |
-| **[3ASYWEALTH](https://wealth.3asy.app)** | Advanced wealth management platform | React + Financial APIs | ✅ Open Source |
-| **[3ASYNUTRY](https://nutry.3asy.app)** | Professional app for nutritionists & meal planning | React + AI | 🚧 WIP |
-| **[3ASYPERIOD](https://period.3asy.app)** | Female period tracking & health insights | React + AI | 🚧 WIP |
+| **[3ASYWEALTH](https://wealth.3asy.app)** | Advanced wealth management platform | React + Financial APIs | ✅ Live (OSS) |
+| **[3ASYWHISTLE](https://3asywhistle.it)** | Blockchain-protected whistleblowing platform | Blockchain + E2E Encryption | ⏸️ Paused |
 
 ## 💡 The Vision
 
@@ -66,9 +69,10 @@ Small team, big output, zero bullshit. Italian design meets global ambition.
 
 ### 📊 Traction
 
-- **7+ apps** live and growing
+- **11 apps** in ecosystem (5 live, 1 beta, 1 dev, 2 paused, 2 planned)
 - **Profitable core business** (ANY3DP)
 - **Ecosystem approach** — apps work together
+- **Internal status dashboard** at `/status`
 
 ---
 

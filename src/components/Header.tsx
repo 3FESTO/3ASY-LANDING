@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { LanguageGlobe } from './LanguageGlobe';
 
 interface HeaderProps {
@@ -12,6 +13,12 @@ export function Header({ language, onToggleLanguage }: HeaderProps) {
         <div className="flex items-center space-x-3">
           <span className="text-2xl">◆ ▲</span>
           <span className="text-xl md:text-2xl font-bold text-gray-900">3ASY</span>
+          <Link 
+            to="/status" 
+            className="text-[10px] px-1.5 py-0.5 bg-gray-100 text-gray-500 hover:bg-gray-200 hover:text-gray-700 rounded transition-colors ml-2"
+          >
+            status
+          </Link>
         </div>
         
         <LanguageGlobe language={language} onClick={onToggleLanguage} />
