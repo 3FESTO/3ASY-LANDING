@@ -236,6 +236,7 @@ export const apps: App[] = [
     icon: '🩸',
     title: '3ASYPERIOD',
     author: 'YURI',
+    appType: 'WebApp',
     subtitle: {
       en: 'CYCLE TRACKING FOR COUPLES',
       it: 'CYCLE TRACKING PER COPPIE'
