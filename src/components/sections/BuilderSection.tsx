@@ -19,16 +19,20 @@ export function BuilderSection({ language }: BuilderSectionProps) {
     },
     features: {
       en: [
-        'AI-powered natural language building',
-        'Professional templates for any business',
-        'Responsive design automatic',
-        'One-click HTML export'
+        '🌐 10 languages supported',
+        '📧 Real contact form included',
+        '🍴 Booking widgets',
+        '✨ Interactive gallery powered by 3ASY',
+        '📊 Google Analytics integration',
+        '🚀 One-click publish to yourname.3asy.app'
       ],
       it: [
-        'Costruzione in linguaggio naturale con AI',
-        'Template professionali per ogni attività',
-        'Design responsive automatico',
-        'Export HTML con un click'
+        '🌐 10 lingue supportate',
+        '📧 Form contatto reale incluso',
+        '🍴 Widget prenotazioni',
+        '✨ Galleria interattiva powered by 3ASY',
+        '📊 Integrazione Google Analytics',
+        '🚀 Pubblica con un click su tuonome.3asy.app'
       ]
     },
     cta: {
@@ -69,26 +73,13 @@ export function BuilderSection({ language }: BuilderSectionProps) {
               </div>
 
               {/* Features */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {content.features[language].map((feature, index) => (
                   <div 
                     key={index}
-                    className="flex items-start gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+                    className="flex items-center gap-2 p-3 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
                   >
-                    <svg 
-                      className="w-6 h-6 text-[#28a745] flex-shrink-0 mt-0.5" 
-                      fill="none" 
-                      viewBox="0 0 24 24" 
-                      stroke="currentColor"
-                    >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={2.5} 
-                        d="M5 13l4 4L19 7" 
-                      />
-                    </svg>
-                    <span className="text-gray-800 font-medium">{feature}</span>
+                    <span className="text-gray-800 font-medium text-sm">{feature}</span>
                   </div>
                 ))}
               </div>

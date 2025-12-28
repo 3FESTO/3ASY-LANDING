@@ -3,6 +3,7 @@ export interface App {
   icon: string;
   title: string;
   author: string;
+  appType: string;
   subtitle: {
     en: string;
     it: string;
@@ -36,10 +37,46 @@ export interface App {
 
 export const apps: App[] = [
   {
+    id: '3asygit',
+    icon: '🎮',
+    title: '3ASYGIT',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'GITHUB CONTRIBUTIONS GAMIFICATION',
+      it: 'GITHUB CONTRIBUTIONS GAMIFICATION'
+    },
+    description: {
+      en: 'Transform your GitHub contributions into art! Generate 3D visualizations and audio from your contribution graph. Turn your coding activity into something unique.',
+      it: 'Trasforma le tue contribuzioni GitHub in arte! Genera visualizzazioni 3D e audio dal tuo grafico contribuzioni. Trasforma la tua attività di coding in qualcosa di unico.'
+    },
+    features: {
+      en: [
+        '🎨 3D contribution graph visualization',
+        '🎵 Audio generation from commits',
+        '📊 Beautiful stats display',
+        '🏆 Gamification of your coding'
+      ],
+      it: [
+        '🎨 Visualizzazione 3D del grafico contribuzioni',
+        '🎵 Generazione audio dai commit',
+        '📊 Statistiche in bella vista',
+        '🏆 Gamification del tuo coding'
+      ]
+    },
+    ctaText: {
+      en: 'COMING SOON',
+      it: 'COMING SOON'
+    },
+    url: 'https://git.3asy.app/',
+    isComingSoon: true
+  },
+  {
     id: '3asyhr',
     icon: '👥',
     title: '3ASYHR',
     author: 'MicheleMikyMonti',
+    appType: 'WebApp',
     subtitle: {
       en: 'SMART HR SOLUTIONS',
       it: 'SMART HR SOLUTIONS'
@@ -96,6 +133,7 @@ export const apps: App[] = [
     icon: '🎨',
     title: '3ASYMODELING',
     author: 'MicheleMikyMonti',
+    appType: 'WebApp',
     subtitle: {
       en: 'AI-POWERED 3D GENERATION',
       it: 'AI-POWERED 3D GENERATION'
@@ -125,10 +163,45 @@ export const apps: App[] = [
     url: 'https://3asymodeling.com/'
   },
   {
+    id: '3asymusic',
+    icon: '🎵',
+    title: '3ASYMUSIC',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'MUSIC WEB APPLICATION',
+      it: 'MUSIC WEB APPLICATION'
+    },
+    description: {
+      en: 'Your personal music streaming web app. Listen, organize and enjoy your favorite tracks with a modern and intuitive interface.',
+      it: 'La tua web app di streaming musicale personale. Ascolta, organizza e goditi i tuoi brani preferiti con un\'interfaccia moderna e intuitiva.'
+    },
+    features: {
+      en: [
+        '🎧 Modern audio player',
+        '📁 Playlist management',
+        '🎨 Clean minimal interface',
+        '📱 Responsive design'
+      ],
+      it: [
+        '🎧 Player audio moderno',
+        '📁 Gestione playlist',
+        '🎨 Interfaccia pulita e minimale',
+        '📱 Design responsive'
+      ]
+    },
+    ctaText: {
+      en: 'LISTEN NOW',
+      it: 'ASCOLTA ORA'
+    },
+    url: 'https://music.3asy.app/'
+  },
+  {
     id: '3asynutry',
     icon: '🥗',
     title: '3ASYNUTRY',
-    author: 'NEW USER',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
     subtitle: {
       en: 'FOR NUTRITIONISTS & PATIENTS',
       it: 'PER NUTRIZIONISTI E PAZIENTI'
@@ -213,10 +286,45 @@ export const apps: App[] = [
     }
   },
   {
+    id: '3asytest',
+    icon: '🧪',
+    title: '3ASYTEST',
+    author: 'SETTIX',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'AI-POWERED WEBSITE TESTING',
+      it: 'AI-POWERED WEBSITE TESTING'
+    },
+    description: {
+      en: 'Test your website like a real user would. Get instant reports on console errors, SEO, accessibility and performance. 1 free test per day.',
+      it: 'Testa il tuo sito come farebbe un utente reale. Ottieni report istantanei su errori console, SEO, accessibilità e performance. 1 test gratuito al giorno.'
+    },
+    features: {
+      en: [
+        '🐛 Console Errors: JS & runtime',
+        '🔍 SEO Check: Title, meta, H1',
+        '♿ Accessibility: WCAG basics',
+        '⚡ Performance: Load times'
+      ],
+      it: [
+        '🐛 Errori Console: JS & runtime',
+        '🔍 SEO Check: Title, meta, H1',
+        '♿ Accessibilità: WCAG basics',
+        '⚡ Performance: Tempi di caricamento'
+      ]
+    },
+    ctaText: {
+      en: 'TEST YOUR SITE',
+      it: 'TESTA IL TUO SITO'
+    },
+    url: 'https://test.3asy.app/'
+  },
+  {
     id: '3asytrading',
     icon: '📈',
     title: '3ASYTRADING',
-    author: 'MicheleMikyMonti',
+    author: '0zone',
+    appType: 'WebApp',
     subtitle: {
       en: 'P2P STRATEGY MARKETPLACE',
       it: 'P2P STRATEGY MARKETPLACE'
@@ -250,6 +358,7 @@ export const apps: App[] = [
     icon: '💰',
     title: '3ASYWEALTH',
     author: 'MicheleMikyMonti',
+    appType: 'WebApp',
     subtitle: {
       en: '100% PRIVATE WEALTH TRACKING',
       it: '100% PRIVATE WEALTH TRACKING'
@@ -283,6 +392,7 @@ export const apps: App[] = [
     icon: '🤫',
     title: '3ASYWHISTLE',
     author: 'UNKNOWN',
+    appType: 'WebApp',
     subtitle: {
       en: 'WHISTLEBLOWING BLOCKCHAIN-BASED',
       it: 'WHISTLEBLOWING BLOCKCHAIN-BASED'

@@ -37,9 +37,10 @@ const appGradients: Record<string, { header: string; cta: string; ctaHover: stri
 // Colori per autori
 const authorColors: Record<string, string> = {
   'MicheleMikyMonti': 'bg-gradient-to-r from-[#28a745] to-emerald-500 text-white',
-  'NEW USER': 'bg-gradient-to-r from-amber-400 to-orange-500 text-white',
   'YURI': 'bg-gradient-to-r from-pink-500 to-purple-500 text-white',
-  'UNKNOWN': 'bg-gradient-to-r from-slate-600 to-slate-800 text-white',
+  'UNKNOWN': 'bg-gray-200 text-gray-800',
+  '0zone': 'bg-gradient-to-r from-blue-400 to-indigo-500 text-white',
+  'SETTIX': 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white'
 };
 
 export function AppCard({ app, language }: AppCardProps) {
@@ -50,16 +51,15 @@ export function AppCard({ app, language }: AppCardProps) {
   return (
     <>
       <div className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-[#28a745] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full relative">
-        {/* Coming Soon Badge */}
-        {app.isComingSoon && (
-          <div className="absolute -top-3 right-4 px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-md z-10">
-            🚀 COMING SOON
-          </div>
-        )}
         
         {/* Author Tag */}
         <div className={`absolute -top-3 left-4 px-3 py-1 rounded-full text-xs font-bold ${authorColor} shadow-md`}>
           @{app.author}
+        </div>
+        
+        {/* App Type Tag */}
+        <div className="absolute top-4 right-4 px-2 py-1 rounded text-[10px] font-bold bg-gray-100 text-gray-600 border border-gray-200">
+          {app.appType}
         </div>
         
         <div className="flex flex-col flex-1 pt-2">
