@@ -287,40 +287,6 @@ export const apps: App[] = [
     }
   },
   {
-    id: '3asytest',
-    icon: '🧪',
-    title: '3ASYTEST',
-    author: 'SETTIX',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'AI-POWERED WEBSITE TESTING',
-      it: 'AI-POWERED WEBSITE TESTING'
-    },
-    description: {
-      en: 'Test your website like a real user would. Get instant reports on console errors, SEO, accessibility and performance. 1 free test per day.',
-      it: 'Testa il tuo sito come farebbe un utente reale. Ottieni report istantanei su errori console, SEO, accessibilità e performance. 1 test gratuito al giorno.'
-    },
-    features: {
-      en: [
-        '🐛 Console Errors: JS & runtime',
-        '🔍 SEO Check: Title, meta, H1',
-        '♿ Accessibility: WCAG basics',
-        '⚡ Performance: Load times'
-      ],
-      it: [
-        '🐛 Errori Console: JS & runtime',
-        '🔍 SEO Check: Title, meta, H1',
-        '♿ Accessibilità: WCAG basics',
-        '⚡ Performance: Tempi di caricamento'
-      ]
-    },
-    ctaText: {
-      en: 'TEST YOUR SITE',
-      it: 'TESTA IL TUO SITO'
-    },
-    url: 'https://test.3asy.app/'
-  },
-  {
     id: '3asytrading',
     icon: '📈',
     title: '3ASYTRADING',

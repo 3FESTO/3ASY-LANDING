@@ -37,7 +37,6 @@ Our philosophy: *When we identify a business need, we don't search for solutions
 | **[3ASYMUSIC](https://music.3asy.app)** | Browser-based audio effects processor | React + Web Audio API | 🚧 Dev |
 | **[3ASYNUTRY](https://nutry.3asy.app)** | Professional app for nutritionists & meal planning | React + AI | 📋 Planned |
 | **[3ASYPERIOD](https://period.3asy.app)** | Female period tracking & health insights | React + LocalStorage | ✅ Live |
-| **[3ASYTEST](https://test.3asy.app)** | Automated website testing with Puppeteer | React + Puppeteer | ✅ Live |
 | **[3ASYTRADING](https://trading.3asy.app)** | P2P algorithmic trading marketplace | React + Trading APIs | ✅ Live |
 | **[3ASYWEALTH](https://wealth.3asy.app)** | Advanced wealth management platform | React + Financial APIs | ✅ Live (OSS) |
 | **[3ASYWHISTLE](https://3asywhistle.it)** | Blockchain-protected whistleblowing platform | Blockchain + E2E Encryption | ⏸️ Paused |

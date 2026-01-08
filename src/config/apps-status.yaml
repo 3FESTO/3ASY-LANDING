@@ -53,13 +53,6 @@ apps:
     repo: 3FESTO/3ASYPERIOD
     notes: "Dual-view funzionante, tracking in progress"
 
-  - name: 3ASYTEST
-    status: live
-    mvp: 100
-    industrialization: 50
-    repo: 3FESTO/3ASYTEST
-    notes: "Puppeteer backend, 1 test/day free"
-
   - name: 3ASYTRADING
     status: live
     mvp: 100
