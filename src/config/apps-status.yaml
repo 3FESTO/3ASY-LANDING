@@ -12,11 +12,11 @@ apps:
     notes: "8 templates, 10 lingue, GA integration"
 
   - name: 3ASYGIT
-    status: planned
-    mvp: 90
+    status: live
+    mvp: 100
     industrialization: 50
     repo: 3FESTO/3ASYGIT
-    notes: "Gamification GitHub contributions"
+    notes: "Online su git.3asy.app"
 
   - name: 3ASYHR
     status: beta

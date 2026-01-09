@@ -31,7 +31,7 @@ Our philosophy: *When we identify a business need, we don't search for solutions
 | App | Description | Technology | Status |
 |-----|-------------|------------|--------|
 | **[3ASYBUILDER](https://builder.3asy.app)** | No-code app builder - Create business apps with AI | React + AI | ✅ Live |
-| **[3ASYGIT](https://git.3asy.app)** | GitHub contribution gamification & analytics | React + GitHub API | 📋 Planned |
+| **[3ASYGIT](https://git.3asy.app)** | GitHub contribution gamification & analytics | React + GitHub API | ✅ Live |
 | **[3ASYHR](https://juno-hr.3asy.app)** | Smart HR with calendar timesheet automation | React + Supabase + Azure AD | 🧪 Beta @JUNO.AM |
 | **[3ASYMODELING](https://3asymodeling.com)** | AI-powered text/image-to-3D generation | AI + WebGL + NFT | ⏸️ Paused |
 | **[3ASYMUSIC](https://music.3asy.app)** | Browser-based audio effects processor | React + Web Audio API | 🚧 Dev |

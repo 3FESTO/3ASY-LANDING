@@ -65,11 +65,10 @@ export const apps: App[] = [
       ]
     },
     ctaText: {
-      en: 'COMING SOON',
-      it: 'COMING SOON'
+      en: 'GAMIFY NOW',
+      it: 'GAMIFY NOW'
     },
-    url: 'https://git.3asy.app/',
-    isComingSoon: true
+    url: 'https://git.3asy.app/'
   },
   {
     id: '3asyhr',
