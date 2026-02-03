@@ -13,8 +13,8 @@ export function AppsSection({ language }: AppsSectionProps) {
   };
   
   const subtitles = {
-    en: 'Some of our 3ASYAPPS solutions in action',
-    it: 'Alcune delle nostre soluzioni 3ASYAPPS in azione'
+    en: 'Some of our 3ASY solutions in action',
+    it: 'Alcune delle nostre soluzioni 3ASY in azione'
   };
 
   return (

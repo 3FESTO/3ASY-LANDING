@@ -7,9 +7,9 @@ import statusYaml from '../config/apps-status.yaml?raw';
 
 interface AppConfig {
   name: string;
-  status: 'live' | 'beta' | 'dev' | 'planned' | 'paused';
-  mvp: number;
-  industrialization: number;
+  status: 'wip';
+  startedAt: string;
+  previewEnds: string;
   repo: string | null;
   notes: string;
 }
@@ -27,19 +27,11 @@ interface StatusConfig {
 }
 
 const statusColors: Record<AppConfig['status'], string> = {
-  live: 'bg-green-500',
-  beta: 'bg-blue-500',
-  dev: 'bg-yellow-500',
-  planned: 'bg-gray-400',
-  paused: 'bg-red-400',
+  wip: 'bg-yellow-500',
 };
 
 const statusLabels: Record<AppConfig['status'], string> = {
-  live: '🟢 LIVE',
-  beta: '🔵 BETA',
-  dev: '🟡 DEV',
-  planned: '⚪ PLAN',
-  paused: '🔴 PAUSE',
+  wip: '🟡 WIP',
 };
 
 // Fetch GitHub data via Vercel serverless function (supports private repos)
@@ -139,9 +131,6 @@ export function StatusPage() {
   }
 
   const totalApps = config.apps.length;
-  const liveApps = config.apps.filter(a => a.status === 'live').length;
-  const avgMvp = Math.round(config.apps.reduce((sum, a) => sum + a.mvp, 0) / totalApps);
-  const avgInd = Math.round(config.apps.reduce((sum, a) => sum + a.industrialization, 0) / totalApps);
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-3">
@@ -153,9 +142,7 @@ export function StatusPage() {
             <h1 className="text-lg font-bold">3ASYAPPS Status</h1>
           </div>
           <div className="flex gap-3 text-[10px]">
-            <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded">{liveApps}/{totalApps} Live</span>
-            <span className="bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded">MVP: {avgMvp}%</span>
-            <span className="bg-cyan-500/20 text-cyan-400 px-2 py-0.5 rounded">IND: {avgInd}%</span>
+            <span className="bg-yellow-500/20 text-yellow-400 px-2 py-0.5 rounded">{totalApps} Apps</span>
           </div>
         </div>
 
@@ -165,8 +152,8 @@ export function StatusPage() {
             <tr className="text-left text-gray-500 border-b border-gray-700">
               <th className="py-1.5 w-28">App</th>
               <th className="py-1.5 w-16">Status</th>
-              <th className="py-1.5 w-32">MVP</th>
-              <th className="py-1.5 w-32">Industrialization</th>
+              <th className="py-1.5 w-20">Started</th>
+              <th className="py-1.5 w-24">Preview Ends</th>
               <th className="py-1.5 w-16 text-center">📅</th>
               <th className="py-1.5 w-12 text-center">📝</th>
               <th className="py-1.5 w-16">👤</th>
@@ -184,21 +171,13 @@ export function StatusPage() {
                       {statusLabels[app.status]}
                     </span>
                   </td>
-                  <td className="py-1.5">
-                    <div className="flex items-center gap-1">
-                      <div className="flex-1 h-1.5 bg-gray-700 rounded-full overflow-hidden">
-                        <div className="h-full bg-purple-500" style={{ width: `${app.mvp}%` }} />
-                      </div>
-                      <span className="text-gray-400 w-6 text-right text-[10px]">{app.mvp}%</span>
-                    </div>
+                  <td className="py-1.5 text-gray-400 font-mono text-[10px]">
+                    {app.startedAt}
                   </td>
-                  <td className="py-1.5">
-                    <div className="flex items-center gap-1">
-                      <div className="flex-1 h-1.5 bg-gray-700 rounded-full overflow-hidden">
-                        <div className="h-full bg-cyan-500" style={{ width: `${app.industrialization}%` }} />
-                      </div>
-                      <span className="text-gray-400 w-6 text-right text-[10px]">{app.industrialization}%</span>
-                    </div>
+                  <td className="py-1.5 text-gray-400 font-mono text-[10px]">
+                    <span className={app.previewEnds === 'TBA' ? 'text-yellow-500' : ''}>
+                      {app.previewEnds}
+                    </span>
                   </td>
                   <td className="py-1.5 text-center text-gray-400 font-mono text-[10px]">
                     {gh?.loading ? <span className="animate-pulse">...</span> : (gh?.lastCommit || '-')}
@@ -219,8 +198,8 @@ export function StatusPage() {
         {/* Legend */}
         <div className="mt-3 flex items-center justify-between text-[9px] text-gray-600">
           <div className="flex gap-4">
-            <span><span className="text-purple-400">■</span> MVP = Minimum Viable Product</span>
-            <span><span className="text-cyan-400">■</span> IND = Industrialization (scale, tests, docs)</span>
+            <span><span className="text-green-400">■</span> Started = project kickoff</span>
+            <span><span className="text-yellow-400">■</span> Preview Ends = TBA (to be announced)</span>
           </div>
           <div className="flex gap-2">
             <span>📅 Last commit</span>

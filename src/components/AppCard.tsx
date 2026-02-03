@@ -8,6 +8,12 @@ interface AppCardProps {
 
 // Colori gradient per ogni app
 const appGradients: Record<string, { header: string; cta: string; ctaHover: string; accent: string }> = {
+  '3asybuilder': {
+    header: 'from-[#28a745] to-emerald-600',
+    cta: 'from-[#28a745] to-emerald-600',
+    ctaHover: 'hover:from-[#218838] hover:to-emerald-700',
+    accent: 'green'
+  },
   '3asyhr': {
     header: 'from-blue-500 to-indigo-600',
     cta: 'from-blue-500 to-indigo-600',
@@ -20,11 +26,17 @@ const appGradients: Record<string, { header: string; cta: string; ctaHover: stri
     ctaHover: 'hover:from-slate-800 hover:to-black',
     accent: 'slate'
   },
-  '3asyperiod': {
-    header: 'from-pink-500 to-purple-600',
-    cta: 'from-pink-500 to-purple-600',
-    ctaHover: 'hover:from-pink-600 hover:to-purple-700',
-    accent: 'pink'
+  '3asyresearch': {
+    header: 'from-cyan-500 to-blue-600',
+    cta: 'from-cyan-500 to-blue-600',
+    ctaHover: 'hover:from-cyan-600 hover:to-blue-700',
+    accent: 'cyan'
+  },
+  '3asysocial': {
+    header: 'from-violet-500 to-purple-600',
+    cta: 'from-violet-500 to-purple-600',
+    ctaHover: 'hover:from-violet-600 hover:to-purple-700',
+    accent: 'violet'
   },
   default: {
     header: 'from-[#28a745] to-emerald-600',
@@ -34,28 +46,13 @@ const appGradients: Record<string, { header: string; cta: string; ctaHover: stri
   }
 };
 
-// Colori per autori
-const authorColors: Record<string, string> = {
-  'MicheleMikyMonti': 'bg-gradient-to-r from-[#28a745] to-emerald-500 text-white',
-  'YURI': 'bg-gradient-to-r from-pink-500 to-purple-500 text-white',
-  'UNKNOWN': 'bg-gray-200 text-gray-800',
-  '0zone': 'bg-gradient-to-r from-blue-400 to-indigo-500 text-white',
-  'SETTIX': 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white'
-};
-
 export function AppCard({ app, language }: AppCardProps) {
   const [showModal, setShowModal] = useState(false);
   const gradient = appGradients[app.id] || appGradients.default;
-  const authorColor = authorColors[app.author] || authorColors['MicheleMikyMonti'];
 
   return (
     <>
       <div className="group bg-white rounded-xl p-6 md:p-8 border-2 border-gray-200 hover:border-[#28a745] hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full relative">
-        
-        {/* Author Tag */}
-        <div className={`absolute -top-3 left-4 px-3 py-1 rounded-full text-xs font-bold ${authorColor} shadow-md`}>
-          @{app.author}
-        </div>
         
         {/* App Type Tag */}
         <div className="absolute top-4 right-4 px-2 py-1 rounded text-[10px] font-bold bg-gray-100 text-gray-600 border border-gray-200">
@@ -98,19 +95,17 @@ export function AppCard({ app, language }: AppCardProps) {
           </ul>
           
           <div className="flex gap-2 mt-auto">
-            {app.hasDetails && (
-              <button
-                onClick={() => setShowModal(true)}
-                className="flex-1 px-4 py-3 border-2 border-[#28a745] text-[#28a745] hover:bg-[#28a745] hover:text-white text-sm font-semibold rounded-lg transition-all duration-300"
-              >
-                {language === 'en' ? 'DETAILS' : 'DETTAGLI'}
-              </button>
-            )}
+            <button
+              onClick={() => setShowModal(true)}
+              className="flex-1 px-4 py-3 border-2 border-[#28a745] text-[#28a745] hover:bg-[#28a745] hover:text-white text-sm font-semibold rounded-lg transition-all duration-300"
+            >
+              {language === 'en' ? 'DETAILS' : 'DETTAGLI'}
+            </button>
             {app.isComingSoon ? (
               <span
-                className={`inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-500 text-sm font-semibold rounded-lg cursor-not-allowed ${app.hasDetails ? 'flex-1' : 'w-full'}`}
+                className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-gray-300 text-gray-500 text-sm font-semibold rounded-lg cursor-not-allowed"
               >
-                <span>{app.ctaText[language]}</span>
+                <span>{language === 'en' ? 'COMING SOON' : 'COMING SOON'}</span>
                 <span className="ml-2">🚀</span>
               </span>
             ) : (
@@ -118,9 +113,9 @@ export function AppCard({ app, language }: AppCardProps) {
                 href={app.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`inline-flex items-center justify-center px-4 py-3 bg-[#28a745] hover:bg-[#218838] text-white text-sm font-semibold rounded-lg transition-all duration-300 group-hover:shadow-lg ${app.hasDetails ? 'flex-1' : 'w-full'}`}
+                className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-[#28a745] hover:bg-[#218838] text-white text-sm font-semibold rounded-lg transition-all duration-300 group-hover:shadow-lg"
               >
-                <span>{app.ctaText[language]}</span>
+                <span>{language === 'en' ? 'LEARN MORE' : 'SCOPRI DI PIÙ'}</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </a>
             )}

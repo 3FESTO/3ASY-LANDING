@@ -19,12 +19,12 @@ export const SITE_CONFIG = {
       en: {
         part1: 'Born from ',
         linkText: 'ANY3DP',
-        part2: ' and 3D Future Experience, we now build AI-powered tools for everyone.'
+        part2: ' and 3D Future Experience,\nwe now build ALSO Ai-powered tools for everyone.'
       },
       it: {
         part1: 'Nati da ',
         linkText: 'ANY3DP',
-        part2: ' e dalla 3D Future Experience, costruiamo ANCHE strumenti AI-powered per tutti.'
+        part2: ' e dalla 3D Future Experience,\ncostruiamo ANCHE strumenti AI-powered per tutti.'
       }
     },
     any3dpUrl: 'https://www.any3dp.com/'
@@ -33,15 +33,15 @@ export const SITE_CONFIG = {
     icon: '🚀',
     title: {
       en: 'What\'s Next?',
-      it: 'Cosa Arriva?'
+      it: 'Cosa Arriverà?'
     },
     subtitle: {
       en: 'ALWAYS SHIPPING',
       it: 'SEMPRE IN MOVIMENTO'
     },
     description: {
-      en: 'We ship fast. New tools every month. AI-first approach. If you can describe it, we can build it.',
-      it: 'Rilasciamo velocemente. Nuovi tool ogni mese. Approccio AI-first. Se puoi descriverlo, possiamo costruirlo.'
+      en: 'We ship fast. New tools every day.\nAI-first approach.\nIf you can describe it, we can build it.',
+      it: 'Rilasciamo velocemente. Nuovi tool ogni giorno.\nApproccio AI-first.\nSe puoi descriverlo, possiamo costruirlo.'
     }
   },
   philosophy: {

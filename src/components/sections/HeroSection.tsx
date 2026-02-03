@@ -9,7 +9,7 @@ export function HeroSection({ language }: HeroSectionProps) {
   const content = hero.description[language];
 
   const stats = [
-    { value: '7+', label: language === 'en' ? 'Apps Live' : 'App Online' },
+    { value: '10', label: language === 'en' ? 'Apps Live' : 'App Online' },
     { value: '∞', label: language === 'en' ? 'Ideas Ahead' : 'Idee in Arrivo' },
   ];
 
@@ -20,7 +20,7 @@ export function HeroSection({ language }: HeroSectionProps) {
           <img 
             src={logo.url} 
             alt={logo.alt} 
-            className="h-16 md:h-20 mx-auto"
+            className="h-12 sm:h-16 md:h-20 max-w-[80%] mx-auto object-contain"
           />
         </div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
@@ -39,7 +39,12 @@ export function HeroSection({ language }: HeroSectionProps) {
           >
             {content.linkText}
           </a>
-          {content.part2}
+          {content.part2.split('\n').map((line, i) => (
+            <span key={i}>
+              {i > 0 && <br />}
+              {line}
+            </span>
+          ))}
         </p>
         
         {/* Stats row */}

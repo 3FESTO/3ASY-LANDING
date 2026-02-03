@@ -1,75 +1,73 @@
 # 3ASYAPPS Status Configuration
 # Aggiorna questo file per modificare lo stato delle app
-# MVP: 0-100 (Minimum Viable Product completato)
-# Industrialization: 0-100 (Scalabilità, testing, docs, CI/CD)
 
 apps:
   - name: 3ASYBUILDER
-    status: live        # live | beta | dev | planned | paused
-    mvp: 90
-    industrialization: 10
+    status: wip
+    startedAt: "2025-09"
+    previewEnds: TBA
     repo: 3FESTO/3ASYBUILDER
-    notes: "8 templates, 10 lingue, GA integration"
+    notes: "AI website builder, 10 languages"
 
   - name: 3ASYGIT
-    status: live
-    mvp: 100
-    industrialization: 50
-    repo: 3FESTO/3ASYGIT
-    notes: "Online su git.3asy.app"
+    status: wip
+    startedAt: "2025-12"
+    previewEnds: TBA
+    repo: michelemonti/3ASYGIT
+    notes: "GitHub contributions gamification"
 
   - name: 3ASYHR
-    status: beta
-    mvp: 100
-    industrialization: 75
-    repo: 3FESTO/JUNO-HR
-    notes: "Testing @JUNO.AM, Microsoft365 integration OK, dashboard con KPI utili al management WIP"
+    status: wip
+    startedAt: "2025-09"
+    previewEnds: TBA
+    repo: 3FESTO/3ASYHR
+    notes: "Calendar → HR Agent, testing @JUNO.AM"
 
   - name: 3ASYMODELING
-    status: paused
-    mvp: 100
-    industrialization: 5
+    status: wip
+    startedAt: "2025-09"
+    previewEnds: TBA
     repo: 3FESTO/3ASYMODELING
-    notes: "AI API costs too high, standby"
+    notes: "AI 3D generation, API costs review"
 
   - name: 3ASYMUSIC
-    status: dev
-    mvp: 95
-    industrialization: 15
-    repo: 3FESTO/3ASYMUSIC
-    notes: "UI base, player funzionante, effects WIP"
-
-  - name: 3ASYNUTRY
-    status: planned
-    mvp: 50
-    industrialization: 0
-    repo: null
-    notes: "Solo concept per ora, collab con partner nutrizionista"
-
-  - name: 3ASYPERIOD
-    status: live
-    mvp: 100
-    industrialization: 35
-    repo: 3FESTO/3ASYPERIOD
-    notes: "Dual-view funzionante, tracking in progress"
+    status: wip
+    startedAt: "2025-12"
+    previewEnds: TBA
+    repo: michelemonti/3asymusic
+    notes: "AI song generation from text prompts"
 
   - name: 3ASYTRADING
-    status: live
-    mvp: 100
-    industrialization: 70
-    repo: 3FESTO/3ASYTRADING
-    notes: "Beta pubblica, algoritmi cron su Db, webhook Telegram OK"
+    status: wip
+    startedAt: "2025-10"
+    previewEnds: TBA
+    repo: michelemonti/3ASYTRADING
+    notes: "P2P strategy marketplace"
 
   - name: 3ASYWEALTH
-    status: live
-    mvp: 100
-    industrialization: 80
-    repo: 3FESTO/3ASYWEALTH
-    notes: "Full localStorage, open source"
+    status: wip
+    startedAt: "2025-10"
+    previewEnds: TBA
+    repo: michelemonti/3ASYWEALTH
+    notes: "100% private wealth tracking"
 
   - name: 3ASYWHISTLE
-    status: paused
-    mvp: 100
-    industrialization: 55
-    repo: 3FESTO/3ASYWHISTLE
-    notes: "Compliance WIP, Blockchain needs improvements, serve marketing push"
+    status: wip
+    startedAt: "2025-08"
+    previewEnds: TBA
+    repo: michelemonti/3ASYWHISTLE
+    notes: "Anonymous reporting, D.Lgs. 24/2023 compliant"
+
+  - name: 3ASYRESEARCH
+    status: wip
+    startedAt: "2025-12"
+    previewEnds: TBA
+    repo: 3FESTO/3ASYRESEARCH
+    notes: "Research → interactive play"
+
+  - name: 3ASYSOCIAL
+    status: wip
+    startedAt: "2026-01"
+    previewEnds: TBA
+    repo: michelemonti/3ASYSOCIAL
+    notes: "Social content in seconds"

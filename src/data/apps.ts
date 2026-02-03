@@ -37,38 +37,106 @@ export interface App {
 
 export const apps: App[] = [
   {
+    id: '3asybuilder',
+    icon: '🏗️',
+    title: '3ASYBUILDER',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'AI WEBSITE BUILDER',
+      it: 'AI WEBSITE BUILDER'
+    },
+    description: {
+      en: 'Describe your business → get a professional website. No coding required.',
+      it: 'Descrivi la tua attività → ottieni un sito professionale. Zero codice.'
+    },
+    features: {
+      en: [
+        '🌐 10 languages supported',
+        '📧 Contact forms & booking widgets',
+        '🚀 One-click publish'
+      ],
+      it: [
+        '🌐 10 lingue supportate',
+        '📧 Form contatto & widget prenotazioni',
+        '🚀 Pubblica con un click'
+      ]
+    },
+    ctaText: {
+      en: 'START BUILDING',
+      it: 'INIZIA A COSTRUIRE'
+    },
+    url: 'https://builder.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '🤖 AI builds from conversation',
+          '📊 Google Analytics included',
+          '✨ Interactive gallery'
+        ],
+        it: [
+          '🤖 AI costruisce da conversazione',
+          '📊 Google Analytics incluso',
+          '✨ Galleria interattiva'
+        ]
+      },
+      whyItMatters: {
+        en: 'Perfect for restaurants, shops, freelancers. From idea to live site in minutes.',
+        it: 'Perfetto per ristoranti, negozi, freelancer. Dall\'idea al sito online in minuti.'
+      }
+    }
+  },
+  {
     id: '3asygit',
     icon: '🎮',
     title: '3ASYGIT',
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     subtitle: {
-      en: 'GITHUB CONTRIBUTIONS GAMIFICATION',
-      it: 'GITHUB CONTRIBUTIONS GAMIFICATION'
+      en: 'GITHUB GAMIFICATION',
+      it: 'GITHUB GAMIFICATION'
     },
     description: {
-      en: 'Transform your GitHub contributions into art! Generate 3D visualizations and audio from your contribution graph. Turn your coding activity into something unique.',
-      it: 'Trasforma le tue contribuzioni GitHub in arte! Genera visualizzazioni 3D e audio dal tuo grafico contribuzioni. Trasforma la tua attività di coding in qualcosa di unico.'
+      en: 'Turn your GitHub contributions into 3D art and audio.',
+      it: 'Trasforma le tue contribuzioni GitHub in arte 3D e audio.'
     },
     features: {
       en: [
-        '🎨 3D contribution graph visualization',
-        '🎵 Audio generation from commits',
-        '📊 Beautiful stats display',
-        '🏆 Gamification of your coding'
+        '🎨 3D contribution visualization',
+        '🎵 Audio from commits',
+        '🏆 Gamified stats'
       ],
       it: [
-        '🎨 Visualizzazione 3D del grafico contribuzioni',
-        '🎵 Generazione audio dai commit',
-        '📊 Statistiche in bella vista',
-        '🏆 Gamification del tuo coding'
+        '🎨 Visualizzazione 3D contribuzioni',
+        '🎵 Audio dai commit',
+        '🏆 Statistiche gamificate'
       ]
     },
     ctaText: {
       en: 'GAMIFY NOW',
       it: 'GAMIFY NOW'
     },
-    url: 'https://git.3asy.app/'
+    url: 'https://git.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '🎨 Stunning 3D visuals',
+          '🎵 Unique audio patterns',
+          '🏆 Shareable achievements'
+        ],
+        it: [
+          '🎨 Visual 3D mozzafiato',
+          '🎵 Pattern audio unici',
+          '🏆 Achievement condivisibili'
+        ]
+      },
+      whyItMatters: {
+        en: 'Showcase your coding activity in a unique, visual way.',
+        it: 'Mostra la tua attività di coding in modo unico e visivo.'
+      }
+    }
   },
   {
     id: '3asyhr',
@@ -77,53 +145,47 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     subtitle: {
-      en: 'SMART HR SOLUTIONS',
-      it: 'SMART HR SOLUTIONS'
+      en: 'CALENDAR → HR AGENT',
+      it: 'CALENDARIO → HR AGENT'
     },
     description: {
-      en: 'Say goodbye to manual timesheets. Auto-export from Outlook Calendar, 8h validation, Excel reports ready for payroll. Zero config, works in 10 seconds.',
-      it: 'Addio timesheet manuali. Export automatico da Outlook Calendar, validazione 8h, report Excel pronti per la busta paga. Zero config, funziona in 10 secondi.'
+      en: 'Automatic timesheets & cost analysis from your calendar. Zero data entry.',
+      it: 'Timesheet automatici e analisi costi dal calendario. Zero data entry.'
     },
     features: {
       en: [
-        'Auto-detect from Outlook Calendar',
-        '8h validation with smart suggestions',
-        'Excel ready for HR/payroll',
-        'Team Lead approval dashboard'
+        '📅 Microsoft 365 / Google Cal',
+        '💰 Real-time budget visibility',
+        '🏢 Multi-company ready'
       ],
       it: [
-        'Auto-rileva da Outlook Calendar',
-        'Validazione 8h con suggerimenti smart',
-        'Excel pronto per HR/buste paga',
-        'Dashboard approvazione Team Lead'
+        '📅 Microsoft 365 / Google Cal',
+        '💰 Visibilità budget real-time',
+        '🏢 Multi-società'
       ]
     },
     ctaText: {
-      en: 'TRY IT FREE',
-      it: 'PROVALO GRATIS'
+      en: 'REQUEST DEMO',
+      it: 'RICHIEDI DEMO'
     },
     url: 'https://juno-hr.3asy.app/',
     hasDetails: true,
     details: {
       highlights: {
         en: [
-          '⏰ Zero setup - Ready in 10 seconds',
-          '📅 Reads "Day Activity" from Outlook automatically',
-          '✅ Guided 8h completion with suggestions',
-          '📊 Cost centers and leaves pre-separated for HR',
-          '🇮🇹 Italian holidays included (even San Petronio!)'
+          '⏰ -85% timesheet time',
+          '📈 KPIs per resource',
+          '🔐 Enterprise security'
         ],
         it: [
-          '⏰ Zero setup - Pronto in 10 secondi',
-          '📅 Legge "Attività del giorno" da Outlook automaticamente',
-          '✅ Completamento guidato 8h con suggerimenti',
-          '📊 Centri di costo e permessi già separati per HR',
-          '🇮🇹 Festività italiane incluse (anche San Petronio!)'
+          '⏰ -85% tempo timesheet',
+          '📈 KPI per risorsa',
+          '🔐 Sicurezza enterprise'
         ]
       },
       whyItMatters: {
-        en: 'Built for real employees who hate filling timesheets. Connect Microsoft account, export calendar, send to HR. Done. From €9.99/month or €99.99/year. Enterprise pricing available.',
-        it: 'Pensato per dipendenti veri che odiano compilare timesheet. Connetti account Microsoft, esporta calendario, invia a HR. Fatto. Da €9,99/mese o €99,99/anno. Prezzi enterprise disponibili.'
+        en: 'In production with JUNO.AM — 30+ resources, 3 companies.',
+        it: 'In produzione con JUNO.AM — 30+ risorse, 3 società.'
       }
     }
   },
@@ -134,32 +196,49 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     subtitle: {
-      en: 'AI-POWERED 3D GENERATION',
-      it: 'AI-POWERED 3D GENERATION'
+      en: 'AI 3D GENERATION',
+      it: 'AI 3D GENERATION'
     },
     description: {
-      en: 'Describe your idea or upload an image → get a professional 3D model in minutes. No technical skills needed. Export or mint as NFT.',
-      it: 'Descrivi la tua idea o carica un\'immagine → ottieni un modello 3D professionale in minuti. Nessuna competenza tecnica. Export o mint come NFT.'
+      en: 'Text or image → professional 3D model in minutes. Export or mint NFT.',
+      it: 'Testo o immagine → modello 3D professionale in minuti. Export o mint NFT.'
     },
     features: {
       en: [
-        'Text-to-3D: describe and create',
-        'Image-to-3D: any photo becomes 3D',
-        'Export GLB, STL, OBJ for printing',
-        'Mint NFT directly on blockchain'
+        '✍️ Text-to-3D',
+        '📸 Image-to-3D',
+        '📦 GLB, STL, OBJ export'
       ],
       it: [
-        'Text-to-3D: descrivi e crea',
-        'Image-to-3D: qualsiasi foto diventa 3D',
-        'Export GLB, STL, OBJ per stampa',
-        'Mint NFT direttamente su blockchain'
+        '✍️ Text-to-3D',
+        '📸 Image-to-3D',
+        '📦 Export GLB, STL, OBJ'
       ]
     },
     ctaText: {
       en: 'CREATE NOW',
       it: 'CREA ORA'
     },
-    url: 'https://3asymodeling.com/'
+    url: 'https://3asymodeling.com/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '🎨 Professional quality',
+          '🖨️ 3D print ready',
+          '💎 NFT minting'
+        ],
+        it: [
+          '🎨 Qualità professionale',
+          '🖨️ Pronto per stampa 3D',
+          '💎 Mint NFT'
+        ]
+      },
+      whyItMatters: {
+        en: 'From idea to printable model in minutes. By the ANY3DP team.',
+        it: 'Dall\'idea al modello stampabile in minuti. Dal team ANY3DP.'
+      }
+    }
   },
   {
     id: '3asymusic',
@@ -168,120 +247,47 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     subtitle: {
-      en: 'MUSIC WEB APPLICATION',
-      it: 'MUSIC WEB APPLICATION'
+      en: 'AI SONG GENERATION',
+      it: 'GENERAZIONE CANZONI AI'
     },
     description: {
-      en: 'Your personal music streaming web app. Listen, organize and enjoy your favorite tracks with a modern and intuitive interface.',
-      it: 'La tua web app di streaming musicale personale. Ascolta, organizza e goditi i tuoi brani preferiti con un\'interfaccia moderna e intuitiva.'
+      en: 'Create original songs with AI. Describe the vibe, get music.',
+      it: 'Crea canzoni originali con AI. Descrivi il mood, ottieni musica.'
     },
     features: {
       en: [
-        '🎧 Modern audio player',
-        '📁 Playlist management',
-        '🎨 Clean minimal interface',
-        '📱 Responsive design'
+        '🤖 AI-powered generation',
+        '🎶 Multiple genres',
+        '💾 Download & share'
       ],
       it: [
-        '🎧 Player audio moderno',
-        '📁 Gestione playlist',
-        '🎨 Interfaccia pulita e minimale',
-        '📱 Design responsive'
+        '🤖 Generazione AI',
+        '🎶 Generi multipli',
+        '💾 Scarica e condividi'
       ]
     },
     ctaText: {
-      en: 'LISTEN NOW',
-      it: 'ASCOLTA ORA'
+      en: 'CREATE MUSIC',
+      it: 'CREA MUSICA'
     },
-    url: 'https://music.3asy.app/'
-  },
-  {
-    id: '3asynutry',
-    icon: '🥗',
-    title: '3ASYNUTRY',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'FOR NUTRITIONISTS & PATIENTS',
-      it: 'PER NUTRIZIONISTI E PAZIENTI'
-    },
-    description: {
-      en: 'Professional nutrition management platform. Nutritionists create personalized meal plans, patients follow them effortlessly. Real-time sync, compliance tracking, and results that speak for themselves.',
-      it: 'Piattaforma professionale per la gestione nutrizionale. I nutrizionisti creano piani alimentari personalizzati, i pazienti li seguono senza sforzo. Sync in tempo reale, tracking dell\'aderenza e risultati che parlano da soli.'
-    },
-    features: {
-      en: [
-        '👨‍⚕️ Pro dashboard for nutritionists',
-        '📱 Simple app for patients',
-        '📊 Compliance & progress analytics',
-        '🔄 Real-time plan updates'
-      ],
-      it: [
-        '👨‍⚕️ Dashboard pro per nutrizionisti',
-        '📱 App semplice per pazienti',
-        '📊 Analytics aderenza e progressi',
-        '🔄 Aggiornamenti piani in tempo reale'
-      ]
-    },
-    ctaText: {
-      en: 'COMING SOON',
-      it: 'COMING SOON'
-    },
-    url: '#',
-    isComingSoon: true
-  },
-  {
-    id: '3asyperiod',
-    icon: '🩸',
-    title: '3ASYPERIOD',
-    author: 'YURI',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'CYCLE TRACKING FOR COUPLES',
-      it: 'CYCLE TRACKING PER COPPIE'
-    },
-    description: {
-      en: 'Revolutionary dual-view cycle tracking. Her dashboard: complete and detailed. His dashboard: 8 essential cards to understand and support her better.',
-      it: 'Tracking del ciclo con dual-view rivoluzionaria. Dashboard lei: completa e dettagliata. Dashboard lui: 8 card essenziali per capirla e supportarla al meglio.'
-    },
-    features: {
-      en: [
-        'Her View 👩: complete analytics',
-        'Him View 👨: 8 essential cards',
-        'Behavioral suggestions by phase',
-        'Gift ideas at the right time'
-      ],
-      it: [
-        'Her View 👩: analytics complete',
-        'Him View 👨: 8 card essenziali',
-        'Suggerimenti comportamentali per fase',
-        'Idee regalo al momento giusto'
-      ]
-    },
-    ctaText: {
-      en: 'TRY IT NOW',
-      it: 'PROVALO ORA'
-    },
-    url: 'https://period.3asy.app/',
+    url: 'https://music.3asy.app/',
     hasDetails: true,
     details: {
       highlights: {
         en: [
-          '🩸 Menstrual Phase: Maximum cuddle mode activated',
-          '🌱 Follicular Phase: Energy rising, adventure time',
-          '🌟 Ovulation: Peak fertility alert',
-          '🍂 Luteal Phase: PMS radar on, tread carefully'
+          '🤖 Text-to-music AI',
+          '🎶 Any genre & style',
+          '💾 Export ready'
         ],
         it: [
-          '🩸 Fase Mestruale: Modalità coccole al massimo',
-          '🌱 Fase Follicolare: Energia in crescita, tempo di avventure',
-          '🌟 Ovulazione: Alert picco fertilità',
-          '🍂 Fase Luteale: Radar PMS attivo, muoviti con cautela'
+          '🤖 AI text-to-music',
+          '🎶 Qualsiasi genere e stile',
+          '💾 Pronto per export'
         ]
       },
       whyItMatters: {
-        en: 'Built for real couples. The "Him View" gives partners exactly what they need: current phase, mood tips, gift suggestions, and a countdown to know when to bring chocolate. Ironic but genuinely useful. No more "I didn\'t know!" excuses.',
-        it: 'Pensata per coppie vere. La "Him View" dà ai partner esattamente ciò che serve: fase attuale, consigli sul mood, suggerimenti regalo e countdown per sapere quando portare il cioccolato. Ironico ma genuinamente utile. Niente più scuse "non lo sapevo!".'
+        en: 'No musical skills needed. Describe and create.',
+        it: 'Nessuna competenza musicale. Descrivi e crea.'
       }
     }
   },
@@ -293,31 +299,48 @@ export const apps: App[] = [
     appType: 'WebApp',
     subtitle: {
       en: 'P2P STRATEGY MARKETPLACE',
-      it: 'P2P STRATEGY MARKETPLACE'
+      it: 'MARKETPLACE STRATEGIE P2P'
     },
     description: {
-      en: 'Marketplace where expert traders share verified strategies and you follow them with real-time Telegram alerts. Creator code stays private.',
-      it: 'Marketplace dove trader esperti condividono strategie verificate e tu le segui con alert Telegram in tempo reale. Il codice dei creator resta privato.'
+      en: 'Follow verified trading strategies with real-time Telegram alerts.',
+      it: 'Segui strategie trading verificate con alert Telegram real-time.'
     },
     features: {
       en: [
-        'Verified strategies with public performance',
-        'Real-time Telegram alerts via webhook',
-        'Creator code protected (serverless)',
-        '🔥 Beta: Early Bird -50% until 31/12'
+        '📊 Verified performance',
+        '📱 Telegram alerts',
+        '🔒 Code protected'
       ],
       it: [
-        'Strategie verificate con performance pubbliche',
-        'Alert Telegram real-time via webhook',
-        'Codice creator protetto (serverless)',
-        '🔥 Beta: Early Bird -50% fino al 31/12'
+        '📊 Performance verificate',
+        '📱 Alert Telegram',
+        '🔒 Codice protetto'
       ]
     },
     ctaText: {
       en: 'JOIN BETA',
       it: 'ENTRA IN BETA'
     },
-    url: 'https://3asytrading.com/'
+    url: 'https://3asytrading.com/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '📊 Public track record',
+          '💰 Fair revenue sharing',
+          '🔥 Early Bird -50%'
+        ],
+        it: [
+          '📊 Track record pubblico',
+          '💰 Revenue sharing equo',
+          '🔥 Early Bird -50%'
+        ]
+      },
+      whyItMatters: {
+        en: 'Follow experts without giving up capital control.',
+        it: 'Segui esperti senza cedere il controllo del capitale.'
+      }
+    }
   },
   {
     id: '3asywealth',
@@ -327,31 +350,48 @@ export const apps: App[] = [
     appType: 'WebApp',
     subtitle: {
       en: '100% PRIVATE WEALTH TRACKING',
-      it: '100% PRIVATE WEALTH TRACKING'
+      it: 'WEALTH TRACKING 100% PRIVATO'
     },
     description: {
-      en: 'Track your entire wealth with TOTAL privacy. All data stays in your browser — no servers, no accounts, no registration. Free forever.',
-      it: 'Traccia tutto il tuo patrimonio con privacy TOTALE. Tutti i dati restano nel tuo browser — nessun server, nessun account, nessuna registrazione. Gratis per sempre.'
+      en: 'Track wealth with total privacy. All data in your browser. Free forever.',
+      it: 'Traccia il patrimonio con privacy totale. Dati nel browser. Gratis sempre.'
     },
     features: {
       en: [
-        '100% localStorage — nothing leaves your device',
-        'No account, no registration, no credit card',
-        'Import/Export CSV & JSON',
-        'Open Source — verify the code yourself'
+        '🔒 100% localStorage',
+        '🚫 No account needed',
+        '💻 Open Source'
       ],
       it: [
-        '100% localStorage — niente lascia il tuo dispositivo',
-        'Nessun account, registrazione, carta di credito',
-        'Import/Export CSV & JSON',
-        'Open Source — verifica tu stesso il codice'
+        '🔒 100% localStorage',
+        '🚫 Nessun account',
+        '💻 Open Source'
       ]
     },
     ctaText: {
-      en: 'START NOW — IT\'S FREE',
-      it: 'INIZIA ORA — È GRATIS'
+      en: 'START FREE',
+      it: 'INIZIA GRATIS'
     },
-    url: 'https://wealth.3asy.app/'
+    url: 'https://wealth.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '🔒 Nothing leaves your device',
+          '📥 Import/Export CSV & JSON',
+          '💰 Free forever'
+        ],
+        it: [
+          '🔒 Niente lascia il dispositivo',
+          '📥 Import/Export CSV & JSON',
+          '💰 Gratis per sempre'
+        ]
+      },
+      whyItMatters: {
+        en: 'Your wealth data stays yours. We never see it.',
+        it: 'I tuoi dati patrimoniali restano tuoi. Non li vediamo mai.'
+      }
+    }
   },
   {
     id: '3asywhistle',
@@ -360,25 +400,23 @@ export const apps: App[] = [
     author: 'UNKNOWN',
     appType: 'WebApp',
     subtitle: {
-      en: 'WHISTLEBLOWING BLOCKCHAIN-BASED',
-      it: 'WHISTLEBLOWING BLOCKCHAIN-BASED'
+      en: 'BLOCKCHAIN WHISTLEBLOWING',
+      it: 'WHISTLEBLOWING BLOCKCHAIN'
     },
     description: {
-      en: 'First Italian blockchain-protected whistleblowing platform. 100% compliant with D.Lgs. 24/2023. Mandatory for companies with 50+ employees.',
-      it: 'Prima piattaforma italiana di whistleblowing protetta da blockchain. 100% conforme D.Lgs. 24/2023. Obbligatoria per aziende con 50+ dipendenti.'
+      en: 'Blockchain-protected whistleblowing. 100% compliant D.Lgs. 24/2023.',
+      it: 'Whistleblowing protetto da blockchain. 100% conforme D.Lgs. 24/2023.'
     },
     features: {
       en: [
-        'Absolute anonymity via blockchain hash',
-        'End-to-end encrypted communications',
-        'Unique tracking code for reports',
-        'Smart referral: 5% employees, 25% freelance'
+        '🔐 Absolute anonymity',
+        '🔒 E2E encrypted',
+        '⚖️ EU compliant'
       ],
       it: [
-        'Anonimato assoluto via hash blockchain',
-        'Comunicazioni cifrate end-to-end',
-        'Codice univoco per tracciare segnalazioni',
-        'Referral smart: 5% dipendenti, 25% freelance'
+        '🔐 Anonimato assoluto',
+        '🔒 Cifrato E2E',
+        '⚖️ Conforme EU'
       ]
     },
     ctaText: {
@@ -390,23 +428,121 @@ export const apps: App[] = [
     details: {
       highlights: {
         en: [
-          '📥 Submit completely anonymous report',
-          '🔐 Receive unique tracking code',
-          '📍 Monitor investigation status',
-          '⚖️ 100% EU Directive 2019/1937 compliant',
-          '🏢 Required for 50+ employee companies'
+          '📥 Anonymous reports',
+          '🔐 Unique tracking code',
+          '🏢 Required for 50+ employees'
         ],
         it: [
-          '📥 Compila segnalazione completamente anonima',
-          '🔐 Ricevi codice univoco di tracciamento',
-          '📍 Monitora lo stato dell\'indagine',
-          '⚖️ 100% conforme Direttiva UE 2019/1937',
-          '🏢 Obbligatoria per aziende 50+ dipendenti'
+          '📥 Segnalazioni anonime',
+          '🔐 Codice tracciamento unico',
+          '🏢 Obbligatorio per 50+ dipendenti'
         ]
       },
       whyItMatters: {
-        en: 'Legal compliance is not optional. Since 2023, companies with 50+ employees MUST have a whistleblowing channel. We offer blockchain-level security at accessible prices. The referral becomes your first anonymous report.',
-        it: 'La compliance legale non è opzionale. Dal 2023, aziende con 50+ dipendenti DEVONO avere un canale whistleblowing. Offriamo sicurezza blockchain a prezzi accessibili. Il referral diventa la tua prima segnalazione anonima.'
+        en: 'Legal compliance since 2023. Blockchain security, accessible prices.',
+        it: 'Compliance legale dal 2023. Sicurezza blockchain, prezzi accessibili.'
+      }
+    }
+  },
+  {
+    id: '3asyresearch',
+    icon: '🔬',
+    title: '3ASYRESEARCH',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'RESEARCH → INTERACTIVE PLAY',
+      it: 'RICERCA → GIOCO INTERATTIVO'
+    },
+    description: {
+      en: 'Complex research papers → interactive experiences and usable tools.',
+      it: 'Paper complessi → esperienze interattive e strumenti utilizzabili.'
+    },
+    features: {
+      en: [
+        '📝 Digestible summaries',
+        '🎮 Interactive playgrounds',
+        '🧪 Hands-on tools'
+      ],
+      it: [
+        '📝 Riassunti accessibili',
+        '🎮 Playground interattivi',
+        '🧪 Strumenti hands-on'
+      ]
+    },
+    ctaText: {
+      en: 'EXPLORE',
+      it: 'ESPLORA'
+    },
+    url: 'https://research.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '📝 Papers made simple',
+          '🎮 Try formulas live',
+          '🔬 Real research cases'
+        ],
+        it: [
+          '📝 Paper semplificati',
+          '🎮 Prova formule live',
+          '🔬 Casi di ricerca reali'
+        ]
+      },
+      whyItMatters: {
+        en: 'From TPMS generators to quantum ML — experience research, don\'t just read it.',
+        it: 'Dai generatori TPMS al quantum ML — vivi la ricerca, non solo leggerla.'
+      }
+    }
+  },
+  {
+    id: '3asysocial',
+    icon: '📱',
+    title: '3ASYSOCIAL',
+    author: 'MicheleMikyMonti',
+    appType: 'WebApp',
+    subtitle: {
+      en: 'SOCIAL CONTENT IN SECONDS',
+      it: 'CONTENUTI SOCIAL IN SECONDI'
+    },
+    description: {
+      en: '3 questions → posts for Instagram, TikTok, X, LinkedIn, YouTube.',
+      it: '3 domande → post per Instagram, TikTok, X, LinkedIn, YouTube.'
+    },
+    features: {
+      en: [
+        '⚡ 3 questions → 5 platforms',
+        '🎯 3 free generations',
+        '✨ Ready to post'
+      ],
+      it: [
+        '⚡ 3 domande → 5 piattaforme',
+        '🎯 3 generazioni gratis',
+        '✨ Pronto da postare'
+      ]
+    },
+    ctaText: {
+      en: 'CREATE NOW',
+      it: 'CREA ORA'
+    },
+    url: 'https://social.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          '📲 All major platforms',
+          '🚫 No signup required',
+          '🤖 AI-powered'
+        ],
+        it: [
+          '📲 Tutte le piattaforme',
+          '🚫 Nessuna registrazione',
+          '🤖 Powered by AI'
+        ]
+      },
+      whyItMatters: {
+        en: 'Stop staring at blank screens. Content ready in seconds.',
+        it: 'Basta schermi bianchi. Contenuti pronti in secondi.'
       }
     }
   }
