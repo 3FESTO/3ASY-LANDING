@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
   name: '◆ △ ▣ 3ASY',
   tagline: {
-    en: 'SOFTWARE THAT BUILDS ITSELF',
-    it: 'SOFTWARE CHE SI COSTRUISCE DA SOLO'
+    en: 'AI TOOLS FOR THE REAL WORLD',
+    it: 'STRUMENTI AI PER IL MONDO REALE'
   },
   logo: {
     url: 'https://www.3FESTO.com/images/homePage/3asyapps.png',
@@ -19,12 +19,12 @@ export const SITE_CONFIG = {
       en: {
         part1: 'Born from ',
         linkText: 'ANY3DP',
-        part2: ' and 3D Future Experience,\nwe now build ALSO Ai-powered tools for everyone.'
+        part2: ' and 3D Future Experience,\nwe build ALSO AI-powered tools that solve real problems.'
       },
       it: {
         part1: 'Nati da ',
         linkText: 'ANY3DP',
-        part2: ' e dalla 3D Future Experience,\ncostruiamo ANCHE strumenti AI-powered per tutti.'
+        part2: ' e dalla 3D Future Experience,\ncostruiamo ANCHE strumenti AI-powered che risolvono problemi reali.'
       }
     },
     any3dpUrl: 'https://www.any3dp.com/'
@@ -40,8 +40,8 @@ export const SITE_CONFIG = {
       it: 'SEMPRE IN MOVIMENTO'
     },
     description: {
-      en: 'We ship fast. New tools every day.\nAI-first approach.\nIf you can describe it, we can build it.',
-      it: 'Rilasciamo velocemente. Nuovi tool ogni giorno.\nApproccio AI-first.\nSe puoi descriverlo, possiamo costruirlo.'
+      en: 'We ship fast. New tools, real solutions.\nAI-first approach.\nIf you can describe it, we can build it.',
+      it: 'Rilasciamo velocemente. Nuovi tool, soluzioni reali.\nApproccio AI-first.\nSe puoi descriverlo, possiamo costruirlo.'
     }
   },
   philosophy: {
@@ -50,8 +50,8 @@ export const SITE_CONFIG = {
       it: 'La Visione'
     },
     content: {
-      en: 'We\'re 3FESTO — proudly Made in Italy 🇮🇹. A small tech company from Bologna with big ambitions. Started in 3D printing, now we\'re building the tools we wish existed. Every 3ASYAPP solves a real problem we faced. The Builder? We got tired of making websites manually. HR? We hated timesheets. That\'s how we work: real needs, real solutions, shipped fast. We\'re bootstrapped, profitable on our core business, and now scaling this ecosystem. Looking for believers who see what we see: AI + no-code = the next wave. Italian design, global ambition.',
-      it: 'Siamo 3FESTO — orgogliosamente Made in Italy 🇮🇹. Una piccola azienda tech bolognese con grandi ambizioni. Partiti dalla stampa 3D, ora costruiamo gli strumenti che avremmo voluto esistessero. Ogni 3ASYAPP risolve un problema reale che abbiamo affrontato. Il Builder? Ci siamo stufati di fare siti a mano. HR? Odiavamo i timesheet. Così lavoriamo: bisogni reali, soluzioni reali, rilasciate velocemente. Siamo bootstrapped, profittevoli sul core business, e ora scaliamo questo ecosistema. Cerchiamo chi vede quello che vediamo noi: AI + no-code = la prossima onda. Design italiano, ambizione globale.'
+      en: 'We\'re 3FESTO — proudly Made in Italy 🇮🇹. A small tech company from Bologna with big ambitions. Started in 3D printing, now we\'re building the tools we wish existed. Every 3ASYAPP solves a real problem we faced. 3ASYCAD? We needed a real printability engine — inspect, repair, lattice, nesting — all in the browser. HR? We hated timesheets. That\'s how we work: real needs, real solutions, shipped fast. We\'re bootstrapped, profitable on our core business, and now scaling this ecosystem. Looking for believers who see what we see: AI + domain expertise = the next wave. Italian design, global ambition.',
+      it: 'Siamo 3FESTO — orgogliosamente Made in Italy 🇮🇹. Una piccola azienda tech bolognese con grandi ambizioni. Partiti dalla stampa 3D, ora costruiamo gli strumenti che avremmo voluto esistessero. Ogni 3ASYAPP risolve un problema reale che abbiamo affrontato. 3ASYCAD? Serviva un vero engine di stampabilità — ispezione, riparazione, lattice, nesting — tutto nel browser. HR? Odiavamo i timesheet. Così lavoriamo: bisogni reali, soluzioni reali, rilasciate velocemente. Siamo bootstrapped, profittevoli sul core business, e ora scaliamo questo ecosistema. Cerchiamo chi vede quello che vediamo noi: AI + competenza di dominio = la prossima onda. Design italiano, ambizione globale.'
     }
   },
   cta: {

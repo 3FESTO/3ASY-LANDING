@@ -37,57 +37,6 @@ export interface App {
 
 export const apps: App[] = [
   {
-    id: '3asybuilder',
-    icon: '🏗️',
-    title: '3ASYBUILDER',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'AI WEBSITE BUILDER',
-      it: 'AI WEBSITE BUILDER'
-    },
-    description: {
-      en: 'Describe your business → get a professional website. No coding required.',
-      it: 'Descrivi la tua attività → ottieni un sito professionale. Zero codice.'
-    },
-    features: {
-      en: [
-        '🌐 10 languages supported',
-        '📧 Contact forms & booking widgets',
-        '🚀 One-click publish'
-      ],
-      it: [
-        '🌐 10 lingue supportate',
-        '📧 Form contatto & widget prenotazioni',
-        '🚀 Pubblica con un click'
-      ]
-    },
-    ctaText: {
-      en: 'START BUILDING',
-      it: 'INIZIA A COSTRUIRE'
-    },
-    url: 'https://builder.3asy.app/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '🤖 AI builds from conversation',
-          '📊 Google Analytics included',
-          '✨ Interactive gallery'
-        ],
-        it: [
-          '🤖 AI costruisce da conversazione',
-          '📊 Google Analytics incluso',
-          '✨ Galleria interattiva'
-        ]
-      },
-      whyItMatters: {
-        en: 'Perfect for restaurants, shops, freelancers. From idea to live site in minutes.',
-        it: 'Perfetto per ristoranti, negozi, freelancer. Dall\'idea al sito online in minuti.'
-      }
-    }
-  },
-  {
     id: '3asygit',
     icon: '🎮',
     title: '3ASYGIT',
@@ -190,53 +139,53 @@ export const apps: App[] = [
     }
   },
   {
-    id: '3asymodeling',
+    id: '3asycad',
     icon: '🎨',
-    title: '3ASYMODELING',
+    title: '3ASYCAD',
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     subtitle: {
-      en: 'AI 3D GENERATION',
-      it: 'AI 3D GENERATION'
+      en: '3D PRINTABILITY ENGINE',
+      it: 'ENGINE DI STAMPABILITÀ 3D'
     },
     description: {
-      en: 'Text or image → professional 3D model in minutes. Export or mint NFT.',
-      it: 'Testo o immagine → modello 3D professionale in minuti. Export o mint NFT.'
+      en: 'Inspect, repair, lattice, nesting — from upload to build-ready parts. Browser-based, no install.',
+      it: 'Ispezione, riparazione, lattice, nesting — dal caricamento al pezzo pronto. Browser-based, nessuna installazione.'
     },
     features: {
       en: [
-        '✍️ Text-to-3D',
-        '📸 Image-to-3D',
-        '📦 GLB, STL, OBJ export'
+        '🔍 Printability analysis & auto-repair',
+        '🧬 TPMS lattice generation',
+        '📦 Nesting & AI assistant'
       ],
       it: [
-        '✍️ Text-to-3D',
-        '📸 Image-to-3D',
-        '📦 Export GLB, STL, OBJ'
+        '🔍 Analisi stampabilità & auto-repair',
+        '🧬 Generazione lattice TPMS',
+        '📦 Nesting & assistente AI'
       ]
     },
     ctaText: {
-      en: 'CREATE NOW',
-      it: 'CREA ORA'
+      en: 'TRY FREE',
+      it: 'PROVA GRATIS'
     },
-    url: 'https://3asymodeling.com/',
+    url: 'https://cad.3asy.app/',
     hasDetails: true,
     details: {
       highlights: {
         en: [
-          '🎨 Professional quality',
-          '🖨️ 3D print ready',
-          '💎 NFT minting'
+          '🌐 Browser-based — no install needed',
+          '🔧 Printability score & 3-pass auto-repair',
+          '🧬 TPMS lattice (Gyroid, Schwarz P, Diamond, IWP)'
         ],
         it: [
-          '🎨 Qualità professionale',
-          '🖨️ Pronto per stampa 3D',
-          '💎 Mint NFT'
+          '🌐 Browser-based — nessuna installazione',
+          '🔧 Score di stampabilità & auto-repair a 3 passaggi',
+          '🧬 Lattice TPMS (Gyroid, Schwarz P, Diamond, IWP)'
         ]
       },
       whyItMatters: {
-        en: 'From idea to printable model in minutes. By the ANY3DP team.',
-        it: 'Dall\'idea al modello stampabile in minuti. Dal team ANY3DP.'
+        en: 'From upload to build-ready in minutes. Built for AM professionals — service bureaus, OEMs, engineers.',
+        it: 'Dal caricamento al pezzo pronto in minuti. Pensato per professionisti AM — service bureau, OEM, ingegneri.'
       }
     }
   },
@@ -292,57 +241,6 @@ export const apps: App[] = [
     }
   },
   {
-    id: '3asytrading',
-    icon: '📈',
-    title: '3ASYTRADING',
-    author: '0zone',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'P2P STRATEGY MARKETPLACE',
-      it: 'MARKETPLACE STRATEGIE P2P'
-    },
-    description: {
-      en: 'Follow verified trading strategies with real-time Telegram alerts.',
-      it: 'Segui strategie trading verificate con alert Telegram real-time.'
-    },
-    features: {
-      en: [
-        '📊 Verified performance',
-        '📱 Telegram alerts',
-        '🔒 Code protected'
-      ],
-      it: [
-        '📊 Performance verificate',
-        '📱 Alert Telegram',
-        '🔒 Codice protetto'
-      ]
-    },
-    ctaText: {
-      en: 'JOIN BETA',
-      it: 'ENTRA IN BETA'
-    },
-    url: 'https://3asytrading.com/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '📊 Public track record',
-          '💰 Fair revenue sharing',
-          '🔥 Early Bird -50%'
-        ],
-        it: [
-          '📊 Track record pubblico',
-          '💰 Revenue sharing equo',
-          '🔥 Early Bird -50%'
-        ]
-      },
-      whyItMatters: {
-        en: 'Follow experts without giving up capital control.',
-        it: 'Segui esperti senza cedere il controllo del capitale.'
-      }
-    }
-  },
-  {
     id: '3asywealth',
     icon: '💰',
     title: '3ASYWEALTH',
@@ -390,57 +288,6 @@ export const apps: App[] = [
       whyItMatters: {
         en: 'Your wealth data stays yours. We never see it.',
         it: 'I tuoi dati patrimoniali restano tuoi. Non li vediamo mai.'
-      }
-    }
-  },
-  {
-    id: '3asywhistle',
-    icon: '🤫',
-    title: '3ASYWHISTLE',
-    author: 'UNKNOWN',
-    appType: 'WebApp',
-    subtitle: {
-      en: 'BLOCKCHAIN WHISTLEBLOWING',
-      it: 'WHISTLEBLOWING BLOCKCHAIN'
-    },
-    description: {
-      en: 'Blockchain-protected whistleblowing. 100% compliant D.Lgs. 24/2023.',
-      it: 'Whistleblowing protetto da blockchain. 100% conforme D.Lgs. 24/2023.'
-    },
-    features: {
-      en: [
-        '🔐 Absolute anonymity',
-        '🔒 E2E encrypted',
-        '⚖️ EU compliant'
-      ],
-      it: [
-        '🔐 Anonimato assoluto',
-        '🔒 Cifrato E2E',
-        '⚖️ Conforme EU'
-      ]
-    },
-    ctaText: {
-      en: 'LEARN MORE',
-      it: 'SCOPRI DI PIÙ'
-    },
-    url: 'https://3asywhistle.it/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '📥 Anonymous reports',
-          '🔐 Unique tracking code',
-          '🏢 Required for 50+ employees'
-        ],
-        it: [
-          '📥 Segnalazioni anonime',
-          '🔐 Codice tracciamento unico',
-          '🏢 Obbligatorio per 50+ dipendenti'
-        ]
-      },
-      whyItMatters: {
-        en: 'Legal compliance since 2023. Blockchain security, accessible prices.',
-        it: 'Compliance legale dal 2023. Sicurezza blockchain, prezzi accessibili.'
       }
     }
   },

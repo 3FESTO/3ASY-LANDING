@@ -6,7 +6,8 @@ import { AppsSection } from './components/sections/AppsSection';
 import { Philosophy } from './components/Philosophy';
 import { CTA } from './components/CTA';
 import { Footer } from './components/Footer';
-import { StatusPage } from './pages/StatusPage';
+// StatusPage kept as backup, not routed
+// import { StatusPage } from './pages/StatusPage';
 
 type Language = 'en' | 'it';
 
@@ -34,7 +35,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/status" element={<StatusPage />} />
+
       </Routes>
     </BrowserRouter>
   );
