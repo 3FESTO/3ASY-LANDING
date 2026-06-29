@@ -21,7 +21,7 @@ export function CTA({ language }: CTAProps) {
   };
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 relative overflow-hidden">
+    <section className="bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#28a745]/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#28a745]/5 rounded-full blur-3xl"></div>
@@ -56,7 +56,7 @@ export function CTA({ language }: CTAProps) {
           <div className="text-center">
             <a
               href={`mailto:${company.email}`}
-              className="inline-flex items-center space-x-3 px-10 py-5 bg-gradient-to-r from-[#28a745] to-[#34ce57] hover:from-[#218838] hover:to-[#28a745] text-white text-base md:text-lg font-semibold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-[#28a745]/50 hover:-translate-y-1 group"
+              className="inline-flex items-center space-x-3 px-10 py-5 bg-linear-to-r from-[#28a745] to-[#34ce57] hover:from-[#218838] hover:to-[#28a745] text-white text-base md:text-lg font-semibold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-[#28a745]/50 hover:-translate-y-1 group"
             >
               <span className="text-2xl">📧</span>
               <span>{cta.buttonText[language]}</span>

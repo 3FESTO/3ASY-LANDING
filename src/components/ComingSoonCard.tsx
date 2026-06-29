@@ -8,8 +8,8 @@ export function ComingSoonCard({ language }: ComingSoonCardProps) {
   const { comingSoon } = SITE_CONFIG;
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 border-2 border-dashed border-gray-300">
-      <div className="text-6xl mb-6">{comingSoon.icon}</div>
+    <div className="bg-linear-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border-2 border-dashed border-gray-300 flex flex-col justify-center hover:border-[#28a745]/50 transition-colors">
+      <div className="text-6xl mb-6 animate-float">{comingSoon.icon}</div>
       <h3 className="text-2xl font-bold text-gray-900 mb-2">
         {comingSoon.title[language]}
       </h3>

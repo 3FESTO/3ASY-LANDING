@@ -30,26 +30,12 @@ apps:
     repo: 3FESTO/3ASYMODELING
     notes: "AI 3D generation, API costs review"
 
-  - name: 3ASYMUSIC
-    status: wip
-    startedAt: "2025-12"
-    previewEnds: TBA
-    repo: michelemonti/3asymusic
-    notes: "AI song generation from text prompts"
-
   - name: 3ASYTRADING
     status: wip
     startedAt: "2025-10"
     previewEnds: TBA
     repo: michelemonti/3ASYTRADING
     notes: "P2P strategy marketplace"
-
-  - name: 3ASYWEALTH
-    status: wip
-    startedAt: "2025-10"
-    previewEnds: TBA
-    repo: michelemonti/3ASYWEALTH
-    notes: "100% private wealth tracking"
 
   - name: 3ASYWHISTLE
     status: wip
@@ -64,10 +50,3 @@ apps:
     previewEnds: TBA
     repo: 3FESTO/3ASYRESEARCH
     notes: "Research → interactive play"
-
-  - name: 3ASYSOCIAL
-    status: wip
-    startedAt: "2026-01"
-    previewEnds: TBA
-    repo: michelemonti/3ASYSOCIAL
-    notes: "Social content in seconds"

@@ -34,7 +34,6 @@ Our philosophy: *When we identify a business need, we don't search for solutions
 | **[3ASYGIT](https://git.3asy.app)** | GitHub contribution gamification & analytics | React + GitHub API | ✅ Live |
 | **[3ASYHR](https://juno-hr.3asy.app)** | Smart HR with calendar timesheet automation | React + Supabase + Azure AD | 🧪 Beta @JUNO.AM |
 | **[3ASYMODELING](https://3asymodeling.com)** | AI-powered text/image-to-3D generation | AI + WebGL + NFT | ⏸️ Paused |
-| **[3ASYMUSIC](https://music.3asy.app)** | Browser-based audio effects processor | React + Web Audio API | 🚧 Dev |
 | **[3ASYNUTRY](https://nutry.3asy.app)** | Professional app for nutritionists & meal planning | React + AI | 📋 Planned |
 | **[3ASYPERIOD](https://period.3asy.app)** | Female period tracking & health insights | React + LocalStorage | ✅ Live |
 | **[3ASYTRADING](https://trading.3asy.app)** | P2P algorithmic trading marketplace | React + Trading APIs | ✅ Live |

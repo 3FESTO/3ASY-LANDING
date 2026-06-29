@@ -17,14 +17,14 @@ export const SITE_CONFIG = {
   hero: {
     description: {
       en: {
-        part1: 'Born from ',
+        part1: '',
         linkText: 'ANY3DP',
-        part2: ' and 3D Future Experience,\nwe build ALSO AI-powered tools that solve real problems.'
+        part2: ' is our top product for industry.\n3ASY is the other line: serious, AI-powered tools that solve real problems.'
       },
       it: {
-        part1: 'Nati da ',
+        part1: '',
         linkText: 'ANY3DP',
-        part2: ' e dalla 3D Future Experience,\ncostruiamo ANCHE strumenti AI-powered che risolvono problemi reali.'
+        part2: ' è il nostro prodotto top per l\'industria.\n3ASY è l\'altra linea: strumenti AI seri, che risolvono problemi reali.'
       }
     },
     any3dpUrl: 'https://www.any3dp.com/'
