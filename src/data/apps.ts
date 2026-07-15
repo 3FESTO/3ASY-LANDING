@@ -1,4 +1,5 @@
 export type AppStatus = 'production' | 'vision' | 'pilot' | 'early';
+export type AppTheme = 'blue' | 'yellow' | 'purple' | 'green';
 
 export interface App {
   id: string;
@@ -7,6 +8,7 @@ export interface App {
   author: string;
   appType: string;
   status: AppStatus;
+  theme: AppTheme;
   tag: {
     en: string;
     it: string;
@@ -19,6 +21,10 @@ export interface App {
     en: string;
     it: string;
   };
+  origin: {
+    en: string;
+    it: string;
+  };
   features: {
     en: string[];
     it: string[];
@@ -26,6 +32,10 @@ export interface App {
   ctaText: {
     en: string;
     it: string;
+  };
+  milestone?: {
+    eyebrow: { en: string; it: string };
+    value: { en: string; it: string };
   };
   url: string;
   isComingSoon?: boolean;
@@ -50,28 +60,39 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     status: 'production',
+    theme: 'blue',
     tag: {
-      en: 'IN PRODUCTION',
-      it: 'IN PRODUZIONE'
+      en: 'PROVEN FOR A YEAR',
+      it: 'TESTATO DA UN ANNO'
     },
     subtitle: {
       en: 'CALENDAR → HR AGENT',
       it: 'CALENDARIO → HR AGENT'
     },
     description: {
-      en: 'Born from our own payroll: dozens of people, contractors and resources to manage. So we built it — automatic timesheets and cost analysis straight from the calendar. Zero data entry. Now it runs every day.',
-      it: 'Nato dalle nostre buste paga: decine di persone, collaboratori e risorse da gestire. Così lo abbiamo costruito — timesheet automatici e analisi costi dal calendario. Zero data entry. Oggi gira ogni giorno.'
+      en: 'One workspace connects attendance, HR, finance and operations. People clock in and turn calendar activity into validated timesheets; team leads approve leave; business profiles see the real cost and margin of every resource.',
+      it: 'Un solo spazio collega presenze, HR, finance e operations. Le persone marcano e trasformano il calendario in timesheet validati; i team lead approvano ferie e permessi; i profili business vedono costo e marginalità reale di ogni risorsa.'
+    },
+    origin: {
+      en: 'It started with what every company has to do: track work, manage absences and close payroll correctly. Then came the questions spreadsheets could not answer.',
+      it: 'Nasce da ciò che ogni azienda deve fare davvero: rilevare il lavoro, gestire le assenze e chiudere correttamente il mese. Poi sono arrivate le domande a cui i fogli di calcolo non sapevano rispondere.'
     },
     features: {
       en: [
-        '📅 Microsoft 365 / Google Cal',
-        '💰 Real-time budget visibility',
-        '🏢 Multi-company ready'
+        'Attendance and automatic timesheets from Microsoft 365 / Google Calendar',
+        'Leave and permit requests with team-lead approval flows',
+        'Company device inventory and assignment history',
+        'Cost, implicit rate and real margin for each resource',
+        'Budget, hours delivered and invoice reconciliation',
+        'Multi-company controls and accounting-ready exports'
       ],
       it: [
-        '📅 Microsoft 365 / Google Cal',
-        '💰 Visibilità budget real-time',
-        '🏢 Multi-società'
+        'Presenze e timesheet automatici da Microsoft 365 / Google Calendar',
+        'Ferie e permessi con flussi di richiesta e approvazione',
+        'Censimento device aziendali e storico assegnazioni',
+        'Costo, tariffa implicita e marginalità reale per risorsa',
+        'Riconciliazione tra budget, ore erogate e fatture',
+        'Controllo multi-società ed export pronti per la contabilità'
       ]
     },
     ctaText: {
@@ -100,12 +121,80 @@ export const apps: App[] = [
     }
   },
   {
+    id: '3asybnb',
+    icon: 'KeyRound',
+    title: '3ASYBNB',
+    author: 'MicheleMikyMonti',
+    appType: 'Utility',
+    status: 'early',
+    theme: 'yellow',
+    tag: {
+      en: 'SELECTED BETA',
+      it: 'BETA SELEZIONATA'
+    },
+    subtitle: {
+      en: 'MONTH-END, IN ONE CLICK',
+      it: 'IL FINE MESE, IN UN CLICK'
+    },
+    description: {
+      en: 'The guided month-end flow for short-term rental property managers. It reads mixed documents, flags anomalies, calculates each allocation with deterministic rules and produces owner-ready reports.',
+      it: 'Il fine mese guidato per chi gestisce affitti brevi per conto di proprietari. Legge documenti diversi, segnala le anomalie, calcola ogni ripartizione con regole deterministiche e prepara report pronti da inviare.'
+    },
+    origin: {
+      en: 'A property manager asked us to remove half a day of repetitive work every month. It was outside our industry, but the need was clear enough to deserve a product.',
+      it: 'Un property manager ci ha chiesto di eliminare mezza giornata di lavoro ripetitivo ogni mese. Era fuori dal nostro settore, ma il bisogno era troppo chiaro per non diventare un prodotto.'
+    },
+    features: {
+      en: [
+        'CSV, Excel, PDF, Word, notes and photos as source documents',
+        '3ASY Ai extracts bookings, payouts, guests and anomalies',
+        'Commissions, cleaning, taxes and PM fees calculated line by line',
+        'Owner PDF, cleaning summary and annual property statement'
+      ],
+      it: [
+        'CSV, Excel, PDF, Word, note e foto come documenti sorgente',
+        '3ASY Ai estrae prenotazioni, payout, ospiti e anomalie',
+        'Commissioni, pulizie, imposte e compensi calcolati riga per riga',
+        'PDF proprietario, riepilogo pulizie e consuntivo annuale'
+      ]
+    },
+    ctaText: {
+      en: 'DISCOVER THE BETA',
+      it: 'SCOPRI LA BETA'
+    },
+    milestone: {
+      eyebrow: { en: 'PUBLIC LAUNCH', it: 'LANCIO PUBBLICO' },
+      value: { en: 'JAN 01 · 2027', it: '01 GEN · 2027' }
+    },
+    url: 'https://bnb.3asy.app/',
+    hasDetails: true,
+    details: {
+      highlights: {
+        en: [
+          'Selected beta with a small group of property managers',
+          'PDF reports ready for the owner',
+          'Public launch: January 1, 2027'
+        ],
+        it: [
+          'Beta con un piccolo gruppo di property manager selezionati',
+          'Report PDF pronti per il proprietario',
+          'Lancio pubblico: 1 gennaio 2027'
+        ]
+      },
+      whyItMatters: {
+        en: 'It started with a practical request: take half a day of repetitive month-end work and turn it into a guided, reliable flow. It is outside our core industry, and that is exactly why it belongs here.',
+        it: 'È partito da una necessità concreta: trasformare mezza giornata di lavoro ripetitivo a fine mese in un flusso guidato e affidabile. È fuori dal nostro settore principale, ed è proprio per questo che appartiene a questa raccolta.'
+      }
+    }
+  },
+  {
     id: '3asycad',
     icon: '🎨',
     title: '3ASYCAD',
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     status: 'vision',
+    theme: 'purple',
     tag: {
       en: 'LONG-TERM VISION',
       it: 'VISIONE A LUNGO TERMINE'
@@ -115,19 +204,25 @@ export const apps: App[] = [
       it: 'ENGINE DI STAMPABILITÀ 3D'
     },
     description: {
-      en: 'Our most ambitious bet. 3D is our home: inspect, repair, lattice, nesting — from upload to build-ready, all in the browser. The same world where partners like JUNO.AM run their printing operations.',
-      it: 'La nostra scommessa più ambiziosa. Il 3D è casa nostra: ispezione, riparazione, lattice, nesting — dal caricamento al pezzo pronto, tutto nel browser. Lo stesso mondo in cui partner come JUNO.AM gestiscono la produzione.'
+      en: 'A browser workspace for preparing additive-manufacturing builds: inspect geometry, repair meshes, generate lattices, estimate stiffness and arrange parts in the build volume. No workstation install or license server.',
+      it: 'Un ambiente browser per preparare build di manifattura additiva: ispeziona geometrie, ripara mesh, genera lattice, stima la rigidezza e dispone le parti nel volume di stampa. Senza installazioni workstation o license server.'
+    },
+    origin: {
+      en: 'This is the hard, long-term project. Parts of the framework already support 3D operations at JUNO.AM and give us room to experiment beyond the ANY3DP MES.',
+      it: 'È il progetto difficile, a lungo termine. Parti del framework supportano già operazioni 3D in JUNO.AM e ci danno uno spazio in cui sperimentare anche oltre il MES di ANY3DP.'
     },
     features: {
       en: [
-        '🔍 Printability analysis & auto-repair',
-        '🧬 TPMS lattice generation',
-        '📦 Nesting & AI assistant'
+        'Printability score, wall thickness and critical 3D markers',
+        'Three-pass repair with safe rollback when geometry worsens',
+        'TPMS and variable-density lattices with stiffness estimates',
+        'Nesting, collision checks and per-printer build volumes'
       ],
       it: [
-        '🔍 Analisi stampabilità & auto-repair',
-        '🧬 Generazione lattice TPMS',
-        '📦 Nesting & assistente AI'
+        'Score di stampabilità, spessori e marker critici nel 3D',
+        'Riparazione in tre passaggi con rollback se la mesh peggiora',
+        'Lattice TPMS e a densità variabile con stima della rigidezza',
+        'Nesting, controllo collisioni e volumi macchina configurabili'
       ]
     },
     ctaText: {
@@ -162,6 +257,7 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     status: 'pilot',
+    theme: 'green',
     tag: {
       en: 'PUBLIC PILOT',
       it: 'PILOT PUBBLICO'
@@ -171,8 +267,12 @@ export const apps: App[] = [
       it: 'GITHUB GAMIFICATION'
     },
     description: {
-      en: 'A public pilot, live on GitHub, for developers who live there too. Turn your contributions into 3D art and audio — your coding, finally something you can show off.',
-      it: 'Un pilot pubblico, live su GitHub, per gli sviluppatori che ci vivono. Trasforma le tue contribuzioni in arte 3D e audio — il tuo coding, finalmente qualcosa da mostrare.'
+      en: 'Enter a GitHub profile and turn its contribution history into a 3D city, a solar system or a speed circuit. A small public experiment, built just for fun and open to the next visualization.',
+      it: 'Inserisci un profilo GitHub e trasformane la storia delle contribuzioni in una città 3D, un sistema solare o un circuito. Un piccolo esperimento pubblico, nato per gioco e aperto alla prossima visualizzazione.'
+    },
+    origin: {
+      en: 'A playful question: what if a contribution graph became a place you could explore?',
+      it: 'Una domanda giocosa: e se il contribution graph diventasse un luogo da esplorare?'
     },
     features: {
       en: [
@@ -218,6 +318,7 @@ export const apps: App[] = [
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     status: 'early',
+    theme: 'green',
     tag: {
       en: 'EARLY STAGE',
       it: 'EARLY STAGE'
@@ -227,8 +328,12 @@ export const apps: App[] = [
       it: 'RICERCA → GIOCO INTERATTIVO'
     },
     description: {
-      en: 'An early-stage concept we are shaping, open to institutional backing. Complex research papers → interactive experiences and usable tools you can actually play with.',
-      it: 'Un concept allo stadio iniziale che stiamo plasmando, aperto a investimenti istituzionali. Paper complessi → esperienze interattive e strumenti utilizzabili con cui giocare davvero.'
+      en: 'Research papers become plain-language explanations and interactive tools. Two live cases already let people generate hybrid TPMS structures and model MJF production costs instead of only reading the formulas.',
+      it: 'I paper diventano spiegazioni accessibili e strumenti interattivi. Due casi live permettono già di generare strutture TPMS ibride e modellare i costi di produzione MJF, invece di limitarsi a leggere le formule.'
+    },
+    origin: {
+      en: 'Good research should be tried, not only cited. This experiment turns publications into something people can understand with their hands.',
+      it: 'La buona ricerca dovrebbe essere provata, non soltanto citata. Questo esperimento trasforma le pubblicazioni in qualcosa che si può capire usando le mani.'
     },
     features: {
       en: [
