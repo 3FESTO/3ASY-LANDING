@@ -11,11 +11,15 @@ import { Footer } from './components/Footer';
 
 type Language = 'en' | 'it';
 
-function LandingPage() {
-  const [language, setLanguage] = useState<Language>('it');
+interface LandingPageProps {
+  initialLanguage?: Language;
+}
+
+export function LandingPage({ initialLanguage = 'it' }: LandingPageProps) {
+  const [language] = useState<Language>(initialLanguage);
 
   const toggleLanguage = () => {
-    setLanguage(prev => prev === 'en' ? 'it' : 'en');
+    window.location.assign(language === 'it' ? '/en/' : '/');
   };
 
   return (
@@ -34,8 +38,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-
+        <Route path="/" element={<LandingPage initialLanguage="it" />} />
+        <Route path="/en/*" element={<LandingPage initialLanguage="en" />} />
       </Routes>
     </BrowserRouter>
   );

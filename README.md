@@ -2,7 +2,7 @@
 
 # ◆ △ ▣ 3ASY
 
-[![Live Site](https://img.shields.io/badge/🌐_Live-www.3asy.app-28a745?style=for-the-badge)](https://www.3asy.app)
+[![Live Site](https://img.shields.io/badge/🌐_Live-www.3asy.it-28a745?style=for-the-badge)](https://www.3asy.it)
 [![By 3FE](https://img.shields.io/badge/by-3FE_·_3Festo-009246?style=for-the-badge)](https://www.3festo.com)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](https://www.3festo.com)
 
@@ -17,7 +17,7 @@
 
 ---
 
-> **About this repository** — Source code of the public **3ASY** landing page ([www.3asy.app](https://www.3asy.app)).
+> **About this repository** — Source code of the public **3ASY** landing page ([www.3asy.it](https://www.3asy.it)).
 > Our top product for industry is **[ANY3DP](https://www.any3dp.com)** — industrial-grade additive manufacturing.
 > **3ASY** is our second line: a small set of focused, AI-powered tools by **3FE — 3Festo S.r.l.** (Bologna, Italy).
 
@@ -60,6 +60,7 @@ We are bootstrapped and profitable on our core business (3D), and we build these
 - **⚡ Vite 7** — instant builds
 - **🎨 Tailwind CSS 4** — utility-first styling
 - **↗ Lucide** — consistent interface icons
+- **🔎 Build-time prerender** — static landing content for crawlers, then React hydration
 - **📱 Mobile-first** — responsive everywhere
 
 ```bash
@@ -68,13 +69,16 @@ npm run dev      # start the dev server
 npm run build    # production build
 ```
 
+The production build renders both localized pages before deployment: Italian at `https://www.3asy.it/` (`dist/index.html`) and English at `https://www.3asy.it/en/` (`dist/en/index.html`). Each page has its own language, canonical URL, localized metadata and structured data, with reciprocal `hreflang` links. Search engines, link unfurlers and clients without JavaScript receive the complete product content immediately; React hydrates the same markup to enable interactions and language navigation. The former `3asy.app` landing domains permanently redirect to the matching path on `3asy.it`.
+
 ## 🇮🇹 Made in Italy
 
 **3Festo S.r.l.** — Bologna, Italy. Small team, focused output.
 
 ## 🔗 Connect
 
-- **🌐 Landing**: [3asy.app](https://www.3asy.app)
+- **🌐 Landing**: [3asy.it](https://www.3asy.it)
+- **💻 Public source**: [github.com/3FESTO/3ASY-LANDING](https://github.com/3FESTO/3ASY-LANDING)
 - **🏢 Company**: [3festo.com](https://www.3festo.com)
 - **🎯 Industrial 3D**: [any3dp.com](https://www.any3dp.com)
 - **📧 Contact**: [info@3festo.com](mailto:info@3festo.com)

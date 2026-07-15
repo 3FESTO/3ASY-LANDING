@@ -2,7 +2,24 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "3asy.it" }],
+      "destination": "https://www.3asy.it/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "3asy.app" }],
+      "destination": "https://www.3asy.it/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.3asy.app" }],
+      "destination": "https://www.3asy.it/:path*",
+      "permanent": true
+    }
   ]
 }

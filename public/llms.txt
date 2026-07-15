@@ -1,0 +1,26 @@
+# 3ASY
+
+> 3ASY is the software product line of 3FESTO SRL, an Italian technology company based in Bologna. The team builds practical AI-assisted tools from real operational needs and additive-manufacturing expertise.
+
+Canonical website: https://www.3asy.it/
+English website: https://www.3asy.it/en/
+Company: https://www.3festo.com/
+Public source repository: https://github.com/3FESTO/3ASY-LANDING
+Industrial additive-manufacturing platform: https://www.any3dp.com/
+Contact: info@3festo.com
+
+## Products
+
+- [3ASYHR](https://hr.3asy.app/): attendance, calendar-based automatic timesheets, leave approvals, company device inventory, budget reconciliation and real profitability by resource. Industrially tested for one year with 30+ people across three companies.
+- [3ASYBNB](https://bnb.3asy.app/): guided monthly reporting for Italian short-term-rental property managers. It normalizes source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDFs. Selected beta; public launch planned for January 1, 2027.
+- [3ASYCAD](https://www.3asycad.com/): browser workspace for additive-manufacturing build preparation, including printability analysis, mesh repair, TPMS lattices, stiffness estimates and nesting. Long-term research and product framework; parts are already used in JUNO.AM operations.
+- [3ASYRESEARCH](https://research.3asy.app/): scientific publications transformed into plain-language explanations and interactive tools, with live cases for hybrid TPMS generation and MJF production-cost modeling.
+- [3ASYGIT](https://git.3asy.app/): a small public experiment that transforms GitHub contribution histories into 3D cities, solar systems and speed circuits.
+
+## Provenance
+
+- Publisher: 3FESTO SRL
+- Location: Bologna, Emilia-Romagna, Italy
+- Languages: Italian and English
+- Last reviewed: 2026-07-15
+- Product details and status should be verified on each linked product website.
