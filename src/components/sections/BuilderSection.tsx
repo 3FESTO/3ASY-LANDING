@@ -206,8 +206,8 @@ export function BuilderSection({ language }: BuilderSectionProps) {
               <h3 className="text-2xl font-bold text-white mb-2">
                 {language === 'en' ? 'White-Label Solution' : 'Soluzione White-Label'}
               </h3>
-              <div className="text-4xl font-bold text-[#28a745] mb-4">
-                €999<span className="text-lg text-gray-400">/mo</span>
+              <div className="text-xl font-bold text-[#28a745] mb-4">
+                {language === 'en' ? 'Tailored rollout' : 'Progetto su misura'}
               </div>
               <ul className="text-left text-gray-300 space-y-2 mb-6">
                 <li className="flex items-center gap-2">
@@ -224,7 +224,7 @@ export function BuilderSection({ language }: BuilderSectionProps) {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#28a745]">✓</span>
-                  {language === 'en' ? 'Only 3% on sales' : 'Solo 3% sulle vendite'}
+                  {language === 'en' ? 'Scope and integrations defined together' : 'Perimetro e integrazioni definiti insieme'}
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#28a745]">✓</span>

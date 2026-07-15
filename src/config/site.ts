@@ -56,12 +56,12 @@ export const SITE_CONFIG = {
   },
   cta: {
     title: {
-      en: 'Join the Wave',
-      it: 'Unisciti all\'Onda'
+      en: 'Choose the problem, not the plan',
+      it: 'Scegli il problema, non il piano'
     },
     description: {
-      en: 'Use our tools for free. Pay when you scale. Or better: let\'s build the future together. We\'re looking for early believers — users who push our limits, partners who share our vision, investors who bet on builders. Small team, big output, zero bullshit. This ecosystem is just starting.',
-      it: 'Usa i nostri tool gratis. Paga quando scali. O meglio: costruiamo il futuro insieme. Cerchiamo early believers — utenti che spingano i nostri limiti, partner che condividano la visione, investitori che scommettano sui builder. Team piccolo, output grande, zero bullshit. Questo ecosistema è solo all\'inizio.'
+      en: 'Each 3ASY product has its own users, maturity and way in.',
+      it: 'Ogni prodotto 3ASY ha utenti, maturità e modalità di accesso proprie.'
     },
     buttonText: {
       en: 'Let\'s Talk',
