@@ -4,6 +4,7 @@
   --brand: #28a745;
   --brand-dark: #218838;
   --ink: #0a0f0a;
+  --deployment-recovery: 1;
 }
 
 html {

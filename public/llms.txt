@@ -1,26 +1,32 @@
 # 3ASY
 
-> 3ASY is the software product line of 3FESTO SRL, an Italian technology company based in Bologna. The team builds practical AI-assisted tools from real operational needs and additive-manufacturing expertise.
+> 3ASY is the software product line of 3FESTO SRL, an Italian technology company based in Bologna. We build practical, AI-assisted tools that solve real operational problems, drawing on hands-on experience in additive manufacturing and day-to-day company operations.
 
-Canonical website: https://www.3asy.it/
-English website: https://www.3asy.it/en/
-Company: https://www.3festo.com/
-Public source repository: https://github.com/3FESTO/3ASY-LANDING
-Industrial additive-manufacturing platform: https://www.any3dp.com/
-Contact: info@3festo.com
+Each product starts from a concrete need we faced ourselves, ships fast, and is validated in real use before it is offered to others. The line spans mature in-production software, public pilots, early-stage betas and long-term research.
+
+- Canonical site (Italian): https://www.3asy.it/
+- English site: https://www.3asy.it/en/
+- Status page: https://www.3asy.it/status
+- Parent company: https://www.3festo.com/
+- Contact: info@3festo.com
 
 ## Products
 
-- [3ASYHR](https://hr.3asy.app/): attendance, calendar-based automatic timesheets, leave approvals, company device inventory, budget reconciliation and real profitability by resource. Industrially tested for one year with 30+ people across three companies.
-- [3ASYBNB](https://bnb.3asy.app/): guided monthly reporting for Italian short-term-rental property managers. It normalizes source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDFs. Selected beta; public launch planned for January 1, 2027.
-- [3ASYCAD](https://www.3asycad.com/): browser workspace for additive-manufacturing build preparation, including printability analysis, mesh repair, TPMS lattices, stiffness estimates and nesting. Long-term research and product framework; parts are already used in JUNO.AM operations.
-- [3ASYRESEARCH](https://research.3asy.app/): scientific publications transformed into plain-language explanations and interactive tools, with live cases for hybrid TPMS generation and MJF production-cost modeling.
-- [3ASYGIT](https://git.3asy.app/): a small public experiment that transforms GitHub contribution histories into 3D cities, solar systems and speed circuits.
+- [3ASYHR](https://hr.3asy.app/): **In production.** Attendance and HR platform that turns calendar activity into validated timesheets, handles leave approvals and device inventory, and surfaces the real cost and margin of every resource. Running daily with 30+ people across three companies for over a year.
+- [3ASYBNB](https://bnb.3asy.app/): **Selected beta.** Guided month-end reporting for short-term-rental property managers: it normalizes mixed source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDF reports. Public launch planned for January 1, 2027.
+- [3ASYCAD](https://www.3asycad.com/): **Long-term vision.** Browser workspace for additive-manufacturing build preparation — printability scoring, mesh repair, TPMS lattices, stiffness estimates and nesting — built for AM professionals from the same expertise behind ANY3DP.
+- [3ASYGIT](https://git.3asy.app/): **Public pilot.** A finished, playful experiment that turns a GitHub contribution history into an explorable 3D city, solar system or speed circuit.
+- [3ASYRESEARCH](https://research.3asy.app/): **Early stage.** Research papers reworked into plain-language explanations and interactive tools, with live cases for hybrid TPMS generation and MJF production-cost modeling.
 
-## Provenance
+## Optional
 
-- Publisher: 3FESTO SRL
-- Location: Bologna, Emilia-Romagna, Italy
+- [ANY3DP](https://www.any3dp.com/): 3FESTO's flagship industrial additive-manufacturing platform (the sister line to 3ASY).
+- [Source repository](https://github.com/3FESTO/3ASY-LANDING): public source of this landing site.
+- [Sitemap](https://www.3asy.it/sitemap.xml)
+
+## Notes
+
+- Publisher: 3FESTO SRL — Bologna, Emilia-Romagna, Italy
 - Languages: Italian and English
+- Product maturity ranges from in-production to experimental; verify current status and details on each linked product site.
 - Last reviewed: 2026-07-15
-- Product details and status should be verified on each linked product website.

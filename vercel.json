@@ -4,6 +4,35 @@
   "framework": "vite",
   "redirects": [
     {
+      "source": "/lander",
+      "destination": "https://www.3asy.it/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "3asy.app" }],
+      "destination": "https://www.3asy.it/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.3asy.app" }],
+      "destination": "https://www.3asy.it/",
+      "permanent": true
+    },
+    {
+      "source": "/en/",
+      "has": [{ "type": "host", "value": "3asy.app" }],
+      "destination": "https://www.3asy.it/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/",
+      "has": [{ "type": "host", "value": "www.3asy.app" }],
+      "destination": "https://www.3asy.it/en/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "3asy.it" }],
       "destination": "https://www.3asy.it/:path*",
