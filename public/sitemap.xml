@@ -7,13 +7,13 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.3asy.it/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.3asy.it/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.3asy.it/" />
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.3asy.it/og-image.png</image:loc>
-      <image:title>3ASY — Strumenti AI per il mondo reale</image:title>
-      <image:caption>La linea software AI di 3FESTO: 3HR, 3BNB, + small projects 3ASYRESEARCH e 3ASYGIT.</image:caption>
+      <image:title>3ASY — Software per HR e property manager</image:title>
+      <image:caption>La linea software di 3FE DEV: due prodotti, 3HR e 3BNB, e due progetti pubblici, 3ASYRESEARCH e 3ASYGIT.</image:caption>
     </image:image>
   </url>
   <url>
@@ -21,13 +21,13 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://www.3asy.it/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.3asy.it/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.3asy.it/" />
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://www.3asy.it/og-image.png</image:loc>
-      <image:title>3ASY — AI tools for the real world</image:title>
-      <image:caption>The AI software line by 3FESTO: 3HR, 3BNB, + small projects3ASYRESEARCH and 3ASYGIT.</image:caption>
+      <image:title>3ASY — Software for HR and property managers</image:title>
+      <image:caption>The software line by 3FE DEV: two products, 3HR and 3BNB, and two public projects, 3ASYRESEARCH and 3ASYGIT.</image:caption>
     </image:image>
   </url>
 </urlset>

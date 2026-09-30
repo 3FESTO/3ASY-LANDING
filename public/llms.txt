@@ -1,31 +1,33 @@
 # 3ASY
 
-> 3ASY is the software product line of 3FESTO SRL, an Italian technology company based in Bologna. We build practical, AI-assisted tools that solve real operational problems, drawing on hands-on experience in additive manufacturing and day-to-day company operations.
+> 3ASY is the software line by 3FE DEV, the development team at 3FESTO SRL, an independent Italian technology company based in Bologna. The current portfolio is deliberately small: two operational products and two public experimental projects.
 
-Each product starts from a concrete need we faced ourselves, ships fast, and is validated in real use before it is offered to others. The line spans mature in-production software, public pilots, early-stage betas and long-term research.
+## Official entities
 
-- Canonical site (Italian): https://www.3asy.it/
-- English site: https://www.3asy.it/en/
-- Status page: https://www.3asy.it/status
+- 3ASY website (Italian, canonical): https://www.3asy.it/
+- 3ASY website (English): https://www.3asy.it/en/
+- 3FE DEV: the software development team at 3FESTO
+- Legal publisher: 3FESTO SRL, Bologna, Emilia-Romagna, Italy
 - Parent company: https://www.3festo.com/
+- Industrial product line: https://www.any3dp.com/
+- Public source: https://github.com/3FESTO/3ASY-LANDING
 - Contact: info@3festo.com
 
 ## Products
 
-- [3HR](https://hr.3asy.app/): **In production.** Attendance and HR platform that turns calendar activity into validated timesheets, handles leave approvals and device inventory, and surfaces the real cost and margin of every resource. Running daily with 30+ people across three companies for over a year.
-- [3BNB](https://bnb.3asy.app/): **Selected beta.** Guided month-end reporting for short-term-rental property managers: it normalizes mixed source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDF reports. Public launch planned for January 1, 2027.
-- [3ASYGIT](https://git.3asy.app/): **Public pilot.** A finished, playful experiment that turns a GitHub contribution history into an explorable 3D city, solar system or speed circuit.
-- [3ASYRESEARCH](https://research.3asy.app/): **Early stage.** Research papers reworked into plain-language explanations and interactive tools, with live cases for hybrid TPMS generation and MJF production-cost modeling.
+- [3HR](https://www.3hr.it/): **In operational use.** A workspace for attendance, calendar-based timesheets, leave approvals, company device inventory, and cost and margin visibility by resource. It is used across three companies and more than 30 people.
+- [3BNB](https://bnb.3asy.app/): **Selected beta.** A guided month-end workflow for short-term-rental property managers. It reads mixed source documents, flags anomalies, applies explicit allocation rules, and prepares owner reports. Public launch is planned for January 1, 2027.
 
-## Optional
+## Public projects
 
-- [ANY3DP](https://www.any3dp.com/): 3FESTO's flagship industrial additive-manufacturing platform (the sister line to 3ASY).
-- [Source repository](https://github.com/3FESTO/3ASY-LANDING): public source of this landing site.
-- [Sitemap](https://www.3asy.it/sitemap.xml)
+- [3ASYRESEARCH](https://research.3asy.app/): **Early experiment.** Research papers turned into plain-language explanations and interactive tools. Two live cases cover hybrid TPMS structures and MJF production-cost modelling.
+- [3ASYGIT](https://git.3asy.app/): **Public experiment.** Public GitHub contribution histories turned into explorable 3D cities, solar systems, and speed circuits.
 
-## Notes
+## Product principles
 
-- Publisher: 3FESTO SRL — Bologna, Emilia-Romagna, Italy
-- Languages: Italian and English
-- Product maturity ranges from in-production to experimental; verify current status and details on each linked product site.
-- Last reviewed: 2026-07-15
+- 3HR and 3BNB are the only products in the current 3ASY offer.
+- 3ASYRESEARCH and 3ASYGIT are projects, not commercial product claims.
+- AI is used where it supports a clear workflow; explicit, deterministic rules are used where control and traceability matter.
+- Product maturity and access differ: 3HR is available through a focused demo, while 3BNB is in a selected beta.
+
+Last reviewed: 2026-09-30

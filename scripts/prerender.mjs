@@ -24,10 +24,10 @@ const pages = [
     language: 'it',
     path: '/',
     output: templatePath,
-    title: '3ASY — Strumenti AI per il mondo reale | 3FESTO',
-    description: 'La linea software AI di 3FESTO, dai creatori di ANY3DP. Due prodotti concreti: 3HR, 3BNB + small projects 3ASYGIT e 3ASYRESEARCH.',
-    keywords: 'strumenti AI italiani, software HR, timesheet automatici, gestione ferie, marginalità risorse, rendicontazione affitti brevi, property manager, manifattura additiva, stampabilità 3D, lattice TPMS, ricerca interattiva',
-    imageAlt: '3ASY, strumenti AI italiani per HR, affitti brevi, manifattura additiva e ricerca',
+    title: '3ASY — Software per HR e property manager | 3FE DEV',
+    description: 'La linea software di 3FE DEV, il team di sviluppo di 3FESTO: due prodotti operativi, 3HR e 3BNB, e due piccoli progetti pubblici. Made in Bologna.',
+    keywords: '3ASY, 3FESTO, software HR, timesheet da calendario, gestione presenze, marginalità risorse, rendicontazione affitti brevi, property manager, automazione aziendale, software italiano',
+    imageAlt: '3ASY di 3FE DEV: due prodotti software e due progetti pubblici',
     locale: 'it_IT',
     alternateLocale: 'en_US',
   },
@@ -35,10 +35,10 @@ const pages = [
     language: 'en',
     path: '/en/',
     output: resolve(outputDirectory, 'en', 'index.html'),
-    title: '3ASY — AI tools for the real world | 3FESTO',
-    description: 'The AI software line by 3FESTO, makers of ANY3DP. Four focused products: 3HR, 3BNB, 3ASYGIT and 3ASYRESEARCH.',
-    keywords: 'Italian AI tools, HR software, automatic timesheets, leave management, resource profitability, short-term rental reporting, property managers, additive manufacturing, 3D printability, TPMS lattice, interactive research',
-    imageAlt: '3ASY, Italian AI tools for HR, short-term rentals, additive manufacturing and research',
+    title: '3ASY — Software for HR and property managers | 3FE DEV',
+    description: 'The software line by 3FE DEV, the development team at 3FESTO: two operational products, 3HR and 3BNB, and two small public projects. Made in Bologna.',
+    keywords: '3ASY, 3FESTO, HR software, calendar timesheets, attendance management, resource profitability, short-term rental reporting, property managers, business automation, Italian software',
+    imageAlt: '3ASY by 3FE DEV: two software products and two public projects',
     locale: 'en_US',
     alternateLocale: 'it_IT',
   },
@@ -46,21 +46,51 @@ const pages = [
 
 const productData = {
   it: [
-    ['3HR', 'BusinessApplication', 'Presenze, timesheet automatici da calendario, ferie, device aziendali e marginalità reale per risorsa.', 'https://hr.3asy.app'],
-    ['3BNB', 'BusinessApplication', 'Rendicontazione mensile per property manager: documenti normalizzati, calcoli deterministici e PDF per il proprietario.', 'https://bnb.3asy.app'],
-    ['3ASYRESEARCH', 'EducationApplication', 'Paper scientifici trasformati in spiegazioni accessibili e strumenti interattivi.', 'https://research.3asy.app'],
-    ['3ASYGIT', 'DeveloperApplication', 'Contribuzioni GitHub trasformate in città 3D, sistemi solari e circuiti.', 'https://git.3asy.app'],
+    ['3HR', 'BusinessApplication', 'Presenze, timesheet da calendario, ferie, device aziendali e marginalità per risorsa.', 'https://www.3hr.it/'],
+    ['3BNB', 'BusinessApplication', 'Rendicontazione mensile per property manager con documenti normalizzati, regole esplicite e PDF per il proprietario.', 'https://bnb.3asy.app/'],
   ],
   en: [
-    ['3HR', 'BusinessApplication', 'Attendance, automatic calendar-based timesheets, leave, company devices and real profitability by resource.', 'https://hr.3asy.app'],
-    ['3BNB', 'BusinessApplication', 'Monthly reporting for property managers: normalized documents, deterministic calculations and owner-ready PDFs.', 'https://bnb.3asy.app'],
-    ['3ASYRESEARCH', 'EducationApplication', 'Scientific papers transformed into accessible explanations and interactive tools.', 'https://research.3asy.app'],
-    ['3ASYGIT', 'DeveloperApplication', 'GitHub contributions transformed into 3D cities, solar systems and speed circuits.', 'https://git.3asy.app'],
+    ['3HR', 'BusinessApplication', 'Attendance, calendar-based timesheets, leave, company devices and profitability by resource.', 'https://www.3hr.it/'],
+    ['3BNB', 'BusinessApplication', 'Monthly reporting for property managers with normalized documents, explicit rules and owner-ready PDFs.', 'https://bnb.3asy.app/'],
   ],
 };
 
+const projectData = {
+  it: [
+    ['3ASYRESEARCH', 'EducationApplication', 'Paper scientifici trasformati in spiegazioni accessibili e strumenti interattivi.', 'https://research.3asy.app/'],
+    ['3ASYGIT', 'DeveloperApplication', 'Contribuzioni GitHub trasformate in città 3D, sistemi solari e circuiti.', 'https://git.3asy.app/'],
+  ],
+  en: [
+    ['3ASYRESEARCH', 'EducationApplication', 'Scientific papers transformed into accessible explanations and interactive tools.', 'https://research.3asy.app/'],
+    ['3ASYGIT', 'DeveloperApplication', 'GitHub contributions transformed into 3D cities, solar systems and speed circuits.', 'https://git.3asy.app/'],
+  ],
+};
+
+function applicationList(items, name, organizationId, options = {}) {
+  return {
+    '@type': 'ItemList',
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map(([applicationName, applicationCategory, description, url], index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: applicationName,
+        applicationCategory,
+        operatingSystem: 'Web',
+        description,
+        url,
+        publisher: { '@id': organizationId },
+        ...options,
+      },
+    })),
+  };
+}
+
 function structuredData(page, canonicalUrl) {
   const organizationId = 'https://www.3festo.com/#organization';
+  const studioId = 'https://www.3asy.it/#3fe-dev';
   const websiteId = 'https://www.3asy.it/#website';
   const brandId = 'https://www.3asy.it/#brand';
 
@@ -86,8 +116,18 @@ function structuredData(page, canonicalUrl) {
           addressCountry: 'IT',
         },
         areaServed: ['Italy', 'Worldwide'],
-        knowsAbout: ['Artificial intelligence', 'Additive manufacturing', 'HR automation', '3D geometry processing', 'Business process automation'],
+        knowsAbout: ['Artificial intelligence', 'Additive manufacturing', 'HR automation', 'Business process automation'],
         sameAs: ['https://www.any3dp.com/', 'https://github.com/3FESTO/3ASY-LANDING'],
+        subOrganization: { '@id': studioId },
+        brand: { '@id': brandId },
+      },
+      {
+        '@type': 'Organization',
+        '@id': studioId,
+        name: '3FE DEV',
+        url: 'https://www.3asy.it/',
+        description: page.language === 'it' ? 'Il team di sviluppo software di 3FESTO.' : 'The software development team at 3FESTO.',
+        parentOrganization: { '@id': organizationId },
         brand: { '@id': brandId },
       },
       {
@@ -95,8 +135,8 @@ function structuredData(page, canonicalUrl) {
         '@id': brandId,
         name: '3ASY',
         url: 'https://www.3asy.it/',
-        slogan: page.language === 'it' ? 'Strumenti AI per il mondo reale' : 'AI tools for the real world',
-        parentOrganization: { '@id': organizationId },
+        slogan: page.language === 'it' ? 'Strumenti digitali, costruiti su problemi reali' : 'Digital tools, built around real problems',
+        parentOrganization: { '@id': studioId },
       },
       {
         '@type': 'WebSite',
@@ -104,7 +144,7 @@ function structuredData(page, canonicalUrl) {
         url: 'https://www.3asy.it/',
         name: '3ASY',
         inLanguage: ['it', 'en'],
-        publisher: { '@id': organizationId },
+        publisher: { '@id': studioId },
       },
       {
         '@type': 'WebPage',
@@ -114,26 +154,21 @@ function structuredData(page, canonicalUrl) {
         description: page.description,
         inLanguage: page.language,
         isPartOf: { '@id': websiteId },
-        about: [{ '@id': brandId }, { '@id': organizationId }],
-        dateModified: '2026-07-15',
-        mainEntity: {
-          '@type': 'ItemList',
-          name: page.language === 'it' ? 'Prodotti 3ASY' : '3ASY products',
-          numberOfItems: 4,
-          itemListElement: productData[page.language].map(([name, applicationCategory, description, url], index) => ({
-            '@type': 'ListItem',
-            position: index + 1,
-            item: {
-              '@type': 'SoftwareApplication',
-              name,
-              applicationCategory,
-              operatingSystem: 'Web',
-              description,
-              url,
-              publisher: { '@id': organizationId },
-            },
-          })),
-        },
+        about: [{ '@id': brandId }, { '@id': studioId }, { '@id': organizationId }],
+        dateModified: '2026-09-30',
+        mainEntity: [
+          applicationList(
+            productData[page.language],
+            page.language === 'it' ? 'I due prodotti 3ASY' : 'The two 3ASY products',
+            studioId,
+          ),
+          applicationList(
+            projectData[page.language],
+            page.language === 'it' ? 'I due progetti pubblici 3ASY' : 'The two public 3ASY projects',
+            studioId,
+            { isAccessibleForFree: true },
+          ),
+        ],
       },
     ],
   };
