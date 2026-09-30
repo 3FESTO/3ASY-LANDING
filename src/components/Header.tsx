@@ -6,19 +6,36 @@ interface HeaderProps {
 }
 
 export function Header({ language, onToggleLanguage }: HeaderProps) {
-  return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/80">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <span className="text-2xl text-[#28a745]">◆ ▲</span>
-          <span className="text-xl md:text-2xl font-bold text-gray-900">3ASY</span>
-          <span className="hidden sm:inline text-xs text-gray-400 border-l border-gray-200 pl-3">
-            by{' '}
-            <a href="https://www.3festo.com/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#28a745] font-semibold">3FE</a>
-          </span>
-        </div>
+  const labels = language === 'it'
+    ? { products: 'Prodotti', projects: 'Progetti', approach: 'Metodo', contact: 'Contatti' }
+    : { products: 'Products', projects: 'Projects', approach: 'Approach', contact: 'Contact' };
 
-        <LanguageGlobe language={language} onClick={onToggleLanguage} />
+  return (
+    <header className="sticky top-0 z-50 border-b border-gray-200/80 bg-white/90 backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+        <a
+          href={language === 'it' ? '/' : '/en/'}
+          className="inline-flex items-center gap-3 rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#218838]"
+          aria-label={language === 'it' ? '3ASY, torna alla home' : '3ASY, back to home'}
+        >
+          <span className="flex items-center gap-1 text-lg text-[#28a745]" aria-hidden="true">
+            <span>◆</span><span className="text-sm">▲</span>
+          </span>
+          <span className="text-xl font-bold tracking-[-0.03em] text-gray-950">3ASY</span>
+          <span className="hidden border-l border-gray-200 pl-3 text-[10px] font-bold uppercase tracking-[0.14em] text-gray-400 sm:inline">
+            by 3FE DEV
+          </span>
+        </a>
+
+        <div className="flex items-center gap-3 md:gap-7">
+          <nav className="hidden items-center gap-6 text-sm font-semibold text-gray-600 md:flex" aria-label={language === 'it' ? 'Navigazione principale' : 'Main navigation'}>
+            <a className="transition-colors hover:text-gray-950" href="#products">{labels.products}</a>
+            <a className="transition-colors hover:text-gray-950" href="#projects">{labels.projects}</a>
+            <a className="transition-colors hover:text-gray-950" href="#approach">{labels.approach}</a>
+            <a className="transition-colors hover:text-gray-950" href="#contact">{labels.contact}</a>
+          </nav>
+          <LanguageGlobe language={language} onClick={onToggleLanguage} />
+        </div>
       </div>
     </header>
   );
