@@ -56,7 +56,7 @@ export const apps: App[] = [
   {
     id: '3asyhr',
     icon: '👥',
-    title: '3ASYHR',
+    title: '3HR',
     author: 'MicheleMikyMonti',
     appType: 'WebApp',
     status: 'production',
@@ -123,7 +123,7 @@ export const apps: App[] = [
   {
     id: '3asybnb',
     icon: 'KeyRound',
-    title: '3ASYBNB',
+    title: '3BNB',
     author: 'MicheleMikyMonti',
     appType: 'Utility',
     status: 'early',
@@ -184,69 +184,6 @@ export const apps: App[] = [
       whyItMatters: {
         en: 'It started with a practical request: take half a day of repetitive month-end work and turn it into a guided, reliable flow. It is outside our core industry, and that is exactly why it belongs here.',
         it: 'È partito da una necessità concreta: trasformare mezza giornata di lavoro ripetitivo a fine mese in un flusso guidato e affidabile. È fuori dal nostro settore principale, ed è proprio per questo che appartiene a questa raccolta.'
-      }
-    }
-  },
-  {
-    id: '3asycad',
-    icon: '🎨',
-    title: '3ASYCAD',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    status: 'vision',
-    theme: 'purple',
-    tag: {
-      en: 'LONG-TERM VISION',
-      it: 'VISIONE A LUNGO TERMINE'
-    },
-    subtitle: {
-      en: '3D PRINTABILITY ENGINE',
-      it: 'ENGINE DI STAMPABILITÀ 3D'
-    },
-    description: {
-      en: 'A browser workspace for preparing additive-manufacturing builds: inspect geometry, repair meshes, generate lattices, estimate stiffness and arrange parts in the build volume. No workstation install or license server.',
-      it: 'Un ambiente browser per preparare build di manifattura additiva: ispeziona geometrie, ripara mesh, genera lattice, stima la rigidezza e dispone le parti nel volume di stampa. Senza installazioni workstation o license server.'
-    },
-    origin: {
-      en: 'This is the hard, long-term project. Parts of the framework already support 3D operations at JUNO.AM and give us room to experiment beyond the ANY3DP MES.',
-      it: 'È il progetto difficile, a lungo termine. Parti del framework supportano già operazioni 3D in JUNO.AM e ci danno uno spazio in cui sperimentare anche oltre il MES di ANY3DP.'
-    },
-    features: {
-      en: [
-        'Printability score, wall thickness and critical 3D markers',
-        'Three-pass repair with safe rollback when geometry worsens',
-        'TPMS and variable-density lattices with stiffness estimates',
-        'Nesting, collision checks and per-printer build volumes'
-      ],
-      it: [
-        'Score di stampabilità, spessori e marker critici nel 3D',
-        'Riparazione in tre passaggi con rollback se la mesh peggiora',
-        'Lattice TPMS e a densità variabile con stima della rigidezza',
-        'Nesting, controllo collisioni e volumi macchina configurabili'
-      ]
-    },
-    ctaText: {
-      en: 'DISCOVER',
-      it: 'SCOPRI'
-    },
-    url: 'https://www.3asycad.com/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '🌐 Browser-based — no install needed',
-          '🔧 Printability score & 3-pass auto-repair',
-          '🧬 TPMS lattice (Gyroid, Schwarz P, Diamond, IWP)'
-        ],
-        it: [
-          '🌐 Browser-based — nessuna installazione',
-          '🔧 Score di stampabilità & auto-repair a 3 passaggi',
-          '🧬 Lattice TPMS (Gyroid, Schwarz P, Diamond, IWP)'
-        ]
-      },
-      whyItMatters: {
-        en: 'Built for AM professionals — service bureaus, OEMs, engineers. A long-term play in the territory of pro tools, born from the same 3D expertise behind ANY3DP.',
-        it: 'Pensato per professionisti AM — service bureau, OEM, ingegneri. Una visione a lungo termine nel territorio dei tool pro, nata dalla stessa expertise 3D di ANY3DP.'
       }
     }
   },

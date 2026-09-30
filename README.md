@@ -25,19 +25,18 @@
 
 ## 🎯 The 3ASY line
 
-Not a pile of demos. Five distinct products, each with its own color, purpose and horizon.
+Not a pile of demos. Four distinct products, each with its own color, purpose and horizon.
 
 | Product | What it does | Stage |
 |---------|--------------|-------|
-| **[3ASYHR](https://hr.3asy.app)** | Attendance, calendar-based timesheets, leave approvals, device inventory and real margin by resource | 🔵 Industrially tested for one year with JUNO.AM |
-| **[3ASYBNB](https://bnb.3asy.app)** | Monthly owner reports for short-term rental property managers, from source documents to ready-to-send PDFs | 🟡 Selected beta · public launch January 1, 2027 |
-| **[3ASYCAD](https://www.3asycad.com)** | Browser-based 3D printability framework: inspect, repair, lattice (TPMS), nesting | 🟣 Long-term, high-difficulty project; parts already used by JUNO.AM |
+| **[3HR](https://hr.3asy.app)** | Attendance, calendar-based timesheets, leave approvals, device inventory and real margin by resource | 🔵 Industrially tested for one year with JUNO.AM |
+| **[3BNB](https://bnb.3asy.app)** | Monthly owner reports for short-term rental property managers, from source documents to ready-to-send PDFs | 🟡 Selected beta · public launch January 1, 2027 |
 | **[3ASYRESEARCH](https://research.3asy.app)** | Complex research papers → interactive experiences and usable tools | 🟢 Small research experiment |
 | **[3ASYGIT](https://git.3asy.app)** | Turns your GitHub contributions into 3D art and audio | 🟢 Small public experiment |
 
 ### Why BNB?
 
-Most 3ASY products grow from our work in industry and 3D. **3ASYBNB** came from a different direction: property managers needed a reliable way to turn monthly statements, payouts and cleaning invoices into clear owner reports. It was a real request, so we built the utility.
+Most 3ASY products grow from our work in industry and 3D. **3BNB** came from a different direction: property managers needed a reliable way to turn monthly statements, payouts and cleaning invoices into clear owner reports. It was a real request, so we built the utility.
 
 3ASY Ai reads and normalizes the inputs; deterministic rules handle commissions, taxes and allocations; the final PDFs remain traceable and repeatable. The product is currently in beta with a small group of selected users, ahead of the public launch on **January 1, 2027**.
 

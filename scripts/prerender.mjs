@@ -25,7 +25,7 @@ const pages = [
     path: '/',
     output: templatePath,
     title: '3ASY — Strumenti AI per il mondo reale | 3FESTO',
-    description: 'La linea software AI di 3FESTO, dai creatori di ANY3DP. Cinque prodotti concreti: 3ASYHR, 3ASYBNB, 3ASYCAD, 3ASYGIT e 3ASYRESEARCH.',
+    description: 'La linea software AI di 3FESTO, dai creatori di ANY3DP. Due prodotti concreti: 3HR, 3BNB + small projects 3ASYGIT e 3ASYRESEARCH.',
     keywords: 'strumenti AI italiani, software HR, timesheet automatici, gestione ferie, marginalità risorse, rendicontazione affitti brevi, property manager, manifattura additiva, stampabilità 3D, lattice TPMS, ricerca interattiva',
     imageAlt: '3ASY, strumenti AI italiani per HR, affitti brevi, manifattura additiva e ricerca',
     locale: 'it_IT',
@@ -36,7 +36,7 @@ const pages = [
     path: '/en/',
     output: resolve(outputDirectory, 'en', 'index.html'),
     title: '3ASY — AI tools for the real world | 3FESTO',
-    description: 'The AI software line by 3FESTO, makers of ANY3DP. Five focused products: 3ASYHR, 3ASYBNB, 3ASYCAD, 3ASYGIT and 3ASYRESEARCH.',
+    description: 'The AI software line by 3FESTO, makers of ANY3DP. Four focused products: 3HR, 3BNB, 3ASYGIT and 3ASYRESEARCH.',
     keywords: 'Italian AI tools, HR software, automatic timesheets, leave management, resource profitability, short-term rental reporting, property managers, additive manufacturing, 3D printability, TPMS lattice, interactive research',
     imageAlt: '3ASY, Italian AI tools for HR, short-term rentals, additive manufacturing and research',
     locale: 'en_US',
@@ -46,16 +46,14 @@ const pages = [
 
 const productData = {
   it: [
-    ['3ASYHR', 'BusinessApplication', 'Presenze, timesheet automatici da calendario, ferie, device aziendali e marginalità reale per risorsa.', 'https://hr.3asy.app'],
-    ['3ASYBNB', 'BusinessApplication', 'Rendicontazione mensile per property manager: documenti normalizzati, calcoli deterministici e PDF per il proprietario.', 'https://bnb.3asy.app'],
-    ['3ASYCAD', 'DesignApplication', 'Ambiente browser per analisi di stampabilità, riparazione mesh, lattice TPMS e nesting nella manifattura additiva.', 'https://www.3asycad.com'],
+    ['3HR', 'BusinessApplication', 'Presenze, timesheet automatici da calendario, ferie, device aziendali e marginalità reale per risorsa.', 'https://hr.3asy.app'],
+    ['3BNB', 'BusinessApplication', 'Rendicontazione mensile per property manager: documenti normalizzati, calcoli deterministici e PDF per il proprietario.', 'https://bnb.3asy.app'],
     ['3ASYRESEARCH', 'EducationApplication', 'Paper scientifici trasformati in spiegazioni accessibili e strumenti interattivi.', 'https://research.3asy.app'],
     ['3ASYGIT', 'DeveloperApplication', 'Contribuzioni GitHub trasformate in città 3D, sistemi solari e circuiti.', 'https://git.3asy.app'],
   ],
   en: [
-    ['3ASYHR', 'BusinessApplication', 'Attendance, automatic calendar-based timesheets, leave, company devices and real profitability by resource.', 'https://hr.3asy.app'],
-    ['3ASYBNB', 'BusinessApplication', 'Monthly reporting for property managers: normalized documents, deterministic calculations and owner-ready PDFs.', 'https://bnb.3asy.app'],
-    ['3ASYCAD', 'DesignApplication', 'Browser workspace for printability analysis, mesh repair, TPMS lattices and additive-manufacturing nesting.', 'https://www.3asycad.com'],
+    ['3HR', 'BusinessApplication', 'Attendance, automatic calendar-based timesheets, leave, company devices and real profitability by resource.', 'https://hr.3asy.app'],
+    ['3BNB', 'BusinessApplication', 'Monthly reporting for property managers: normalized documents, deterministic calculations and owner-ready PDFs.', 'https://bnb.3asy.app'],
     ['3ASYRESEARCH', 'EducationApplication', 'Scientific papers transformed into accessible explanations and interactive tools.', 'https://research.3asy.app'],
     ['3ASYGIT', 'DeveloperApplication', 'GitHub contributions transformed into 3D cities, solar systems and speed circuits.', 'https://git.3asy.app'],
   ],
@@ -121,7 +119,7 @@ function structuredData(page, canonicalUrl) {
         mainEntity: {
           '@type': 'ItemList',
           name: page.language === 'it' ? 'Prodotti 3ASY' : '3ASY products',
-          numberOfItems: 5,
+          numberOfItems: 4,
           itemListElement: productData[page.language].map(([name, applicationCategory, description, url], index) => ({
             '@type': 'ListItem',
             position: index + 1,

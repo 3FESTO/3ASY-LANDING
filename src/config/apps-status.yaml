@@ -16,7 +16,7 @@ apps:
     repo: michelemonti/3ASYGIT
     notes: "GitHub contributions gamification"
 
-  - name: 3ASYHR
+  - name: 3HR
     status: wip
     startedAt: "2025-09"
     previewEnds: TBA

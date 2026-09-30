@@ -12,9 +12,8 @@ Each product starts from a concrete need we faced ourselves, ships fast, and is 
 
 ## Products
 
-- [3ASYHR](https://hr.3asy.app/): **In production.** Attendance and HR platform that turns calendar activity into validated timesheets, handles leave approvals and device inventory, and surfaces the real cost and margin of every resource. Running daily with 30+ people across three companies for over a year.
-- [3ASYBNB](https://bnb.3asy.app/): **Selected beta.** Guided month-end reporting for short-term-rental property managers: it normalizes mixed source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDF reports. Public launch planned for January 1, 2027.
-- [3ASYCAD](https://www.3asycad.com/): **Long-term vision.** Browser workspace for additive-manufacturing build preparation — printability scoring, mesh repair, TPMS lattices, stiffness estimates and nesting — built for AM professionals from the same expertise behind ANY3DP.
+- [3HR](https://hr.3asy.app/): **In production.** Attendance and HR platform that turns calendar activity into validated timesheets, handles leave approvals and device inventory, and surfaces the real cost and margin of every resource. Running daily with 30+ people across three companies for over a year.
+- [3BNB](https://bnb.3asy.app/): **Selected beta.** Guided month-end reporting for short-term-rental property managers: it normalizes mixed source documents, applies deterministic financial and tax rules, flags anomalies and generates owner-ready PDF reports. Public launch planned for January 1, 2027.
 - [3ASYGIT](https://git.3asy.app/): **Public pilot.** A finished, playful experiment that turns a GitHub contribution history into an explorable 3D city, solar system or speed circuit.
 - [3ASYRESEARCH](https://research.3asy.app/): **Early stage.** Research papers reworked into plain-language explanations and interactive tools, with live cases for hybrid TPMS generation and MJF production-cost modeling.
 

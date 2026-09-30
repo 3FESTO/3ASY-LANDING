@@ -13,13 +13,12 @@ export function AppsSection({ language }: AppsSectionProps) {
       title: 'We do not start with ideas. We start with work.',
       subtitle: 'Every 3ASY product begins with a real task, a repeated friction or a question worth testing. We build the first useful version, use it ourselves and let reality decide how far it should go.',
       paths: [
-        ['01', 'An internal need', 'HR and CAD grow from our daily operations in people management and additive manufacturing.'],
+        ['01', 'An internal need', 'HR grows from our daily operations in people management.'],
         ['02', 'A request from outside', 'BNB proves that a clear problem deserves an answer, even beyond our usual industry.'],
         ['03', 'An idea to test', 'Research and Git stay small on purpose: one hypothesis, one experience, something real to try.'],
       ],
       core: 'CORE PRODUCT',
       utilities: 'A USEFUL DETOUR',
-      lab: 'THE 3D LAB',
       side: 'SMALLER EXPERIMENTS',
       sideNote: 'Compact projects, free to explore a single idea well.',
     },
@@ -28,13 +27,12 @@ export function AppsSection({ language }: AppsSectionProps) {
       title: 'Non partiamo dalle idee. Partiamo dal lavoro.',
       subtitle: 'Ogni prodotto 3ASY nasce da un’attività reale, da un attrito che si ripete o da una domanda che vale la pena verificare. Costruiamo la prima versione utile, la usiamo e lasciamo che sia la realtà a dirci fin dove portarla.',
       paths: [
-        ['01', 'Una necessità interna', 'HR e CAD crescono dentro il nostro lavoro quotidiano: gestione delle persone e manifattura additiva.'],
+        ['01', 'Una necessità interna', 'HR cresce dentro il nostro lavoro quotidiano: la gestione delle persone.'],
         ['02', 'Una richiesta da fuori', 'BNB dimostra che un problema chiaro merita una risposta, anche oltre il nostro settore abituale.'],
         ['03', 'Un’idea da verificare', 'Research e Git restano piccoli per scelta: un’ipotesi, un’esperienza, qualcosa di concreto da provare.'],
       ],
       core: 'IL PRODOTTO CENTRALE',
       utilities: 'UNA DEVIAZIONE UTILE',
-      lab: 'IL LABORATORIO 3D',
       side: 'ESPERIMENTI PIÙ PICCOLI',
       sideNote: 'Progetti compatti, liberi di esplorare bene una singola idea.',
     },
@@ -73,16 +71,12 @@ export function AppsSection({ language }: AppsSectionProps) {
             <p className="mb-4 text-[11px] font-bold text-[#806300]">02 / {content.utilities}</p>
             <ProductCard app={product('3asybnb')} language={language} variant="story" />
           </div>
-          <div className="lg:mt-20">
-            <p className="mb-4 text-[11px] font-bold text-[#6742b8]">03 / {content.lab}</p>
-            <ProductCard app={product('3asycad')} language={language} variant="story" />
-          </div>
 
         </div>
 
         <div className="border-t border-gray-300 pt-8">
           <div className="mb-6 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
-            <p className="text-[11px] font-bold text-[#1f8437]">04 / {content.side}</p>
+            <p className="text-[11px] font-bold text-[#1f8437]">03 / {content.side}</p>
             <p className="text-sm text-gray-500">{content.sideNote}</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2">

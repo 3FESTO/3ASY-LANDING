@@ -9,7 +9,7 @@ export function HeroSection({ language }: HeroSectionProps) {
   const content = hero.description[language];
 
   const stats = [
-    { value: '5', label: language === 'en' ? 'Products' : 'Prodotti' },
+    { value: '4', label: language === 'en' ? 'Products' : 'Prodotti' },
     { value: '∞', label: language === 'en' ? 'Ideas Ahead' : 'Idee in Arrivo' },
   ];
 

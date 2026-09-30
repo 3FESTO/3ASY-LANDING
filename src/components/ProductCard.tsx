@@ -62,8 +62,7 @@ const themes: Record<AppTheme, {
 const icons: Record<string, LucideIcon> = {
   '3asyhr': UsersRound,
   '3asybnb': KeyRound,
-  '3asycad': Boxes,
-  '3asyresearch': FlaskConical,
+    '3asyresearch': FlaskConical,
   '3asygit': GitBranch,
 };
 

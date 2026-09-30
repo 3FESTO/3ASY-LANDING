@@ -1,6 +1,5 @@
 import {
   ArrowUpRight,
-  Boxes,
   FlaskConical,
   GitBranch,
   KeyRound,
@@ -19,14 +18,14 @@ export function CTA({ language }: CTAProps) {
     en: {
       eyebrow: 'WHERE TO START',
       title: 'Choose the problem, not the plan.',
-      description: '3ASY is not one subscription with five logos. Each product has its own users, maturity and way in. Explore what is already open, bring us a real company workflow, or help shape the next release.',
+      description: '3ASY is not one subscription with four logos. Each product has its own users, maturity and way in. Explore what is already open, bring us a real company workflow, or help shape the next release.',
       liveTitle: 'Try what is already open',
-      liveDescription: 'Work on a 3D file in the browser, turn research into an interactive tool or give a GitHub profile a new shape. No sales call required.',
+      liveDescription: 'Turn research into an interactive tool or give a GitHub profile a new shape. No sales call required.',
       hrTitle: 'Bring HR into your company',
       hrDescription: 'Start from your calendars, attendance and approval flows. We map the process, show the JUNO.AM case and configure a focused demo for your team.',
       bnbTitle: 'Join the selected BNB beta',
       bnbDescription: 'For Italian short-term-rental property managers who want to test the month-end workflow before the public launch on January 1, 2027.',
-      explore: 'Open 3ASYCAD',
+      explore: 'Open 3ASYRESEARCH',
       demo: 'Request an HR demo',
       beta: 'Ask for beta access',
       footer: 'A different need?',
@@ -35,14 +34,14 @@ export function CTA({ language }: CTAProps) {
     it: {
       eyebrow: 'DA DOVE COMINCIARE',
       title: 'Scegli il problema, non il piano.',
-      description: '3ASY non è un unico abbonamento con cinque loghi. Ogni prodotto ha utenti, maturità e modalità di accesso proprie. Esplora ciò che è già aperto, portaci un processo aziendale reale oppure contribuisci a dare forma al prossimo rilascio.',
+      description: '3ASY non è un unico abbonamento con quattro loghi. Ogni prodotto ha utenti, maturità e modalità di accesso proprie. Esplora ciò che è già aperto, portaci un processo aziendale reale oppure contribuisci a dare forma al prossimo rilascio.',
       liveTitle: 'Prova ciò che è già aperto',
-      liveDescription: 'Lavora su un file 3D nel browser, trasforma una ricerca in uno strumento interattivo o dai una nuova forma a un profilo GitHub. Senza passare da una call commerciale.',
+      liveDescription: 'Trasforma una ricerca in uno strumento interattivo o dai una nuova forma a un profilo GitHub. Senza passare da una call commerciale.',
       hrTitle: 'Porta HR nella tua azienda',
       hrDescription: 'Partiamo da calendari, presenze e flussi approvativi. Mappiamo il processo, mostriamo il caso JUNO.AM e prepariamo una demo mirata per il tuo team.',
       bnbTitle: 'Entra nella beta selezionata BNB',
       bnbDescription: 'Per property manager italiani che vogliono provare il flusso di fine mese prima del lancio pubblico del 1 gennaio 2027.',
-      explore: 'Apri 3ASYCAD',
+      explore: 'Apri 3ASYRESEARCH',
       demo: 'Richiedi una demo HR',
       beta: 'Candidati alla beta',
       footer: 'Hai un bisogno diverso?',
@@ -68,14 +67,13 @@ export function CTA({ language }: CTAProps) {
         <div className="grid border-y border-white/20 lg:grid-cols-3">
           <article className="flex flex-col border-b border-white/20 py-8 lg:border-b-0 lg:border-r lg:pr-8">
             <div className="mb-8 flex items-center gap-3 text-[#5bd174]">
-              <Boxes className="size-6" aria-hidden="true" />
               <FlaskConical className="size-5" aria-hidden="true" />
               <GitBranch className="size-5" aria-hidden="true" />
             </div>
             <h3 className="mb-3 text-2xl font-bold">{content.liveTitle}</h3>
             <p className="mb-8 text-sm leading-relaxed text-gray-400">{content.liveDescription}</p>
             <div className="mt-auto flex flex-wrap gap-3">
-              <a href="https://cad.3asy.app/" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-[6px] bg-[#28a745] px-4 py-3 text-sm font-bold transition-colors hover:bg-[#218838]">
+              <a href="https://research.3asy.app/" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-[6px] bg-[#28a745] px-4 py-3 text-sm font-bold transition-colors hover:bg-[#218838]">
                 {content.explore}
                 <ArrowUpRight className="size-4" aria-hidden="true" />
               </a>
