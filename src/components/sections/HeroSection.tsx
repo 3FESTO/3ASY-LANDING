@@ -9,7 +9,11 @@ export function HeroSection({ language }: HeroSectionProps) {
   const content = language === 'it' ? {
     eyebrow: 'SOFTWARE UTILITIES · BOLOGNA, ITALIA',
     title: 'Strumenti digitali, costruiti su problemi reali.',
-    description: '3ASY è la linea software di 3FE DEV, il team di sviluppo di 3FESTO: due prodotti operativi e due piccoli progetti pubblici. Automazione e AI entrano solo dove rendono il lavoro più semplice, verificabile e utile.',
+    description: [
+      '3ASY è la linea software di ',
+      ', il team di sviluppo di ',
+      ': due prodotti operativi e due piccoli progetti pubblici. Automazione e AI entrano solo dove rendono il lavoro più semplice, verificabile e utile.',
+    ],
     primary: 'Scopri i prodotti',
     secondary: 'Il nostro lavoro industriale',
     products: 'prodotti',
@@ -18,7 +22,10 @@ export function HeroSection({ language }: HeroSectionProps) {
   } : {
     eyebrow: 'SOFTWARE UTILITIES · BOLOGNA, ITALY',
     title: 'Digital tools, built around real problems.',
-    description: '3ASY is the software line by 3FE DEV: two operational products and two small public projects. Automation and AI belong only where they make work simpler, verifiable and useful.',
+    description: [
+      '3ASY is the software line by ',
+      ': two operational products and two small public projects. Automation and AI belong only where they make work simpler, verifiable and useful.',
+    ],
     primary: 'Explore the products',
     secondary: 'Our industrial work',
     products: 'products',
@@ -37,7 +44,17 @@ export function HeroSection({ language }: HeroSectionProps) {
           <h1 className="max-w-4xl text-5xl font-bold leading-[0.98] tracking-[-0.055em] text-gray-950 sm:text-6xl md:text-7xl">
             {content.title}
           </h1>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">{content.description}</p>
+          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">
+            {content.description[0]}
+            <a href={SITE_CONFIG.company.website} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#18752d] underline decoration-current underline-offset-2 hover:text-[#125b23]">3FE DEV</a>
+            {content.description[1]}
+            {language === 'it' && (
+              <>
+                <a href={SITE_CONFIG.company.website} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#18752d] underline decoration-current underline-offset-2 hover:text-[#125b23]">3FESTO</a>
+                {content.description[2]}
+              </>
+            )}
+          </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#products" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-[#18752d] px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[#125b23] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#18752d]">
               {content.primary}

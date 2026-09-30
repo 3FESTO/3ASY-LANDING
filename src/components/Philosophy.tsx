@@ -1,4 +1,5 @@
 import { Bot, Crosshair, Gauge } from 'lucide-react';
+import { SITE_CONFIG } from '@/config/site';
 
 interface PhilosophyProps {
   language: 'en' | 'it';
@@ -8,7 +9,10 @@ export function Philosophy({ language }: PhilosophyProps) {
   const content = language === 'it' ? {
     eyebrow: 'COME LAVORIAMO',
     title: 'La tecnologia viene dopo il problema.',
-    description: '3FE DEV è il team di sviluppo software di 3FESTO, una piccola azienda tecnologica indipendente di Bologna. Siamo partiti dalla manifattura additiva con ANY3DP; 3ASY raccoglie il software nato dai processi che conosciamo direttamente o da richieste abbastanza concrete da meritare una risposta.',
+    description: [
+      '3FE DEV è il team di sviluppo software di ',
+      ', una piccola azienda tecnologica indipendente di Bologna. Siamo partiti dalla manifattura additiva con ANY3DP; 3ASY raccoglie il software nato dai processi che conosciamo direttamente o da richieste abbastanza concrete da meritare una risposta.',
+    ],
     principles: [
       { title: 'Partire dal lavoro', description: 'Osserviamo un processo reale prima di disegnare il prodotto.', Icon: Crosshair },
       { title: 'Rilasciare il necessario', description: 'Costruiamo una prima versione utile, misurabile e comprensibile.', Icon: Gauge },
@@ -18,7 +22,10 @@ export function Philosophy({ language }: PhilosophyProps) {
   } : {
     eyebrow: 'HOW WE WORK',
     title: 'Technology comes after the problem.',
-    description: '3FE DEV is the software development team at 3FESTO, a small independent technology company based in Bologna. We started in additive manufacturing with ANY3DP; 3ASY brings together software born from processes we know firsthand, or from requests concrete enough to deserve an answer.',
+    description: [
+      '3FE DEV is the software development team at ',
+      ', a small independent technology company based in Bologna. We started in additive manufacturing with ANY3DP; 3ASY brings together software born from processes we know firsthand, or from requests concrete enough to deserve an answer.',
+    ],
     principles: [
       { title: 'Start from the work', description: 'We observe a real process before designing the product.', Icon: Crosshair },
       { title: 'Ship what is needed', description: 'We build a first version that is useful, measurable and clear.', Icon: Gauge },
@@ -34,7 +41,11 @@ export function Philosophy({ language }: PhilosophyProps) {
           <header>
             <p className="mb-4 text-xs font-bold tracking-[0.14em] text-[#18752d]">{content.eyebrow}</p>
             <h2 className="text-4xl font-bold leading-[1.04] tracking-[-0.045em] text-gray-950 md:text-6xl">{content.title}</h2>
-            <p className="mt-6 text-lg leading-relaxed text-gray-600">{content.description}</p>
+            <p className="mt-6 text-lg leading-relaxed text-gray-600">
+              {content.description[0]}
+              <a href={SITE_CONFIG.company.website} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#18752d] underline decoration-current underline-offset-2 hover:text-[#125b23]">3FESTO</a>
+              {content.description[1]}
+            </p>
           </header>
 
           <div className="border-y border-gray-300">

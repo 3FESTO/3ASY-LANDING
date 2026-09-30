@@ -3,7 +3,7 @@
 # ◆ ▲ 3ASY
 
 [![Live site](https://img.shields.io/badge/Live-www.3asy.it-28a745?style=for-the-badge)](https://www.3asy.it/)
-[![3FE DEV](https://img.shields.io/badge/by-3FE_DEV-111510?style=for-the-badge)](https://www.3asy.it/)
+[![3FE DEV](https://img.shields.io/badge/by-3FE_DEV-111510?style=for-the-badge)](https://www.3festo.com/)
 [![3FESTO](https://img.shields.io/badge/a_3FESTO_team-009246?style=for-the-badge)](https://www.3festo.com/)
 
 **Two software products and two public projects, built around real work.**
@@ -12,7 +12,7 @@
 
 ---
 
-This repository contains the public landing page for [3ASY](https://www.3asy.it/), the software line by **3FE DEV**, the development team at **3FESTO SRL** in Bologna, Italy.
+This repository contains the public landing page for [3ASY](https://www.3asy.it/), the software line by [**3FE DEV**](https://www.3festo.com/), the development team at [**3FESTO SRL**](https://www.3festo.com/) in Bologna, Italy.
 
 3ASY is intentionally compact. The current offer is not a four-product suite: **3HR** and **3BNB** are products; **3ASYRESEARCH** and **3ASYGIT** are smaller public projects.
 
