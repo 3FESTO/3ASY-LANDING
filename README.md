@@ -1,87 +1,68 @@
 <div align="center">
 
-# ◆ △ ▣ 3ASY
+# ◆ ▲ 3ASY
 
-[![Live Site](https://img.shields.io/badge/🌐_Live-www.3asy.it-28a745?style=for-the-badge)](https://www.3asy.it)
-[![By 3FE](https://img.shields.io/badge/by-3FE_·_3Festo-009246?style=for-the-badge)](https://www.3festo.com)
-[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](https://www.3festo.com)
+[![Live site](https://img.shields.io/badge/Live-www.3asy.it-28a745?style=for-the-badge)](https://www.3asy.it/)
+[![3FE DEV](https://img.shields.io/badge/by-3FE_DEV-111510?style=for-the-badge)](https://www.3asy.it/)
+[![3FESTO](https://img.shields.io/badge/a_3FESTO_team-009246?style=for-the-badge)](https://www.3festo.com/)
 
-**Serious, AI-powered software tools — from the makers of [ANY3DP](https://www.any3dp.com).**
-
-![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+**Two software products and two public projects, built around real work.**
 
 </div>
 
 ---
 
-> **About this repository** — Source code of the public **3ASY** landing page ([www.3asy.it](https://www.3asy.it)).
-> Our top product for industry is **[ANY3DP](https://www.any3dp.com)** — industrial-grade additive manufacturing.
-> **3ASY** is our second line: a small set of focused, AI-powered tools by **3FE — 3Festo S.r.l.** (Bologna, Italy).
+This repository contains the public landing page for [3ASY](https://www.3asy.it/), the software line by **3FE DEV**, the development team at **3FESTO SRL** in Bologna, Italy.
 
----
+3ASY is intentionally compact. The current offer is not a four-product suite: **3HR** and **3BNB** are products; **3ASYRESEARCH** and **3ASYGIT** are smaller public projects.
 
-## 🎯 The 3ASY line
+## Products
 
-Not a pile of demos. Four distinct products, each with its own color, purpose and horizon.
+| Product | Current scope | Maturity |
+| --- | --- | --- |
+| [3HR](https://www.3hr.it/) | Attendance, calendar-based timesheets, leave approvals, device inventory, cost and margin by resource | In operational use across 3 companies and 30+ people |
+| [3BNB](https://bnb.3asy.app/) | Guided month-end reporting for short-term-rental property managers | Selected beta; public launch planned for January 1, 2027 |
 
-| Product | What it does | Stage |
-|---------|--------------|-------|
-| **[3HR](https://hr.3asy.app)** | Attendance, calendar-based timesheets, leave approvals, device inventory and real margin by resource | 🔵 Industrially tested for one year with JUNO.AM |
-| **[3BNB](https://bnb.3asy.app)** | Monthly owner reports for short-term rental property managers, from source documents to ready-to-send PDFs | 🟡 Selected beta · public launch January 1, 2027 |
-| **[3ASYRESEARCH](https://research.3asy.app)** | Complex research papers → interactive experiences and usable tools | 🟢 Small research experiment |
-| **[3ASYGIT](https://git.3asy.app)** | Turns your GitHub contributions into 3D art and audio | 🟢 Small public experiment |
+## Public projects
 
-### Why BNB?
+| Project | What it explores | Maturity |
+| --- | --- | --- |
+| [3ASYRESEARCH](https://research.3asy.app/) | Research papers turned into accessible explanations and interactive tools | Early experiment with two live cases |
+| [3ASYGIT](https://git.3asy.app/) | Public GitHub contribution data turned into 3D landscapes | Public experiment |
 
-Most 3ASY products grow from our work in industry and 3D. **3BNB** came from a different direction: property managers needed a reliable way to turn monthly statements, payouts and cleaning invoices into clear owner reports. It was a real request, so we built the utility.
+## Product principle
 
-3ASY Ai reads and normalizes the inputs; deterministic rules handle commissions, taxes and allocations; the final PDFs remain traceable and repeatable. The product is currently in beta with a small group of selected users, ahead of the public launch on **January 1, 2027**.
+We start from a concrete workflow, ship the smallest useful version, and use AI only where it improves that workflow. Deterministic rules remain explicit where control and traceability matter.
 
-### 🧪 In the lab
+Our industrial work lives in the sister line [ANY3DP](https://www.any3dp.com/).
 
-Other prototypes we have built, not public yet: **3ASYBUILDER**, **3ASYMODELING**, **3ASYTRADING**, **3ASYWHISTLE**.
+## Technical approach
 
-## 💡 How we work
+- React 19 and TypeScript
+- Vite 7 and Tailwind CSS 4
+- Three.js for the 3D language control
+- Build-time prerender for complete static HTML
+- Italian and English pages with localized metadata
+- Canonical and reciprocal `hreflang` links
+- Schema.org entity graph for 3FESTO, 3FE DEV, 3ASY, products and projects
+- `robots.txt`, XML sitemap and `llms.txt`
 
-```
-⚡ Ship Fast → 🎯 Solve Real → 🤖 AI-First
-```
+The build generates two complete documents:
 
-Every 3ASY product was born from a real need of ours — starting with HR, because we had timesheets to run.
-We are bootstrapped and profitable on our core business (3D), and we build these tools because we use them.
+- Italian: `dist/index.html`
+- English: `dist/en/index.html`
 
-## 🏗️ Tech stack
+Both pages contain the full landing-page DOM before JavaScript runs. React hydrates the prerendered markup to enable the Three.js control and language navigation. The legacy `3asy.app` landing domains permanently redirect to the corresponding path on `www.3asy.it`.
 
-- **⚛️ React 19 + TypeScript** — type-safe and fast
-- **⚡ Vite 7** — instant builds
-- **🎨 Tailwind CSS 4** — utility-first styling
-- **↗ Lucide** — consistent interface icons
-- **🔎 Build-time prerender** — static landing content for crawlers, then React hydration
-- **📱 Mobile-first** — responsive everywhere
+## Public files
 
-```bash
-npm install      # install dependencies
-npm run dev      # start the dev server
-npm run build    # production build
-```
+- [Production website](https://www.3asy.it/)
+- [English website](https://www.3asy.it/en/)
+- [Sitemap](https://www.3asy.it/sitemap.xml)
+- [Machine-readable overview](https://www.3asy.it/llms.txt)
+- [3FESTO](https://www.3festo.com/)
+- [ANY3DP](https://www.any3dp.com/)
 
-The production build renders both localized pages before deployment: Italian at `https://www.3asy.it/` (`dist/index.html`) and English at `https://www.3asy.it/en/` (`dist/en/index.html`). Each page has its own language, canonical URL, localized metadata and structured data, with reciprocal `hreflang` links. Search engines, link unfurlers and clients without JavaScript receive the complete product content immediately; React hydrates the same markup to enable interactions and language navigation. The former `3asy.app` landing domains permanently redirect to the matching path on `3asy.it`.
+## License
 
-## 🇮🇹 Made in Italy
-
-**3Festo S.r.l.** — Bologna, Italy. Small team, focused output.
-
-## 🔗 Connect
-
-- **🌐 Landing**: [3asy.it](https://www.3asy.it)
-- **💻 Public source**: [github.com/3FESTO/3ASY-LANDING](https://github.com/3FESTO/3ASY-LANDING)
-- **🏢 Company**: [3festo.com](https://www.3festo.com)
-- **🎯 Industrial 3D**: [any3dp.com](https://www.any3dp.com)
-- **📧 Contact**: [info@3festo.com](mailto:info@3festo.com)
-
-## 📄 License
-
-**© 2026 3Festo S.r.l.** — Proprietary. Proudly Made in Italy 🇮🇹
+Copyright © 2026 3FESTO SRL. All rights reserved. This is a source-available public repository, not an open-source license grant.
