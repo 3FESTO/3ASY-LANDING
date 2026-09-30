@@ -1,47 +1,58 @@
-import { SITE_CONFIG } from '@/config/site';
+import { Bot, Crosshair, Gauge } from 'lucide-react';
 
 interface PhilosophyProps {
   language: 'en' | 'it';
 }
 
 export function Philosophy({ language }: PhilosophyProps) {
-  const { philosophy } = SITE_CONFIG;
-
-  const pillars = language === 'en' 
-    ? [
-        { icon: '⚡', title: 'Ship Fast', desc: 'Ideas to production in days, not months' },
-        { icon: '🎯', title: 'Solve Real', desc: 'Every app born from actual pain points' },
-        { icon: '🤖', title: 'AI-First', desc: 'Automation at the core of everything' },
-      ]
-    : [
-        { icon: '⚡', title: 'Veloci', desc: 'Dall\'idea alla produzione in giorni, non mesi' },
-        { icon: '🎯', title: 'Problemi Reali', desc: 'Ogni app nasce da bisogni veri' },
-        { icon: '🤖', title: 'AI-First', desc: 'Automazione al centro di tutto' },
-      ];
+  const content = language === 'it' ? {
+    eyebrow: 'COME LAVORIAMO',
+    title: 'La tecnologia viene dopo il problema.',
+    description: '3FE DEV è il team di sviluppo software di 3FESTO, una piccola azienda tecnologica indipendente di Bologna. Siamo partiti dalla manifattura additiva con ANY3DP; 3ASY raccoglie il software nato dai processi che conosciamo direttamente o da richieste abbastanza concrete da meritare una risposta.',
+    principles: [
+      { title: 'Partire dal lavoro', description: 'Osserviamo un processo reale prima di disegnare il prodotto.', Icon: Crosshair },
+      { title: 'Rilasciare il necessario', description: 'Costruiamo una prima versione utile, misurabile e comprensibile.', Icon: Gauge },
+      { title: 'Usare l’AI con criterio', description: 'Modelli e automazioni dove aiutano; regole esplicite dove serve controllo.', Icon: Bot },
+    ],
+    note: 'Italian design. Operational discipline. No theatre.',
+  } : {
+    eyebrow: 'HOW WE WORK',
+    title: 'Technology comes after the problem.',
+    description: '3FE DEV is the software development team at 3FESTO, a small independent technology company based in Bologna. We started in additive manufacturing with ANY3DP; 3ASY brings together software born from processes we know firsthand, or from requests concrete enough to deserve an answer.',
+    principles: [
+      { title: 'Start from the work', description: 'We observe a real process before designing the product.', Icon: Crosshair },
+      { title: 'Ship what is needed', description: 'We build a first version that is useful, measurable and clear.', Icon: Gauge },
+      { title: 'Use AI deliberately', description: 'Models and automation where they help; explicit rules where control matters.', Icon: Bot },
+    ],
+    note: 'Italian design. Operational discipline. No theatre.',
+  };
 
   return (
-    <section className="bg-linear-to-br from-gray-50 to-green-50 py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 text-center">
-            {philosophy.title[language]}
-          </h2>
-          
-          {/* Pillars */}
-          <div className="grid grid-cols-3 gap-4 md:gap-8 mb-10">
-            {pillars.map((pillar, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl mb-2">{pillar.icon}</div>
-                <div className="font-bold text-gray-900 text-sm md:text-base">{pillar.title}</div>
-                <div className="text-xs md:text-sm text-gray-600 mt-1">{pillar.desc}</div>
-              </div>
+    <section id="approach" className="scroll-mt-16 bg-white px-4 py-20 md:py-28">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+          <header>
+            <p className="mb-4 text-xs font-bold tracking-[0.14em] text-[#18752d]">{content.eyebrow}</p>
+            <h2 className="text-4xl font-bold leading-[1.04] tracking-[-0.045em] text-gray-950 md:text-6xl">{content.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-gray-600">{content.description}</p>
+          </header>
+
+          <div className="border-y border-gray-300">
+            {content.principles.map(({ title, description, Icon }, index) => (
+              <article key={title} className="grid grid-cols-[auto_1fr] gap-5 border-b border-gray-300 py-7 last:border-b-0">
+                <span className="flex size-11 items-center justify-center rounded-[6px] bg-[#eef8f0] text-[#18752d]">
+                  <Icon className="size-5" aria-hidden="true" />
+                </span>
+                <div>
+                  <p className="mb-1 text-[10px] font-bold text-[#18752d]">0{index + 1}</p>
+                  <h3 className="text-xl font-bold text-gray-950">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{description}</p>
+                </div>
+              </article>
             ))}
           </div>
-          
-          <div className="text-base md:text-lg text-gray-700 leading-relaxed space-y-4 bg-white/60 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-gray-100">
-            <p>{philosophy.content[language]}</p>
-          </div>
         </div>
+        <p className="mt-12 border-l-2 border-[#28a745] pl-4 text-sm font-bold uppercase tracking-[0.12em] text-gray-500">{content.note}</p>
       </div>
     </section>
   );

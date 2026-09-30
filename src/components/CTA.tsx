@@ -16,11 +16,11 @@ export function CTA({ language }: CTAProps) {
   const { company } = SITE_CONFIG;
   const content = {
     en: {
-      eyebrow: 'WHERE TO START',
-      title: 'Choose the problem, not the plan.',
-      description: '3ASY is not one subscription with four logos. Each product has its own users, maturity and way in. Explore what is already open, bring us a real company workflow, or help shape the next release.',
-      liveTitle: 'Try what is already open',
-      liveDescription: 'Turn research into an interactive tool or give a GitHub profile a new shape. No sales call required.',
+      eyebrow: 'A CONCRETE NEXT STEP',
+      title: 'Start from the work you want to improve.',
+      description: 'The two 3ASY products have different users and entry points. 3HR starts with a focused process review; 3BNB is currently available to a selected beta group. The two public projects are free to explore.',
+      liveTitle: 'Explore the public projects',
+      liveDescription: 'Try an interactive research case or turn a GitHub profile into a 3D landscape. No sales call and no product claim.',
       hrTitle: 'Bring HR into your company',
       hrDescription: 'Start from your calendars, attendance and approval flows. We map the process, show the JUNO.AM case and configure a focused demo for your team.',
       bnbTitle: 'Join the selected BNB beta',
@@ -32,11 +32,11 @@ export function CTA({ language }: CTAProps) {
       contact: 'Tell us what keeps repeating',
     },
     it: {
-      eyebrow: 'DA DOVE COMINCIARE',
-      title: 'Scegli il problema, non il piano.',
-      description: '3ASY non è un unico abbonamento con quattro loghi. Ogni prodotto ha utenti, maturità e modalità di accesso proprie. Esplora ciò che è già aperto, portaci un processo aziendale reale oppure contribuisci a dare forma al prossimo rilascio.',
-      liveTitle: 'Prova ciò che è già aperto',
-      liveDescription: 'Trasforma una ricerca in uno strumento interattivo o dai una nuova forma a un profilo GitHub. Senza passare da una call commerciale.',
+      eyebrow: 'UN PROSSIMO PASSO CONCRETO',
+      title: 'Parti dal lavoro che vuoi migliorare.',
+      description: 'I due prodotti 3ASY hanno utenti e modalità di accesso diverse. 3HR parte da un confronto mirato sul processo; 3BNB è oggi disponibile a un gruppo beta selezionato. I due progetti pubblici sono liberamente esplorabili.',
+      liveTitle: 'Esplora i progetti pubblici',
+      liveDescription: 'Prova un caso di ricerca interattivo o trasforma un profilo GitHub in un paesaggio 3D. Senza call commerciale e senza promesse da prodotto.',
       hrTitle: 'Porta HR nella tua azienda',
       hrDescription: 'Partiamo da calendari, presenze e flussi approvativi. Mappiamo il processo, mostriamo il caso JUNO.AM e prepariamo una demo mirata per il tuo team.',
       bnbTitle: 'Entra nella beta selezionata BNB',
@@ -54,7 +54,7 @@ export function CTA({ language }: CTAProps) {
     : 'A real problem for 3ASY';
 
   return (
-    <section className="bg-[#111510] px-4 py-20 text-white md:py-28">
+    <section id="contact" className="scroll-mt-16 bg-[#111510] px-4 py-20 text-white md:py-28">
       <div className="mx-auto max-w-6xl">
         <header className="mb-12 grid gap-6 border-b border-white/20 pb-10 md:mb-16 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
@@ -90,7 +90,7 @@ export function CTA({ language }: CTAProps) {
             <UsersRound className="mb-8 size-7 text-[#5da2ff]" aria-hidden="true" />
             <h3 className="mb-3 text-2xl font-bold">{content.hrTitle}</h3>
             <p className="mb-8 text-sm leading-relaxed text-gray-400">{content.hrDescription}</p>
-            <a href="https://hr.3asy.app/" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex min-h-11 w-fit items-center gap-2 rounded-[6px] border border-[#5da2ff] px-4 py-3 text-sm font-bold text-[#8abaff] transition-colors hover:bg-[#0b5ee8] hover:text-white">
+            <a href="https://www.3hr.it/" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex min-h-11 w-fit items-center gap-2 rounded-[6px] border border-[#5da2ff] px-4 py-3 text-sm font-bold text-[#8abaff] transition-colors hover:bg-[#0b5ee8] hover:text-white">
               {content.demo}
               <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>

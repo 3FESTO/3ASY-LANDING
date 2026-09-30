@@ -1,373 +1,133 @@
-export type AppStatus = 'production' | 'vision' | 'pilot' | 'early';
-export type AppTheme = 'blue' | 'yellow' | 'purple' | 'green';
+export type AppTheme = 'blue' | 'yellow' | 'green';
 
 export interface App {
   id: string;
-  icon: string;
   title: string;
-  author: string;
-  appType: string;
-  status: AppStatus;
   theme: AppTheme;
-  tag: {
-    en: string;
-    it: string;
-  };
-  subtitle: {
-    en: string;
-    it: string;
-  };
-  description: {
-    en: string;
-    it: string;
-  };
-  origin: {
-    en: string;
-    it: string;
-  };
-  features: {
-    en: string[];
-    it: string[];
-  };
-  ctaText: {
-    en: string;
-    it: string;
-  };
+  tag: { en: string; it: string };
+  subtitle: { en: string; it: string };
+  description: { en: string; it: string };
+  origin: { en: string; it: string };
+  features: { en: string[]; it: string[] };
+  ctaText: { en: string; it: string };
   milestone?: {
     eyebrow: { en: string; it: string };
     value: { en: string; it: string };
   };
   url: string;
-  isComingSoon?: boolean;
-  hasDetails?: boolean;
-  details?: {
-    highlights: {
-      en: string[];
-      it: string[];
-    };
-    whyItMatters: {
-      en: string;
-      it: string;
-    };
-  };
 }
 
 export const apps: App[] = [
   {
-    id: '3asyhr',
-    icon: '👥',
+    id: '3hr',
     title: '3HR',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    status: 'production',
     theme: 'blue',
-    tag: {
-      en: 'PROVEN FOR A YEAR',
-      it: 'TESTATO DA UN ANNO'
-    },
-    subtitle: {
-      en: 'CALENDAR → HR AGENT',
-      it: 'CALENDARIO → HR AGENT'
-    },
+    tag: { en: 'IN OPERATIONAL USE', it: 'IN USO OPERATIVO' },
+    subtitle: { en: 'CALENDAR → HR OPERATIONS', it: 'CALENDARIO → OPERATIONS HR' },
     description: {
-      en: 'One workspace connects attendance, HR, finance and operations. People clock in and turn calendar activity into validated timesheets; team leads approve leave; business profiles see the real cost and margin of every resource.',
-      it: 'Un solo spazio collega presenze, HR, finance e operations. Le persone marcano e trasformano il calendario in timesheet validati; i team lead approvano ferie e permessi; i profili business vedono costo e marginalità reale di ogni risorsa.'
+      en: 'One workspace connects attendance, HR, finance and operations. People track attendance and turn calendar activity into validated timesheets; team leads approve leave; business roles can review the cost and margin of each resource.',
+      it: 'Un solo spazio collega presenze, HR, finance e operations. Le persone registrano le presenze e trasformano il calendario in timesheet validati; i team lead approvano ferie e permessi; i profili business possono leggere costo e marginalità di ogni risorsa.',
     },
     origin: {
-      en: 'It started with what every company has to do: track work, manage absences and close payroll correctly. Then came the questions spreadsheets could not answer.',
-      it: 'Nasce da ciò che ogni azienda deve fare davvero: rilevare il lavoro, gestire le assenze e chiudere correttamente il mese. Poi sono arrivate le domande a cui i fogli di calcolo non sapevano rispondere.'
+      en: 'It started with a process we run ourselves: tracking work, managing absences and closing the month with reliable data.',
+      it: 'Nasce da un processo che gestiamo in prima persona: rilevare il lavoro, organizzare le assenze e chiudere il mese con dati affidabili.',
     },
     features: {
       en: [
-        'Attendance and automatic timesheets from Microsoft 365 / Google Calendar',
-        'Leave and permit requests with team-lead approval flows',
+        'Attendance and timesheets from Microsoft 365 or Google Calendar',
+        'Leave and permit requests with approval flows',
         'Company device inventory and assignment history',
-        'Cost, implicit rate and real margin for each resource',
-        'Budget, hours delivered and invoice reconciliation',
-        'Multi-company controls and accounting-ready exports'
+        'Cost, implicit rate and margin by resource',
+        'Reconciliation of budgets, delivered hours and invoices',
+        'Multi-company controls and accounting-ready exports',
       ],
       it: [
-        'Presenze e timesheet automatici da Microsoft 365 / Google Calendar',
+        'Presenze e timesheet da Microsoft 365 o Google Calendar',
         'Ferie e permessi con flussi di richiesta e approvazione',
-        'Censimento device aziendali e storico assegnazioni',
-        'Costo, tariffa implicita e marginalità reale per risorsa',
-        'Riconciliazione tra budget, ore erogate e fatture',
-        'Controllo multi-società ed export pronti per la contabilità'
-      ]
+        'Censimento dei device aziendali e storico assegnazioni',
+        'Costo, tariffa implicita e marginalità per risorsa',
+        'Riconciliazione di budget, ore erogate e fatture',
+        'Controllo multi-società ed export per la contabilità',
+      ],
     },
-    ctaText: {
-      en: 'REQUEST DEMO',
-      it: 'RICHIEDI DEMO'
-    },
-    url: 'https://hr.3asy.app/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '⏰ -85% timesheet time',
-          '📈 KPIs per resource',
-          '🔐 Enterprise security'
-        ],
-        it: [
-          '⏰ -85% tempo timesheet',
-          '📈 KPI per risorsa',
-          '🔐 Sicurezza enterprise'
-        ]
-      },
-      whyItMatters: {
-        en: 'Our most mature product. In production with JUNO.AM — 30+ resources, 3 companies. We built it for ourselves; now it could pay off for someone else too.',
-        it: 'Il nostro prodotto più maturo. In produzione con JUNO.AM — 30+ risorse, 3 società. Nato per noi: ora potrebbe giovare anche a qualcun altro.'
-      }
-    }
+    ctaText: { en: 'REQUEST A FOCUSED DEMO', it: 'RICHIEDI UNA DEMO MIRATA' },
+    url: 'https://www.3hr.it/',
   },
   {
     id: '3asybnb',
-    icon: 'KeyRound',
     title: '3BNB',
-    author: 'MicheleMikyMonti',
-    appType: 'Utility',
-    status: 'early',
     theme: 'yellow',
-    tag: {
-      en: 'SELECTED BETA',
-      it: 'BETA SELEZIONATA'
-    },
-    subtitle: {
-      en: 'MONTH-END, IN ONE CLICK',
-      it: 'IL FINE MESE, IN UN CLICK'
-    },
+    tag: { en: 'SELECTED BETA', it: 'BETA SELEZIONATA' },
+    subtitle: { en: 'A GUIDED MONTH-END', it: 'UN FINE MESE GUIDATO' },
     description: {
-      en: 'The guided month-end flow for short-term rental property managers. It reads mixed documents, flags anomalies, calculates each allocation with deterministic rules and produces owner-ready reports.',
-      it: 'Il fine mese guidato per chi gestisce affitti brevi per conto di proprietari. Legge documenti diversi, segnala le anomalie, calcola ogni ripartizione con regole deterministiche e prepara report pronti da inviare.'
+      en: 'A guided month-end workflow for short-term-rental property managers. It reads mixed documents, flags anomalies, applies explicit allocation rules and prepares reports for property owners.',
+      it: 'Un flusso di fine mese guidato per chi gestisce affitti brevi per conto di proprietari. Legge documenti diversi, segnala anomalie, applica regole di ripartizione esplicite e prepara i report per i proprietari.',
     },
     origin: {
-      en: 'A property manager asked us to remove half a day of repetitive work every month. It was outside our industry, but the need was clear enough to deserve a product.',
-      it: 'Un property manager ci ha chiesto di eliminare mezza giornata di lavoro ripetitivo ogni mese. Era fuori dal nostro settore, ma il bisogno era troppo chiaro per non diventare un prodotto.'
+      en: 'A property manager asked us to reduce a repetitive half-day of work each month. The request was outside our usual industry, but concrete enough to build and test.',
+      it: 'Un property manager ci ha chiesto di ridurre mezza giornata di lavoro ripetitivo ogni mese. La richiesta era fuori dal nostro settore abituale, ma abbastanza concreta da costruire e verificare.',
     },
     features: {
       en: [
         'CSV, Excel, PDF, Word, notes and photos as source documents',
-        '3ASY Ai extracts bookings, payouts, guests and anomalies',
-        'Commissions, cleaning, taxes and PM fees calculated line by line',
-        'Owner PDF, cleaning summary and annual property statement'
+        'AI-assisted extraction of bookings, payouts, guests and anomalies',
+        'Line-by-line calculation of commissions, cleaning, taxes and fees',
+        'Owner PDF, cleaning summary and annual property statement',
       ],
       it: [
         'CSV, Excel, PDF, Word, note e foto come documenti sorgente',
-        '3ASY Ai estrae prenotazioni, payout, ospiti e anomalie',
-        'Commissioni, pulizie, imposte e compensi calcolati riga per riga',
-        'PDF proprietario, riepilogo pulizie e consuntivo annuale'
-      ]
+        'Estrazione assistita da AI di prenotazioni, payout, ospiti e anomalie',
+        'Calcolo riga per riga di commissioni, pulizie, imposte e compensi',
+        'PDF proprietario, riepilogo pulizie e consuntivo annuale',
+      ],
     },
-    ctaText: {
-      en: 'DISCOVER THE BETA',
-      it: 'SCOPRI LA BETA'
-    },
+    ctaText: { en: 'ASK FOR BETA ACCESS', it: 'RICHIEDI ACCESSO ALLA BETA' },
     milestone: {
-      eyebrow: { en: 'PUBLIC LAUNCH', it: 'LANCIO PUBBLICO' },
-      value: { en: 'JAN 01 · 2027', it: '01 GEN · 2027' }
+      eyebrow: { en: 'PLANNED PUBLIC LAUNCH', it: 'LANCIO PUBBLICO PREVISTO' },
+      value: { en: 'JAN 01 · 2027', it: '01 GEN · 2027' },
     },
     url: 'https://bnb.3asy.app/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          'Selected beta with a small group of property managers',
-          'PDF reports ready for the owner',
-          'Public launch: January 1, 2027'
-        ],
-        it: [
-          'Beta con un piccolo gruppo di property manager selezionati',
-          'Report PDF pronti per il proprietario',
-          'Lancio pubblico: 1 gennaio 2027'
-        ]
-      },
-      whyItMatters: {
-        en: 'It started with a practical request: take half a day of repetitive month-end work and turn it into a guided, reliable flow. It is outside our core industry, and that is exactly why it belongs here.',
-        it: 'È partito da una necessità concreta: trasformare mezza giornata di lavoro ripetitivo a fine mese in un flusso guidato e affidabile. È fuori dal nostro settore principale, ed è proprio per questo che appartiene a questa raccolta.'
-      }
-    }
-  },
-  {
-    id: '3asygit',
-    icon: '🎮',
-    title: '3ASYGIT',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    status: 'pilot',
-    theme: 'green',
-    tag: {
-      en: 'PUBLIC PILOT',
-      it: 'PILOT PUBBLICO'
-    },
-    subtitle: {
-      en: 'GITHUB GAMIFICATION',
-      it: 'GITHUB GAMIFICATION'
-    },
-    description: {
-      en: 'Enter a GitHub profile and turn its contribution history into a 3D city, a solar system or a speed circuit. A small public experiment, built just for fun and open to the next visualization.',
-      it: 'Inserisci un profilo GitHub e trasformane la storia delle contribuzioni in una città 3D, un sistema solare o un circuito. Un piccolo esperimento pubblico, nato per gioco e aperto alla prossima visualizzazione.'
-    },
-    origin: {
-      en: 'A playful question: what if a contribution graph became a place you could explore?',
-      it: 'Una domanda giocosa: e se il contribution graph diventasse un luogo da esplorare?'
-    },
-    features: {
-      en: [
-        '🎨 3D contribution visualization',
-        '🎵 Audio from commits',
-        '🏆 Gamified stats'
-      ],
-      it: [
-        '🎨 Visualizzazione 3D contribuzioni',
-        '🎵 Audio dai commit',
-        '🏆 Statistiche gamificate'
-      ]
-    },
-    ctaText: {
-      en: 'GAMIFY NOW',
-      it: 'GAMIFY NOW'
-    },
-    url: 'https://git.3asy.app/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '🎨 Stunning 3D visuals',
-          '🎵 Unique audio patterns',
-          '🏆 Shareable achievements'
-        ],
-        it: [
-          '🎨 Visual 3D mozzafiato',
-          '🎵 Pattern audio unici',
-          '🏆 Achievement condivisibili'
-        ]
-      },
-      whyItMatters: {
-        en: 'A finished, reliable product — a fun, technical showcase for the GitHub community.',
-        it: 'Un prodotto finito e affidabile — una vetrina tecnica e divertente per la community GitHub.'
-      }
-    }
   },
   {
     id: '3asyresearch',
-    icon: '🔬',
     title: '3ASYRESEARCH',
-    author: 'MicheleMikyMonti',
-    appType: 'WebApp',
-    status: 'early',
     theme: 'green',
-    tag: {
-      en: 'EARLY STAGE',
-      it: 'EARLY STAGE'
-    },
-    subtitle: {
-      en: 'RESEARCH → INTERACTIVE PLAY',
-      it: 'RICERCA → GIOCO INTERATTIVO'
-    },
+    tag: { en: 'EARLY EXPERIMENT', it: 'ESPERIMENTO INIZIALE' },
+    subtitle: { en: 'RESEARCH → INTERACTIVE TOOLS', it: 'RICERCA → STRUMENTI INTERATTIVI' },
     description: {
-      en: 'Research papers become plain-language explanations and interactive tools. Two live cases already let people generate hybrid TPMS structures and model MJF production costs instead of only reading the formulas.',
-      it: 'I paper diventano spiegazioni accessibili e strumenti interattivi. Due casi live permettono già di generare strutture TPMS ibride e modellare i costi di produzione MJF, invece di limitarsi a leggere le formule.'
+      en: 'Research papers become plain-language explanations and interactive tools. Two live cases explore hybrid TPMS structures and MJF production-cost modelling.',
+      it: 'I paper diventano spiegazioni accessibili e strumenti interattivi. Due casi live esplorano strutture TPMS ibride e la modellazione dei costi di produzione MJF.',
     },
     origin: {
-      en: 'Good research should be tried, not only cited. This experiment turns publications into something people can understand with their hands.',
-      it: 'La buona ricerca dovrebbe essere provata, non soltanto citata. Questo esperimento trasforma le pubblicazioni in qualcosa che si può capire usando le mani.'
+      en: 'An experiment in making technical research something people can try, not only cite.',
+      it: 'Un esperimento per rendere la ricerca tecnica qualcosa da provare, non soltanto da citare.',
     },
     features: {
-      en: [
-        '📝 Digestible summaries',
-        '🎮 Interactive playgrounds',
-        '🧪 Hands-on tools'
-      ],
-      it: [
-        '📝 Riassunti accessibili',
-        '🎮 Playground interattivi',
-        '🧪 Strumenti hands-on'
-      ]
+      en: ['Plain-language summaries', 'Interactive playgrounds', 'Two live research cases'],
+      it: ['Sintesi accessibili', 'Playground interattivi', 'Due casi di ricerca live'],
     },
-    ctaText: {
-      en: 'EXPLORE',
-      it: 'ESPLORA'
-    },
+    ctaText: { en: 'EXPLORE THE PROJECT', it: 'ESPLORA IL PROGETTO' },
     url: 'https://research.3asy.app/',
-    hasDetails: true,
-    details: {
-      highlights: {
-        en: [
-          '📝 Papers made simple',
-          '🎮 Try formulas live',
-          '🔬 Real research cases'
-        ],
-        it: [
-          '📝 Paper semplificati',
-          '🎮 Prova formule live',
-          '🔬 Casi di ricerca reali'
-        ]
-      },
-      whyItMatters: {
-        en: 'A sketched prototype with big ambitions — we are looking for institutional partners to take it further.',
-        it: 'Un prototipo abbozzato con grandi ambizioni — cerchiamo partner istituzionali per portarlo avanti.'
-      }
-    }
-  }
+  },
+  {
+    id: '3asygit',
+    title: '3ASYGIT',
+    theme: 'green',
+    tag: { en: 'PUBLIC EXPERIMENT', it: 'ESPERIMENTO PUBBLICO' },
+    subtitle: { en: 'GITHUB DATA → 3D LANDSCAPES', it: 'DATI GITHUB → PAESAGGI 3D' },
+    description: {
+      en: 'Enter a public GitHub profile and turn its contribution history into a 3D city, solar system or speed circuit. A playful visualization project, open to explore.',
+      it: 'Inserisci un profilo GitHub pubblico e trasformane le contribuzioni in una città 3D, un sistema solare o un circuito. Un progetto di visualizzazione giocoso, aperto a tutti.',
+    },
+    origin: {
+      en: 'A playful question: what if a contribution graph became a place you could explore?',
+      it: 'Una domanda giocosa: e se il contribution graph diventasse un luogo da esplorare?',
+    },
+    features: {
+      en: ['3D contribution views', 'Sound generated from commits', 'Shareable visualizations'],
+      it: ['Viste 3D delle contribuzioni', 'Suono generato dai commit', 'Visualizzazioni condivisibili'],
+    },
+    ctaText: { en: 'EXPLORE THE PROJECT', it: 'ESPLORA IL PROGETTO' },
+    url: 'https://git.3asy.app/',
+  },
 ];
-
-export interface StatusMeta {
-  label: { en: string; it: string };
-  note: { en: string; it: string };
-  gradient: string;
-  solid: string;
-  soft: string;
-  text: string;
-  dot: string;
-}
-
-export const statusMeta: Record<AppStatus, StatusMeta> = {
-  production: {
-    label: { en: 'In production', it: 'In produzione' },
-    note: {
-      en: 'Already running every day — ready to save your team hours.',
-      it: 'Già in uso ogni giorno: pronto a far risparmiare ore al tuo team.'
-    },
-    gradient: 'from-[#28a745] to-emerald-600',
-    solid: 'bg-[#28a745]',
-    soft: 'bg-emerald-50 border-emerald-200',
-    text: 'text-emerald-700',
-    dot: 'bg-[#28a745]'
-  },
-  vision: {
-    label: { en: 'Long-term vision', it: 'Visione a lungo termine' },
-    note: {
-      en: 'Built for people who work with 3D printing every day.',
-      it: 'Pensato per chi lavora ogni giorno con la stampa 3D.'
-    },
-    gradient: 'from-indigo-500 to-violet-600',
-    solid: 'bg-violet-600',
-    soft: 'bg-violet-50 border-violet-200',
-    text: 'text-violet-700',
-    dot: 'bg-violet-500'
-  },
-  pilot: {
-    label: { en: 'Public pilot', it: 'Pilot pubblico' },
-    note: {
-      en: 'Live on GitHub — turn your profile into something worth showing.',
-      it: 'Live su GitHub: trasforma il tuo profilo in qualcosa da mostrare.'
-    },
-    gradient: 'from-sky-500 to-blue-600',
-    solid: 'bg-sky-600',
-    soft: 'bg-sky-50 border-sky-200',
-    text: 'text-sky-700',
-    dot: 'bg-sky-500'
-  },
-  early: {
-    label: { en: 'Early stage', it: 'Early stage' },
-    note: {
-      en: 'The foundations are there — open to partners to take it far.',
-      it: 'Le basi ci sono: aperti a partner per portarlo lontano.'
-    },
-    gradient: 'from-amber-500 to-orange-600',
-    solid: 'bg-amber-500',
-    soft: 'bg-amber-50 border-amber-200',
-    text: 'text-amber-700',
-    dot: 'bg-amber-500'
-  }
-};

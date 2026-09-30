@@ -1,3 +1,4 @@
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { SITE_CONFIG } from '@/config/site';
 
 interface HeroSectionProps {
@@ -5,73 +6,64 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ language }: HeroSectionProps) {
-  const { hero, logo, name, tagline } = SITE_CONFIG;
-  const content = hero.description[language];
-
-  const stats = [
-    { value: '4', label: language === 'en' ? 'Products' : 'Prodotti' },
-    { value: '∞', label: language === 'en' ? 'Ideas Ahead' : 'Idee in Arrivo' },
-  ];
+  const content = language === 'it' ? {
+    eyebrow: 'SOFTWARE UTILITIES · BOLOGNA, ITALIA',
+    title: 'Strumenti digitali, costruiti su problemi reali.',
+    description: '3ASY è la linea software di 3FE DEV, il team di sviluppo di 3FESTO: due prodotti operativi e due piccoli progetti pubblici. Automazione e AI entrano solo dove rendono il lavoro più semplice, verificabile e utile.',
+    primary: 'Scopri i prodotti',
+    secondary: 'Il nostro lavoro industriale',
+    products: 'prodotti',
+    projects: 'progetti pubblici',
+    principle: 'problema prima della tecnologia',
+  } : {
+    eyebrow: 'SOFTWARE UTILITIES · BOLOGNA, ITALY',
+    title: 'Digital tools, built around real problems.',
+    description: '3ASY is the software line by 3FE DEV: two operational products and two small public projects. Automation and AI belong only where they make work simpler, verifiable and useful.',
+    primary: 'Explore the products',
+    secondary: 'Our industrial work',
+    products: 'products',
+    projects: 'public projects',
+    principle: 'problem before technology',
+  };
 
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-160 h-160 bg-[#28a745]/10 rounded-full blur-3xl animate-glow pointer-events-none" />
+    <section className="relative overflow-hidden border-b border-gray-200 bg-[#fbfcf9]">
+      <div className="pointer-events-none absolute inset-0 bg-grid" />
+      <div className="pointer-events-none absolute -right-40 -top-56 size-[38rem] rounded-full bg-[#28a745]/10 blur-3xl" />
 
-      <div className="container mx-auto px-4 py-16 md:py-24 relative">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Industry badge */}
-          <a
-            href={hero.any3dpUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 rounded-full border border-[#28a745]/30 bg-[#28a745]/5 text-xs md:text-sm font-semibold text-gray-700 hover:bg-[#28a745]/10 transition-colors"
-          >
-            <span className="w-2 h-2 rounded-full bg-[#28a745] animate-pulse" />
-            {language === 'en' ? 'From the makers of ANY3DP' : 'Dai creatori di ANY3DP'}
-          </a>
-
-          <div className="mb-6">
-            <img
-              src={logo.url}
-              alt={logo.alt}
-              className="h-12 sm:h-16 md:h-20 max-w-[80%] mx-auto object-contain animate-float"
-            />
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-shine">
-            {name}
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 md:py-28 lg:grid-cols-[1.25fr_0.75fr] lg:items-end lg:py-36">
+        <div>
+          <p className="mb-6 text-[11px] font-bold uppercase tracking-[0.18em] text-[#18752d]">{content.eyebrow}</p>
+          <h1 className="max-w-4xl text-5xl font-bold leading-[0.98] tracking-[-0.055em] text-gray-950 sm:text-6xl md:text-7xl">
+            {content.title}
           </h1>
-          <p className="text-xl md:text-2xl font-semibold text-[#28a745] mb-6">
-            {tagline[language]}
-          </p>
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-12 max-w-2xl mx-auto">
-            {content.part1}
-            <a
-              href={hero.any3dpUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#28a745] hover:text-[#218838] font-semibold"
-            >
-              {content.linkText}
+          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-gray-600 md:text-xl">{content.description}</p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#products" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] bg-[#18752d] px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[#125b23] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#18752d]">
+              {content.primary}
+              <ArrowDown className="size-4" aria-hidden="true" />
             </a>
-            {content.part2.split('\n').map((line, i) => (
-              <span key={i}>
-                {i > 0 && <br />}
-                {line}
-              </span>
-            ))}
-          </p>
-
-          {/* Stats row */}
-          <div className="flex justify-center gap-10 md:gap-16 pt-8 border-t border-gray-200/80">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#28a745]">{stat.value}</div>
-                <div className="text-xs md:text-sm text-gray-500 uppercase tracking-wider mt-1">{stat.label}</div>
-              </div>
-            ))}
+            <a href={SITE_CONFIG.hero.any3dpUrl} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-[6px] border border-gray-300 bg-white px-5 py-3 text-sm font-bold text-gray-800 transition-colors hover:border-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+              {content.secondary}
+              <ArrowUpRight className="size-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
+
+        <dl className="grid grid-cols-2 border-y border-gray-300 lg:grid-cols-1">
+          <div className="border-r border-gray-300 py-5 pr-5 lg:border-b lg:border-r-0 lg:px-0">
+            <dd className="text-4xl font-bold tracking-[-0.04em] text-gray-950">2</dd>
+            <dt className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{content.products}</dt>
+          </div>
+          <div className="py-5 pl-5 lg:border-b lg:px-0">
+            <dd className="text-4xl font-bold tracking-[-0.04em] text-gray-950">2</dd>
+            <dt className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{content.projects}</dt>
+          </div>
+          <div className="col-span-2 border-t border-gray-300 py-5 lg:col-span-1 lg:border-t-0">
+            <dd className="text-lg font-bold text-[#18752d]">01</dd>
+            <dt className="mt-1 text-xs font-bold uppercase tracking-wide text-gray-500">{content.principle}</dt>
+          </div>
+        </dl>
       </div>
     </section>
   );
